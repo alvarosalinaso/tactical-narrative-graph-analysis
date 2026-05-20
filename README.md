@@ -1,4 +1,4 @@
-# Análisis de Sistemas Complejos y Teoría de Grafos Aplicada a la Optimización Táctica (CNA)
+﻿# Análisis de Sistemas Complejos y Teoría de Grafos Aplicada a la Optimización Táctica (CNA)
 
 🚀 **[Ver Simulación Interactiva en Vivo]** *(Si aplica enlace a output interactivo)*
 
@@ -85,5 +85,5 @@ El código del proyecto está optimizado para ejecutarse localmente de forma flu
 ---
 
 > **Álvaro Salinas Ortiz**
-> *Asesor Estratégico en Toma de Datos y Análisis*
+> *Consultor en Estrategia de Datos y Analítica Avanzada*
 > [LinkedIn](https://www.linkedin.com/in/alvaro-salinas-ortiz) | [Portafolio Web](https://alvarosalinaso.github.io)
