@@ -6,6 +6,8 @@
 
 ## Executive Summary & Decision Making
 
+[![CI](https://github.com/alvarosalinaso/tactical-narrative-graph-analysis/actions/workflows/ci.yml/badge.svg)](https://github.com/alvarosalinaso/tactical-narrative-graph-analysis/actions/workflows/ci.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 Este proyecto diseña e implementa una infraestructura avanzada de **Ciencia de Redes (Complex Network Analysis - CNA)** y **Teoría de Grafos** aplicada al rendimiento deportivo de élite. Mediante la modelación matemática de un partido de fútbol no como eventos independientes aislados, sino como un **Sistema Complejo Dinámico**, el algoritmo deconstruye las interacciones colectivas del equipo. Esto permite parametrizar de forma cuantitativa la circulación de información (el balón), identificar vulnerabilidades estructurales en la red y optimizar la resiliencia táctica colectiva.
 
 El análisis de grafos tácticos capacita a Directores Técnicos, Analistas de Rendimiento y Departamentos de Inteligencia Deportiva para tomar **decisiones tácticas de alto nivel**:
