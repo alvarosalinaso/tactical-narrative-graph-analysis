@@ -1,4 +1,4 @@
-﻿# Análisis de Sistemas Complejos y Teoría de Grafos Aplicada a la Optimización Táctica (CNA)
+﻿# Analisis de Sistemas Complejos y Teoria de Grafos Aplicada a la Optimizacion Tactica (CNA)
 
 [![CI](https://github.com/alvarosalinaso/tactical-narrative-graph-analysis/actions/workflows/ci.yml/badge.svg)](https://github.com/alvarosalinaso/tactical-narrative-graph-analysis/actions/workflows/ci.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?logo=python&logoColor=white)](https://python.org)
@@ -8,89 +8,153 @@
 
 ---
 
-## Executive Summary & Decision Making
+## 1. Titulo Academico y Contexto Estrategico
 
-Este proyecto diseña e implementa una infraestructura avanzada de **Ciencia de Redes (Complex Network Analysis - CNA)** y **Teoría de Grafos** aplicada al rendimiento deportivo de élite. Mediante la modelación matemática de un partido de fútbol no como eventos independientes aislados, sino como un **Sistema Complejo Dinámico**, el algoritmo deconstruye las interacciones colectivas del equipo. Esto permite parametrizar de forma cuantitativa la circulación de información (el balón), identificar vulnerabilidades estructurales en la red y optimizar la resiliencia táctica colectiva.
+Este repositorio constituye un marco analitico para la **aplicacion de Ciencia de Redes (Complex Network Analysis - CNA) y Teoria de Grafos a la optimizacion tactica del futbol de elites**. Modelamos un partido de futbol no como una secuencia de eventos independientes, sino como un **Sistema Complejo Dinamico** en el que la circulacion del balon genera una red dirigida ponderada de interacciones entre agentes.
 
-El análisis de grafos tácticos capacita a Directores Técnicos, Analistas de Rendimiento y Departamentos de Inteligencia Deportiva para tomar **decisiones tácticas de alto nivel**:
-1. **Identificación y Mitigación de Puntos de Falla Críticos:** Detectar de forma cuantitativa qué jugadores tienen una métrica de centralidad crítica (*Betweenness Centrality*). Esto identifica cuellos de botella tácticos: si el rival neutraliza a este nodo mediante marca personal, la red de posesión del equipo colapsa por completo.
-2. **Rediseño de Patrones de Circulación (Tactical De-bottlenecking):** Diseñar e implementar alternativas de pase para distribuir mejor la centralidad del juego, reduciendo la dependencia de jugadores aislados y aumentando la imprevisibilidad ofensiva.
-3. **Auditoría de Sinergia y Conexión de Plantilla:** Evaluar empíricamente la efectividad de las sociedades tácticas en el terreno de juego, tomando decisiones informadas sobre alineaciones iniciales y contrataciones basadas en compatibilidad estructural y cooperativa.
+El proposito es proporcionar a Directores Tecnicos, Analistas de Rendimiento y Departamentos de Inteligencia Deportiva una **capacidad cuantitativa de diagnostico estructural** que trasciende las metricas descriptivas convencionales (volumen de pases, kilometros recorridos). A traves de la formalizacion matematica de la red de pase, el sistema identifica cuellos de botella criticos, monopolios de transito y fracturas de sinergia que permanecen invisibles ante analisis tradicionales basados en tablas.
 
 ---
 
-## Business Context & Challenge
+## 2. Preguntas de Investigacion e Hipotesis
 
-En el fútbol moderno de élite, la diferencia entre ganar y perder se define por detalles milimétricos y adaptaciones tácticas en tiempo real. Los clubes acumulan volúmenes inmensos de datos de eventos, pero los análisis convencionales basados exclusivamente en tablas de volumen (p. ej., "el jugador X completó 50 pases") son insuficientes. No capturan la estructura relacional del juego, la influencia de los circuitos de pase ni la topología de la red de juego.
+El proyecto aborda tres preguntas de investigacion centrales derivadas del contexto competitivo del futbol elite:
 
-El desafío de este proyecto consiste en **traducir la Teoría de Grafos en una ventaja competitiva en el terreno de juego**, abstrayendo las dinámicas espaciales e interaccionales en una red de nodos (jugadores) y aristas con peso (frecuencia y dirección de pases). Esto permite responder a la pregunta de negocio: *¿Cómo responde nuestro equipo estructuralmente ante la presión del oponente y qué tan vulnerables somos a perder nuestra capacidad de distribución?*
+**P1 - Deteccion de SPOF (Single Point of Failure):** Existe un nodo cuya remocion o neutralizacion por marca individual provoca el colapso parcial o total de la red de posesion del equipo? Formulamos que la *Betweenness Centrality* identifica de forma fiable estos puntos de falla estructural.
 
----
+**P2 - Monopolios de Betweenness:** Concentra un jugador una proporcion desproporcionada del trafico transicional del equipo? Nuestra hipotesis establece que un mediocampista central puede monopolizar hasta el 45% del travesia del balon entre lineas, convirtiendose en un cuello de botella táctico explotable por oponentes analiticos.
 
-## Data Architecture & Analytical Approach
-
-La metodología y arquitectura del proyecto garantizan rigor matemático e interactividad táctica:
-
-1. **Modelado y Matemática de Nodos (`NetworkX`):** Desarrollo del motor matemático principal que construye el grafo de juego directo. El algoritmo calcula tensores de red y métricas estructurales críticas:
-   - **Degree Centrality:** Quién recibe y distribuye el mayor volumen absoluto de balón.
-   - **Betweenness Centrality:** Quién actúa como puente indispensable para conectar la línea de defensa con la fase ofensiva.
-   - **Closeness Centrality:** Qué jugador se encuentra a la distancia media de pases más corta del resto del equipo, facilitando transiciones rápidas.
-2. **Visualización y Simulación Física Dinámica (`PyVis`):** Inyección de las matrices abstractas calculadas en Python en un motor visual HTML dinámico. Este simulador calcula colisiones, fuerzas gravitacionales y tensiones de resorte físicas interactivas en tiempo real.
-3. **Generación de Outputs Autoportantes:** Exportación automática de la visualización interactiva a un formato HTML ligero (`grafo_tactico.html`) ideal para presentación inmediata ante cuerpos técnicos o directivas en tablets y ordenadores portátiles, libre de dependencias de servidor complejas.
-4. **Exportación JSON para Portfolio Web:** Datos serializados (`tactical-network.json`) para consumo en Portfolio Web con **Plotly.js**, permitiendo visualizaciones interactivas estáticas (GitHub Pages) con drag-and-drop de nodos y betweenness en tiempo real.
+**P3 - Sinergias Fallidas (Fracturas de conexion):** Se verifican en el terreno de juego las asociaciones tácticas nominalmente planificadas? Analizamos la ausencia de aristas significativas entre mediocampistas y delanteros nominales como evidencia de fallos operativos en los pasillos interiores.
 
 ---
 
-## Strategic Insights & Impact
+## 3. Pipeline Metodologico y Arquitectura de Datos
 
-El modelado analítico mediante Teoría de Grafos arroja conclusiones transformadoras sobre el rendimiento colectivo:
+La arquitectura analitica se estructura en tres capas secuenciales:
 
-- **Detección de Monopolios Críticos:** El análisis demuestra de forma empírica cómo en ciertos esquemas tácticos un solo mediocampista central monopoliza el 45% del tránsito de balón transicional del equipo, transformándolo en un punto único de falla (Single Point of Failure - SPOF) fácilmente detectable e inutilizable por entrenadores rivales analíticos.
-- **Visualización Inmersiva de Roles Reales:** El simulador gravitacional permite arrastrar los nodos de los jugadores de forma interactiva en la pantalla de análisis táctico, facilitando a los cuerpos técnicos comprender la elasticidad, el acoplamiento y el espacio real que las sociedades de juego ocupan durante el partido.
-- **Cuantificación de Sinergias Fallidas:** El sistema expone la ausencia de aristas significativas (pases) entre mediocampistas y delanteros nominales, evidenciando fallas operativas en los pasillos interiores que las estadísticas tradicionales no logran diagnosticar.
+### 3.1 Construccion del Grafo Dirigido (NetworkX DiGraph)
 
----
+El modulo `src/graph_builder.py` implementa el motor matematico principal. A partir de un DataFrame de eventos de pase (columnas `Passer` y `Receiver`), se construye un `nx.DiGraph` donde:
 
-## Infraestructura, Despliegue y Ejecución
+- **Nodos** representan jugadores.
+- **Aristas dirigidas** representan la direccion del pase.
+- **Peso de arista** (`weight`) corresponde a la frecuencia acumulada de pases entre dos jugadores.
 
-El código del proyecto está optimizado para ejecutarse localmente de forma fluida sin configuraciones avanzadas.
+### 3.2 Metricas de Centralidad Calculadas
 
-### Prerrequisitos
-- Python 3.9+
-- Motor de renderizado web local
+El pipeline calcula las siguientes metricas topologicas fundamentales:
 
-### Setup y Ejecución Local
-1. **Clonación del repositorio y aislamiento de entorno:**
-   ```bash
-   git clone https://github.com/alvarosalinaso/tactical-narrative-graph-analysis
-   cd tactical-narrative-graph-analysis
-   python -m venv .venv
-   ```
-2. **Activación del entorno virtual (Windows):**
-   ```powershell
-   .\.venv\Scripts\activate
-   ```
-3. **Instalación de las librerías matemáticas y visuales:**
-   ```bash
-   pip install -r requirements.txt
-   ```
-4. **Ejecución del pipeline y generación del mapa dinámico:**
-   ```bash
-   python src/graph_builder.py
-   ```
-5. **Generar datos para Portfolio Web:**
-   ```bash
-   python src/export_json.py
-   ```
-6. **Navegación e Inspección Visual (PyVis):**
-   Navega a la carpeta `/output/`, abre el archivo `grafo_tactico.html` en tu navegador y arrastra interactivamente los nodos de los jugadores en la simulación física integrada.
+| Metrica | Definicion Matematica | Interpretacion Tactica |
+|---|---|---|
+| **Degree Centrality** | Fraccion de nodos conectados directamente a un nodo | Quien recibe y distribuye el mayor volumen absoluto de balon |
+| **Betweenness Centrality** | Frecuencia con la que un nodo aparece en el camino mas corto entre todos los pares | Quien actua como puente indispensable entre fase defensiva y ofensiva; identifica el SPOF |
+| **Closeness Centrality** | Inverso de la distancia media mas corta a todos los demas nodos | Que jugador se halla a la menor distancia de pase promedio del resto del equipo |
 
-### Ver Dashboard Interactivo (Plotly.js)
+La implementacion actual prioriza `betweenness_centrality(G, weight="weight")` como metrica diagnostica principal, dado que revela la dependencia estructural del equipo hacia nodos individuales.
 
-**[https://alvarosalinaso.github.io/portfolio-web/](https://alvarosalinaso.github.io/portfolio-web/)** → Tab **"🕸️ Redes Tácticas CNA"** (integrado con drag-and-drop SVG + Plotly.js)
+### 3.3 Simulacion Visual Dinamica (PyVis)
+
+Los tensores abstractos calculados en Python se inyectan en un motor de renderizado HTML interactivo a traves de **PyVis**. El simulador resuelve fuerzas de tipo resorte y colisiones entre nodos en tiempo real, produciendo un grafo de fuerza direccional (`grafo_tactico.html`) que permite la inspeccion interactiva de la topologia táctica sin dependencias de servidor.
 
 ---
 
-> **Álvaro Salinas Ortiz**
-> *Consultor en Estrategia de Datos y Analítica Avanzada*
+## 4. Hallazgos Clave y Business/Domain Insights
+
+### 4.1 Monopolio de Transito Critico (45%)
+
+El analisis demuestra empiricamente que un mediocampista central puede monopolizar aproximadamente el **45% del trafico transicional** del equipo entre lineas de construccion y fase ofensiva. Esta concentracion convierte al nodo en un **SPOF táctico**: un rival que utilice marca personal o presion orientada sobre este jugador puede provocar el colapso de la red de posesion. La metrica de Betweenness Centrality cuantifica esta vulnerabilidad con precision.
+
+### 4.2 Identificacion de Puntos de Falla Estructurales
+
+El sistema identifica nodos cuya remocion simulada fragmenta la red en componentes desconectados o debilitados. Estos puntos de falla no son visibles en metricas volumetricas convencionales, pero resultan determinantes en el rendimiento colectivo bajo presion rival.
+
+### 4.3 Cuantificacion de Sinergias Fallidas
+
+La ausencia de aristas de peso significativo entre mediocampistas y delanteros nominales evidencia **fallos operativos en los pasillos interiores** que las estadisticas tradicionales no logran diagnosticar. El grafo revela donde la comunicacion táctica se interrumpe, permitiendo al cuerpo tecnico tomar decisiones informadas sobre alineaciones y esquemas alternativos.
+
+---
+
+## 5. Dashboard y Visualizaciones Interactivas
+
+### 5.1 Simulador PyVis (Grafo de Fuerza Direccional)
+
+El archivo generado en `output/grafo_tactico.html` contiene el grafo interactivo completo. Los nodos se representan con tama proporcionales a su Betweenness Centrality; las aristas muestran el peso del pase en la inspeccion hover. Permite arrastre interactivo para exploracion tactica.
+
+### 5.2 Portfolio Web (Plotly.js + Drag-and-Drop SVG)
+
+**[https://alvarosalinaso.github.io/portfolio-web/](https://alvarosalinaso.github.io/portfolio-web/)** - Tab *"Redes Tacticas CNA"*. Integracion con Plotly.js para visualizaciones estaticas interactivas con drag-and-drop de nodos y metricas en tiempo real.
+
+### 5.3 Flourish Arc/Chord Diagram (Placeholder)
+
+<!-- Embebido Flourish: reemplazar con URL publicacion cuando este disponible -->
+<!-- <iframe src="https://public.flourish.studio/visualisation/XXXXX/embed" ...></iframe> -->
+
+Diagrama de arcos para la representacion de flujos de pase entre bloques tácticos (defensa, mediocampo, ataque).
+
+### 5.4 Datawrapper Embed (Placeholder)
+
+<!-- Embebido Datawrapper: reemplazar con URL publicacion cuando este disponible -->
+<!-- <iframe src="https://www.datawrapper.de/XXXXX/..." ...></iframe> -->
+
+Grafico de barras o heatmap de centralidades por jugador para reportes ejecutivos.
+
+### 5.5 Observable Graph Notebook (Placeholder)
+
+<!-- Observable notebook: reemplazar con URL publicacion cuando este disponible -->
+<!-- <a href="https://observablehq.com/@username/tactical-graph-analysis">Ver en Observable</a> -->
+
+Notebook interactivo con documentación reproducible del pipeline analítico.
+
+---
+
+## 6. Reproducibilidad y Entorno Tecnico
+
+### 6.1 Prerrequisitos
+
+- Python 3.9 o superior
+- Motor de renderizado web local (Chrome, Firefox o Edge)
+
+### 6.2 Instalacion y Ejecucion
+
+```bash
+# Clonar repositorio
+git clone https://github.com/alvarosalinaso/tactical-narrative-graph-analysis
+cd tactical-narrative-graph-analysis
+
+# Crear y activar entorno virtual
+python -m venv .venv
+# Windows:
+.\.venv\Scripts\activate
+# Linux/Mac:
+source .venv/bin/activate
+
+# Instalar dependencias
+pip install -r requirements.txt
+
+# Ejecutar pipeline principal (genera output/grafo_tactico.html)
+python src/graph_builder.py
+```
+
+### 6.3 Dependencias (requirements.txt)
+
+```
+statsbombpy==1.13.0
+networkx==3.2.1
+pyvis==0.3.2
+pandas==2.2.1
+streamlit==1.32.2
+```
+
+### 6.4 Nota sobre Exportacion JSON
+
+> **TODO:** El script `src/export_json.py` referenciado en versiones anteriores no existe actualmente en el repositorio. La exportacion de datos serializados (`tactical-network.json`) para consumo via Plotly.js en Portfolio Web esta pendiente de implementacion.
+
+### 6.5 Inspeccion del Resultado
+
+Tras la ejecucion, navegue a la carpeta `output/` y abra `grafo_tactico.html` en su navegador para interactuar con el grafo de fuerza direccional.
+
+---
+
+> **Alvaro Salinas Ortiz**
+> *Consultor en Estrategia de Datos y Analitica Avanzada*
 > [LinkedIn](https://www.linkedin.com/in/alvaro-salinas-ortiz) | [Portafolio Web](https://alvarosalinaso.github.io/portfolio-web/)

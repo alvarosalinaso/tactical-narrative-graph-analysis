@@ -1,0 +1,10 @@
+source,target,weight,betweenness_source,betweenness_target
+Onana,Martinez,1,0.0,0.0833
+Onana,Dalot,1,0.0,0.05
+Martinez,Bruno Fernandes,1,0.0833,0.2667
+Martinez,Mainoo,1,0.0833,0.0
+Dalot,Bruno Fernandes,1,0.05,0.2667
+Bruno Fernandes,Garnacho,2,0.2667,0.0
+Bruno Fernandes,Hojlund,1,0.2667,0.0
+Mainoo,Bruno Fernandes,1,0.0,0.2667
+Garnacho,Hojlund,1,0.0,0.0
