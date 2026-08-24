@@ -9,7 +9,6 @@ Generates:
 
 from __future__ import annotations
 
-import os
 import sys
 from pathlib import Path
 
@@ -202,7 +201,9 @@ def main() -> None:
         df = _mock_data()
         G = build_graph(df)
 
-        print(f"\nGraph loaded: {G.number_of_nodes()} nodes, {G.number_of_edges()} edges\n")
+        print(
+            f"\nGraph loaded: {G.number_of_nodes()} nodes, {G.number_of_edges()} edges\n"
+        )
 
         export_flourish_arc(G)
         export_observable_grafo(G)
@@ -210,7 +211,7 @@ def main() -> None:
         generate_embed_snippets()
 
         print("\nAll exports completed successfully.")
-    except Exception as exc:
+    except (OSError, ValueError, KeyError) as exc:
         print(f"[ERROR] Export failed: {exc}", file=sys.stderr)
         sys.exit(1)
 
