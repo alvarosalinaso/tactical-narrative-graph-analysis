@@ -98,5 +98,13 @@ pandas==2.2.1
 
 ---
 
+## Related projects
+
+- [Manchester United Analysis](https://github.com/alvarosalinaso/manchester-united-analisis) — Causal analysis of managerial changes
+- [Passing Network Analysis](https://github.com/alvarosalinaso/united-passing-efficiency-24-25) — Graph analysis of Man United's passing
+- [Portfolio Web](https://github.com/alvarosalinaso/portfolio-web) — Dashboard with all projects
+
+---
+
 > **Álvaro Salinas Ortiz**
 > [LinkedIn](https://www.linkedin.com/in/alvaro-salinas-ortiz) | [Portfolio](https://alvarosalinaso.github.io/portfolio-web/)
