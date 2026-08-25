@@ -1,74 +1,31 @@
+from __future__ import annotations
+
 import os
+from pathlib import Path
 
 import networkx as nx
 import pandas as pd
 from pyvis.network import Network
 
-# Simularemos un generador offline primero para asegurar estabilidad inmediata.
-# En producción, usaríamos `from statsbombpy import sb`
-# y haríamos: sb.events(match_id=3750201)
+DATA_DIR = Path(__file__).resolve().parent.parent / "data" / "raw"
+PASSING_CSV = DATA_DIR / "passing.csv"
 
 
-def build_graph(data: pd.DataFrame) -> nx.DiGraph:
-    """Extrae las conexiones dirigidas de Pases y crea el Grafo Matemático"""
-    G = nx.DiGraph()
+def load_passing_data() -> pd.DataFrame:
+    """Load passing data from CSV, falling back to mock data if unavailable."""
+    if PASSING_CSV.exists():
+        df = pd.read_csv(PASSING_CSV)
+        df = df.dropna(subset=["Player"])
+        df = df[df["Player"].str.strip().str.len() > 0]
 
-    # Agregar Nodos y bordes con peso (Weight = N° de Pases)
-    for index, row in data.iterrows():
-        source = row["Passer"]
-        target = row["Receiver"]
+        df = df.rename(columns={"Player": "Passer"})
+        df["Receiver"] = df["Passer"].shift(-1)
+        df = df.dropna(subset=["Receiver"])
+        print(f"Loaded {len(df)} rows from {PASSING_CSV.name}")
+        return df
 
-        if G.has_edge(source, target):
-            G[source][target]["weight"] += 1
-        else:
-            G.add_edge(source, target, weight=1)
-
-    return G
-
-
-def analyze_and_visualize(G: nx.DiGraph, output_filename="grafo_tactico.html"):
-    """
-    Calcula Betweenness Centrality (El dictador o 'broker' táctico del equipo)
-    y renderiza el mapa en HTML interactivo
-    """
-    # 1. Análisis de centralidad (Matemática Pura)
-    centrality = nx.betweenness_centrality(G, weight="weight")
-
-    # 2. Configurar motor visual PyVis
-    net = Network(
-        height="600px",
-        width="100%",
-        bgcolor="#222222",
-        font_color="white",
-        directed=True,
-    )
-
-    # Transformar a formato visual
-    for node in G.nodes():
-        # El tamaño del jugador en el mapa dependerá de cuánto es el 'puente' táctico
-        size = centrality.get(node, 0.01) * 200 + 10
-        net.add_node(
-            node,
-            label=node,
-            title=f"Betweenness: {centrality.get(node, 0.01):.2f}",
-            size=size,
-        )
-
-    for source, target, data in G.edges(data=True):
-        weight = data["weight"]
-        net.add_edge(source, target, value=weight, title=f"{weight} pases")
-
-    # Guardar en local (Se puede abrir en cualquier navegador web)
-    os.makedirs("output", exist_ok=True)
-    out_path = os.path.join("output", output_filename)
-    net.write_html(out_path)
-    print(f"Grafo interactivo renderizado con éxito en: {out_path}")
-
-
-if __name__ == "__main__":
-    # Generamos un dataset esqueleto con base en tus propias estadísticas de passing.csv del United
-    # Esto asegura de que corra a la primera (Plug-and-play)
-    mock_data = pd.DataFrame(
+    print("[INFO] No CSV found, using mock data")
+    return pd.DataFrame(
         [
             {"Passer": "Onana", "Receiver": "Martinez"},
             {"Passer": "Onana", "Receiver": "Dalot"},
@@ -83,5 +40,57 @@ if __name__ == "__main__":
         ]
     )
 
-    grafo = build_graph(mock_data)
+
+def build_graph(data: pd.DataFrame) -> nx.DiGraph:
+    """Extrae las conexiones dirigidas de Pases y crea el Grafo Matemático."""
+    G = nx.DiGraph()
+
+    for _, row in data.iterrows():
+        source = row["Passer"]
+        target = row["Receiver"]
+
+        if G.has_edge(source, target):
+            G[source][target]["weight"] += 1
+        else:
+            G.add_edge(source, target, weight=1)
+
+    return G
+
+
+def analyze_and_visualize(G: nx.DiGraph, output_filename="grafo_tactico.html"):
+    """
+    Calcula Betweenness Centrality y renderiza el mapa en HTML interactivo.
+    """
+    centrality = nx.betweenness_centrality(G, weight="weight")
+
+    net = Network(
+        height="600px",
+        width="100%",
+        bgcolor="#222222",
+        font_color="white",
+        directed=True,
+    )
+
+    for node in G.nodes():
+        size = centrality.get(node, 0.01) * 200 + 10
+        net.add_node(
+            node,
+            label=node,
+            title=f"Betweenness: {centrality.get(node, 0.01):.2f}",
+            size=size,
+        )
+
+    for source, target, data_edge in G.edges(data=True):
+        weight = data_edge["weight"]
+        net.add_edge(source, target, value=weight, title=f"{weight} pases")
+
+    os.makedirs("output", exist_ok=True)
+    out_path = os.path.join("output", output_filename)
+    net.write_html(out_path)
+    print(f"Grafo interactivo renderizado con éxito en: {out_path}")
+
+
+if __name__ == "__main__":
+    df = load_passing_data()
+    grafo = build_graph(df)
     analyze_and_visualize(grafo)

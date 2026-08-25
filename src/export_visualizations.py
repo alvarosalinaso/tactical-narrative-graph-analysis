@@ -15,10 +15,9 @@ from pathlib import Path
 import networkx as nx
 import pandas as pd
 
-# Ensure src/ is importable when run from project root
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from graph_builder import build_graph
+from graph_builder import build_graph, load_passing_data
 from graph_analysis import run_graph_analysis
 
 EXPORT_DIR = Path(__file__).resolve().parent.parent / "data" / "export"
@@ -28,24 +27,6 @@ SNIPPET_PATH = EXPORT_DIR / "embed_snippets.md"
 def _ensure_export_dir() -> None:
     """Create the export directory if it does not exist."""
     EXPORT_DIR.mkdir(parents=True, exist_ok=True)
-
-
-def _mock_data() -> pd.DataFrame:
-    """Fallback passing dataset matching graph_builder demo data."""
-    return pd.DataFrame(
-        [
-            {"Passer": "Onana", "Receiver": "Martinez"},
-            {"Passer": "Onana", "Receiver": "Dalot"},
-            {"Passer": "Martinez", "Receiver": "Bruno Fernandes"},
-            {"Passer": "Martinez", "Receiver": "Mainoo"},
-            {"Passer": "Dalot", "Receiver": "Bruno Fernandes"},
-            {"Passer": "Mainoo", "Receiver": "Bruno Fernandes"},
-            {"Passer": "Bruno Fernandes", "Receiver": "Garnacho"},
-            {"Passer": "Bruno Fernandes", "Receiver": "Garnacho"},
-            {"Passer": "Bruno Fernandes", "Receiver": "Hojlund"},
-            {"Passer": "Garnacho", "Receiver": "Hojlund"},
-        ]
-    )
 
 
 def export_flourish_arc(G: nx.DiGraph) -> None:
@@ -198,8 +179,7 @@ def main() -> None:
     try:
         _ensure_export_dir()
 
-        # Build the graph (uses mock data if no CSV provided)
-        df = _mock_data()
+        df = load_passing_data()
         G = build_graph(df)
 
         print(
@@ -211,18 +191,14 @@ def main() -> None:
         export_dw_centralidad(G)
         generate_embed_snippets()
 
-        # Graph analysis (PageRank, communities, network metrics)
         run_graph_analysis()
 
-        # Benchmark SOTA
         from benchmark_sota import run_benchmark
         run_benchmark()
 
-        # Statistical tests
         from statistical_tests import run_statistical_tests
         run_statistical_tests()
 
-        # Generate executive tables
         from generate_tables import generate as generate_exec_tables
         generate_exec_tables()
 
