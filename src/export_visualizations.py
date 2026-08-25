@@ -19,6 +19,7 @@ import pandas as pd
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from graph_builder import build_graph
+from graph_analysis import run_graph_analysis
 
 EXPORT_DIR = Path(__file__).resolve().parent.parent / "data" / "export"
 SNIPPET_PATH = EXPORT_DIR / "embed_snippets.md"
@@ -209,6 +210,9 @@ def main() -> None:
         export_observable_grafo(G)
         export_dw_centralidad(G)
         generate_embed_snippets()
+
+        # Graph analysis (PageRank, communities, network metrics)
+        run_graph_analysis()
 
         print("\nAll exports completed successfully.")
     except (OSError, ValueError, KeyError) as exc:

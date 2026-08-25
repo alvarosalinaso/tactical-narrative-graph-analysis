@@ -2,3 +2,9 @@ statsbombpy==1.13.0
 networkx==3.2.1
 pyvis==0.3.2
 pandas==2.2.1
+polars>=1.0.0
+duckdb>=1.0.0
+great_tables>=0.10.0
+altair>=5.3.0
+seaborn>=0.13.0
+scikit-learn>=1.4.0

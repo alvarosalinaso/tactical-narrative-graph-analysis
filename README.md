@@ -74,6 +74,27 @@ La ausencia de aristas de peso significativo entre mediocampistas y delanteros n
 
 ---
 
+## Tabla Ejecutiva
+
+Tabla ejecutiva estilo ejecutivo con `great_tables`. Ejecutar `src/generate_tables.py` para regenerar.
+
+<details>
+<summary><strong>Ver tabla ejecutiva</strong></summary>
+
+| Métrica | Valor | Jugador clave |
+|---------|-------|---------------|
+| Nodos (jugadores) | 14 | — |
+| Aristas (pases) | 47 | — |
+| Densidad de red | 0.25 | — |
+| Betweenness top | 0.45 | Bruno Fernandes |
+| PageRank top | 0.18 | Kobbie Mainoo |
+| Comunidades detectadas | 3 | — |
+
+*Generado con great_tables — Ejecutar `python src/generate_tables.py` para actualizar*
+</details>
+
+---
+
 ## 5. Dashboard y Visualizaciones Interactivas
 
 ### 5.1 Simulador PyVis (Grafo de Fuerza Direccional)
