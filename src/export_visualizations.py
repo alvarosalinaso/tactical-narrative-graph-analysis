@@ -214,6 +214,18 @@ def main() -> None:
         # Graph analysis (PageRank, communities, network metrics)
         run_graph_analysis()
 
+        # Benchmark SOTA
+        from benchmark_sota import run_benchmark
+        run_benchmark()
+
+        # Statistical tests
+        from statistical_tests import run_statistical_tests
+        run_statistical_tests()
+
+        # Generate executive tables
+        from generate_tables import generate as generate_exec_tables
+        generate_exec_tables()
+
         print("\nAll exports completed successfully.")
     except (OSError, ValueError, KeyError) as exc:
         print(f"[ERROR] Export failed: {exc}", file=sys.stderr)
