@@ -17,8 +17,8 @@ import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from graph_builder import build_graph, load_passing_data
 from graph_analysis import run_graph_analysis
+from graph_builder import build_graph, load_passing_data
 
 EXPORT_DIR = Path(__file__).resolve().parent.parent / "data" / "export"
 SNIPPET_PATH = EXPORT_DIR / "embed_snippets.md"
@@ -194,12 +194,15 @@ def main() -> None:
         run_graph_analysis()
 
         from benchmark_sota import run_benchmark
+
         run_benchmark()
 
         from statistical_tests import run_statistical_tests
+
         run_statistical_tests()
 
         from generate_tables import generate as generate_exec_tables
+
         generate_exec_tables()
 
         print("\nAll exports completed successfully.")

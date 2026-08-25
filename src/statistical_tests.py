@@ -1,16 +1,20 @@
 """Tests estadisticos para analisis de grafos tacticos."""
+
 import json
 from pathlib import Path
 
 try:
-    import numpy as np
+    import numpy as np  # noqa: F401
     from scipy import stats
+
     SCIPY_AVAILABLE = True
 except ImportError:
     SCIPY_AVAILABLE = False
 
 
-def run_statistical_tests(data_dir: Path = Path("data/export"), output_dir: Path = Path("data/export")) -> dict:
+def run_statistical_tests(
+    data_dir: Path = Path("data/export"), output_dir: Path = Path("data/export")
+) -> dict:
     if not SCIPY_AVAILABLE:
         return {}
 
@@ -32,7 +36,9 @@ def run_statistical_tests(data_dir: Path = Path("data/export"), output_dir: Path
                 "rho": round(r, 4),
                 "p_value": round(p, 6),
                 "significant": p < 0.05,
-                "interpretation": "Los jugadores con alta betweenness tambien tienen alto PageRank" if r > 0.5 else "Metricas independientes",
+                "interpretation": "Los jugadores con alta betweenness tambien tienen alto PageRank"
+                if r > 0.5
+                else "Metricas independientes",
             }
             print(f"[STATS] Spearman: rho={r:.3f}, p={p:.4f}")
 
