@@ -160,6 +160,20 @@ Interactividad multinivel para exploración de datos y presentación ejecutiva.
 
 ---
 
+## Recomendación Ejecutiva
+
+- Laterales son conectores clave entre fases defensivas y ofensivas
+- Implementar métricas de red en entrenamientos tácticos
+- Identificar sinergias entre jugadores complementarios
+
+| Prioridad | Acción | Impacto esperado |
+|-----------|--------|-----------------|
+| Alta | Entrenar laterales en transición defensa-ataque | +20% posesión en tercio final |
+| Media | Monitorear métricas de red post-partido | Detectar patrones de juego emergentes |
+| Baja | Crear dashboard táctico en tiempo real | Soporte a decisiones en vivo |
+
+---
+
 ## 6. Reproducibilidad y Entorno Tecnico
 
 ### 6.1 Prerrequisitos
