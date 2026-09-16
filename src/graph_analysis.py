@@ -17,7 +17,6 @@ except ImportError:
 
 def build_graph_from_csv(csv_path: Path) -> "nx.DiGraph":
     """Construye un grafo dirigido desde CSV de pases (source, target, weight)."""
-    import csv
 
     G = nx.DiGraph()
     with open(csv_path, encoding="utf-8") as f:

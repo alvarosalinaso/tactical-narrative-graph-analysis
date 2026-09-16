@@ -6,19 +6,28 @@
 
 ## What is this?
 
-EN: I wanted to see if network graph analysis could reveal tactical patterns in football passing data that traditional stats miss. So I built a pipeline that takes FBref passing data, constructs a directed graph with NetworkX, and calculates centrality metrics to identify key players and structural weaknesses.
+EN: Network graph analysis on real football passing data to reveal tactical patterns that traditional stats miss. Uses StatsBomb Open Data (event-level passes with actual player names and locations) to construct directed graphs and calculate centrality metrics.
 
-ES: Quería ver si el análisis de grafos de red podía revelar patrones tácticos en datos de pases de fútbol que las estadísticas tradicionales pasan por alto. Construí un pipeline que toma datos de FBref, construye un grafo dirigido con NetworkX y calcula métricas de centralidad para identificar jugadores clave y debilidades estructurales.
+ES: Análisis de grafos de red sobre datos reales de pases de fútbol para revelar patrones tácticos que las estadísticas tradicionales no muestran. Usa datos abiertos de StatsBomb (pases a nivel de evento con nombres reales de jugadores y ubicaciones) para construir grafos dirigidos y calcular métricas de centralidad.
+
+---
+
+## Data Source
+
+**StatsBomb Open Data** — Free, event-level football data:
+- Real pass events with player names, locations, and outcomes
+- World Cup 2022 matches (Morocco vs Canada as demo)
+- 869 total passes → 252 unique passing edges
 
 ---
 
 ## Questions I asked
 
-**P1 - Single Point of Failure:** Is there a player whose removal would collapse the team's possession network? Betweenness centrality should identify these structural vulnerabilities.
+**P1 - Single Point of Failure:** Is there a player whose removal would collapse the team's possession network? Betweenness centrality identifies these structural vulnerabilities.
 
-**P2 - Traffic monopolies:** Does one midfielder concentrate a disproportionate share of transitional traffic? If so, opponents can target this player to disrupt buildup.
+**P2 - Traffic monopolies:** Does one player concentrate a disproportionate share of transitional traffic? Opponents can target this player to disrupt buildup.
 
-**P3 - Failed connections:** Are there missing links between midfielders and forwards that traditional stats don't show? The graph can reveal where tactical communication breaks down.
+**P3 - Failed connections:** Are there missing links between midfielders and forwards that traditional stats don't show? The graph reveals where tactical communication breaks down.
 
 ---
 
@@ -26,18 +35,18 @@ ES: Quería ver si el análisis de grafos de red podía revelar patrones táctic
 
 ### 1. Graph construction
 
-`src/graph_builder.py` builds a `nx.DiGraph` from passing events:
-- **Nodes** = players
-- **Directed edges** = passing direction
+`src/graph_builder.py` builds a `nx.DiGraph` from StatsBomb passing events:
+- **Nodes** = players (real names from match data)
+- **Directed edges** = actual pass direction between players
 - **Edge weight** = accumulated pass frequency
 
 ### 2. Centrality metrics
 
 | Metric | What it measures |
 |--------|-----------------|
-| **Degree Centrality** | Who receives and distributes the most ball volume |
-| **Betweenness Centrality** | Who acts as indispensable bridge between defense and attack (the SPOF) |
-| **Closeness Centrality** | Who is closest to all other players by average pass distance |
+| **Betweenness Centrality** | Who acts as indispensable bridge (the SPOF) |
+| **PageRank** | Who is most connected in the passing network |
+| **In/Out Degree** | Ball reception vs distribution volume |
 
 ### 3. Interactive visualization
 
@@ -45,31 +54,12 @@ PyVis renders the graph as an interactive HTML file (`output/grafo_tactico.html`
 
 ---
 
-## Key findings
+## Key findings (Morocco vs Canada)
 
-- Bruno Fernandes monopolizes ~45% of transitional traffic — a clear single point of failure
-- 3 communities detected, matching expected tactical blocks (defense, midfield, attack)
-- Missing edges between midfielders and forwards reveal communication breakdowns in interior channels
-
----
-
-## Visualizations
-
-<details>
-<summary><strong>Datawrapper — Centrality benchmark</strong></summary>
-
-<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;">
-  <iframe src="https://datawrapper.dwcdn.net/ahvhZ/" title="Centrality Benchmark" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" loading="lazy" allowfullscreen></iframe>
-</div>
-</details>
-
-<details>
-<summary><strong>Observable — Interactive graph</strong></summary>
-
-<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;">
-  <iframe src="https://observablehq.com/@alvarosalinaso/tactical-nodes" title="Tactical Passing Graph" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" loading="lazy" allowfullscreen></iframe>
-</div>
-</details>
+- Azzedine Ounahi has highest betweenness (0.047) — key connector in Morocco's buildup
+- 252 unique passing edges from 869 total passes
+- Short passes (<10m) dominate possession phases
+- Long balls (>25m) used primarily in transitions
 
 ---
 
@@ -91,9 +81,10 @@ Open `output/grafo_tactico.html` in your browser.
 ## Dependencies
 
 ```
-networkx==3.2.1
-pyvis==0.3.2
-pandas==2.2.1
+networkx>=3.0
+pyvis>=0.3
+pandas>=2.0
+statsbombpy>=1.0
 ```
 
 ---
@@ -101,8 +92,8 @@ pandas==2.2.1
 ## Related projects
 
 - [Manchester United Analysis](https://github.com/alvarosalinaso/manchester-united-analisis) — Causal analysis of managerial changes
-- [Passing Network Analysis](https://github.com/alvarosalinaso/united-passing-efficiency-24-25) — Graph analysis of Man United's passing
-- [Portfolio Web](https://github.com/alvarosalinaso/portfolio-web) — Dashboard with all projects
+- [Chilean Video Games](https://github.com/alvarosalinaso/chilean-videogames-analysis) — Market analysis with scraping
+- [World Cup 2026](https://github.com/alvarosalinaso/worldcup-2026) — Interactive dashboard
 
 ---
 

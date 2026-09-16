@@ -1,0 +1,870 @@
+passer,receiver,x,y,end_x,end_y,pass_outcome,pass_length,pass_angle,minute,second,team,match_id,match_date,opponent
+Youssef En-Nesyri,Sofyan Amrabat,61.0,40.1,48.5,41.3,,12.557467,3.045886,0,0,Morocco,3857276,2022-12-01,Morocco
+Sofyan Amrabat,Nayef Aguerd,48.4,42.5,30.5,59.0,,24.344608,2.3968697,0,2,Morocco,3857276,2022-12-01,Morocco
+Nayef Aguerd,Romain Saïss,30.9,59.0,29.8,26.9,,32.118843,-1.6050508,0,5,Morocco,3857276,2022-12-01,Morocco
+Romain Saïss,Nayef Aguerd,31.7,26.2,24.8,58.4,,32.93099,1.7818897,0,8,Morocco,3857276,2022-12-01,Morocco
+Nayef Aguerd,Achraf Hakimi Mouh,26.9,59.5,34.7,78.0,,20.0771,1.1717907,0,12,Morocco,3857276,2022-12-01,Morocco
+Achraf Hakimi Mouh,Sofyan Amrabat,32.4,79.2,36.8,73.0,,7.602631,-0.95360494,0,15,Morocco,3857276,2022-12-01,Morocco
+Sofyan Amrabat,Hakim Ziyech,36.8,73.0,43.5,78.2,,8.481155,0.660009,0,16,Morocco,3857276,2022-12-01,Morocco
+Hakim Ziyech,Achraf Hakimi Mouh,37.3,78.2,29.0,79.6,,8.417244,2.974491,0,18,Morocco,3857276,2022-12-01,Morocco
+Achraf Hakimi Mouh,Nayef Aguerd,27.6,78.0,14.1,74.9,,13.851354,-2.9158762,0,20,Morocco,3857276,2022-12-01,Morocco
+Nayef Aguerd,Yassine Bounou,14.1,74.4,7.1,51.2,,24.233036,-1.8638341,0,22,Morocco,3857276,2022-12-01,Morocco
+Yassine Bounou,Romain Saïss,6.6,47.7,9.9,14.6,,33.264095,-1.4714268,0,25,Morocco,3857276,2022-12-01,Morocco
+Romain Saïss,Abdelhamid Sabiri,22.7,7.2,92.7,4.7,,70.04463,-0.035699114,0,30,Morocco,3857276,2022-12-01,Morocco
+Abdelhamid Sabiri,Sofiane Boufal,97.9,4.2,90.6,17.7,,15.347313,2.0665028,0,37,Morocco,3857276,2022-12-01,Morocco
+Sofiane Boufal,Hakim Ziyech,89.6,17.7,98.1,75.1,,58.025944,1.4237812,0,39,Morocco,3857276,2022-12-01,Morocco
+Hakim Ziyech,Achraf Hakimi Mouh,100.0,75.6,86.7,69.5,,14.632156,-2.7115715,0,45,Morocco,3857276,2022-12-01,Morocco
+Achraf Hakimi Mouh,Hakim Ziyech,87.0,68.7,97.2,75.9,,12.485191,0.61466295,0,47,Morocco,3857276,2022-12-01,Morocco
+Hakim Ziyech,Youssef En-Nesyri,105.9,70.9,111.9,47.9,Incomplete,23.769728,-1.315614,0,50,Morocco,3857276,2022-12-01,Morocco
+Noussair Mazraoui,Sofiane Boufal,104.2,0.1,112.1,4.9,,9.2439165,0.5459853,1,10,Morocco,3857276,2022-12-01,Morocco
+Milan Borjan,Kamal Miller,6.0,44.0,17.0,23.0,,23.70654,-1.0882831,1,28,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Cyle Larin,17.5,22.9,63.2,47.0,Incomplete,51.665268,0.48528925,1,36,Canada,3857276,2022-12-01,Canada
+Romain Saïss,Youssef En-Nesyri,56.9,33.1,78.3,35.2,,21.50279,0.09781766,1,39,Morocco,3857276,2022-12-01,Morocco
+Youssef En-Nesyri,Sofyan Amrabat,75.2,34.4,67.2,38.2,,8.856636,2.6981444,1,42,Morocco,3857276,2022-12-01,Morocco
+Sofyan Amrabat,Nayef Aguerd,56.5,34.9,40.9,43.4,,17.765415,2.6426952,1,44,Morocco,3857276,2022-12-01,Morocco
+Nayef Aguerd,Achraf Hakimi Mouh,38.8,44.8,40.9,74.4,,29.6744,1.499969,1,47,Morocco,3857276,2022-12-01,Morocco
+Achraf Hakimi Mouh,Hakim Ziyech,42.3,76.6,57.5,78.7,,15.34438,0.1372888,1,49,Morocco,3857276,2022-12-01,Morocco
+David Junior Hoilett,Cyle Larin,69.3,13.7,77.6,31.2,,19.36853,1.127931,1,54,Canada,3857276,2022-12-01,Canada
+Cyle Larin,Alphonso Davies,77.3,35.9,94.8,47.1,,20.777151,0.56931317,1,57,Canada,3857276,2022-12-01,Canada
+Alphonso Davies,Mark Anthony Kaye,103.1,51.1,96.5,40.7,,12.317468,-2.1362803,2,4,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Alphonso Davies,75.1,42.1,81.6,52.1,,11.926861,0.9944211,2,12,Canada,3857276,2022-12-01,Canada
+Abdelhamid Sabiri,Sofiane Boufal,38.3,23.5,33.4,19.8,,6.140033,-2.4948342,2,15,Morocco,3857276,2022-12-01,Morocco
+Sofiane Boufal,Abdelhamid Sabiri,33.4,19.8,50.3,11.3,,18.917189,-0.46601167,2,16,Morocco,3857276,2022-12-01,Morocco
+Abdelhamid Sabiri,Sofiane Boufal,52.3,9.2,57.7,17.9,,10.239629,1.0153025,2,19,Morocco,3857276,2022-12-01,Morocco
+Sofiane Boufal,Abdelhamid Sabiri,57.7,17.9,50.6,17.7,,7.102816,-3.113431,2,20,Morocco,3857276,2022-12-01,Morocco
+Abdelhamid Sabiri,Azzedine Ounahi,52.2,20.0,57.4,29.0,,10.394229,1.046877,2,20,Morocco,3857276,2022-12-01,Morocco
+Azzedine Ounahi,Sofyan Amrabat,57.4,29.0,50.6,26.2,,7.3539104,-2.7509856,2,22,Morocco,3857276,2022-12-01,Morocco
+Sofyan Amrabat,Sofiane Boufal,52.9,24.1,84.1,5.1,,36.529987,-0.5469922,2,24,Morocco,3857276,2022-12-01,Morocco
+Alistair Johnston,Jonathan Osorio,32.1,80.0,33.6,72.8,,7.3545904,-1.3654009,2,41,Canada,3857276,2022-12-01,Canada
+Jonathan Osorio,Alistair Johnston,31.5,72.8,32.6,77.1,,4.438468,1.3203533,2,42,Canada,3857276,2022-12-01,Canada
+Alistair Johnston,Jonathan Osorio,34.0,77.3,27.2,72.8,,8.15414,-2.5569913,2,43,Canada,3857276,2022-12-01,Canada
+Jonathan Osorio,Kamal Miller,28.1,60.8,19.8,36.6,,25.583784,-1.9011993,2,47,Canada,3857276,2022-12-01,Canada
+Kamal Miller,David Junior Hoilett,22.9,29.1,45.4,26.5,,22.649725,-0.115045294,2,50,Canada,3857276,2022-12-01,Canada
+David Junior Hoilett,Mark Anthony Kaye,45.6,28.6,37.1,34.5,,10.34698,2.5348256,2,51,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,Steven de Sousa Vitoria,37.3,34.7,28.1,49.0,,17.003822,2.142487,2,53,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Kamal Miller,33.3,49.0,32.2,22.9,,26.123169,-1.612917,2,57,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Sam Adekugbe,33.3,20.8,42.5,5.2,,18.110771,-1.0379524,2,59,Canada,3857276,2022-12-01,Canada
+Sam Adekugbe,Mark Anthony Kaye,43.7,5.4,47.7,16.5,,11.798729,1.2249218,3,3,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,Kamal Miller,47.5,15.9,31.5,15.6,,16.002811,-3.122845,3,4,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Steven de Sousa Vitoria,31.5,15.6,31.2,39.9,,24.301851,1.5831413,3,5,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Alistair Johnston,34.5,44.7,38.3,51.3,,7.615773,1.0483929,3,9,Canada,3857276,2022-12-01,Canada
+Alistair Johnston,Mark Anthony Kaye,38.5,51.5,45.6,44.7,,9.831073,-0.7638188,3,11,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,Alistair Johnston,47.8,46.8,38.3,56.7,,13.720787,2.335579,3,13,Canada,3857276,2022-12-01,Canada
+Alistair Johnston,Jonathan Osorio,39.9,58.6,57.2,73.6,,22.897379,0.7143107,3,15,Canada,3857276,2022-12-01,Canada
+Jonathan Osorio,Alphonso Davies,65.3,76.4,73.0,77.5,,7.7781744,0.14189705,3,17,Canada,3857276,2022-12-01,Canada
+Sofiane Boufal,Romain Saïss,47.0,3.7,31.4,7.5,,16.056152,2.9026563,3,18,Morocco,3857276,2022-12-01,Morocco
+Steven de Sousa Vitoria,Milan Borjan,31.5,57.5,20.5,48.3,,14.340154,-2.4450686,3,24,Canada,3857276,2022-12-01,Canada
+David Junior Hoilett,Mark Anthony Kaye,60.0,40.0,43.5,32.4,,18.166178,-2.7099538,4,51,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,Sam Adekugbe,43.5,31.7,42.8,6.2,,25.509605,-1.5982404,4,53,Canada,3857276,2022-12-01,Canada
+Sam Adekugbe,Kamal Miller,42.8,6.6,38.1,14.4,,9.106591,2.113099,4,54,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Steven de Sousa Vitoria,38.1,14.4,26.3,43.7,,31.586864,1.9536543,4,56,Canada,3857276,2022-12-01,Canada
+Alistair Johnston,Mark Anthony Kaye,38.1,80.0,56.1,57.2,,29.048923,-0.9025069,5,11,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,Alphonso Davies,56.3,58.0,69.8,56.1,,13.633048,-0.13982236,5,13,Canada,3857276,2022-12-01,Canada
+Alphonso Davies,Cyle Larin,69.8,56.1,92.2,70.7,Pass Offside,26.737988,0.5776295,5,15,Canada,3857276,2022-12-01,Canada
+Romain Saïss,Achraf Hakimi Mouh,27.9,14.8,25.7,72.3,,57.542072,1.6090386,5,33,Morocco,3857276,2022-12-01,Morocco
+Achraf Hakimi Mouh,Hakim Ziyech,29.0,72.5,42.3,78.2,,14.469969,0.4048918,5,38,Morocco,3857276,2022-12-01,Morocco
+Hakim Ziyech,Achraf Hakimi Mouh,38.7,78.2,38.7,73.9,,4.3,-1.5707964,5,40,Morocco,3857276,2022-12-01,Morocco
+Achraf Hakimi Mouh,Hakim Ziyech,38.7,73.9,36.6,78.9,,5.4230986,1.9684243,5,41,Morocco,3857276,2022-12-01,Morocco
+Hakim Ziyech,Noussair Mazraoui,31.9,74.9,42.3,8.4,,67.30832,-1.4156619,5,43,Morocco,3857276,2022-12-01,Morocco
+Alistair Johnston,Steven de Sousa Vitoria,56.0,68.8,42.3,59.4,,16.614752,-2.5402353,5,49,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Mark Anthony Kaye,42.8,59.4,54.9,50.2,,15.200329,-0.65007997,5,51,Canada,3857276,2022-12-01,Canada
+Sofyan Amrabat,Sofiane Boufal,57.4,33.0,100.5,1.1,Out,53.62108,-0.6371603,5,54,Morocco,3857276,2022-12-01,Morocco
+Alistair Johnston,Cyle Larin,30.5,80.0,45.7,77.5,,15.404221,-0.1630142,6,15,Canada,3857276,2022-12-01,Canada
+Alistair Johnston,Mark Anthony Kaye,45.7,80.0,40.4,71.9,,9.679876,-2.1502032,6,25,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,Alistair Johnston,39.2,70.7,43.0,75.0,,5.7384667,0.84704834,6,28,Canada,3857276,2022-12-01,Canada
+Alistair Johnston,Steven de Sousa Vitoria,30.3,64.5,16.5,66.0,,13.881283,3.033322,6,32,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Mark Anthony Kaye,22.2,70.7,39.2,75.9,,17.777514,0.29684466,6,34,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,Alistair Johnston,38.1,75.0,43.8,57.0,Incomplete,18.880943,-1.26412,6,37,Canada,3857276,2022-12-01,Canada
+Alistair Johnston,Cyle Larin,21.8,80.0,34.0,75.0,Incomplete,13.18484,-0.38895687,9,35,Canada,3857276,2022-12-01,Canada
+Hakim Ziyech,Abdelhamid Sabiri,105.1,0.1,110.8,14.5,Incomplete,15.487091,1.1938871,10,39,Morocco,3857276,2022-12-01,Morocco
+Azzedine Ounahi,Abdelhamid Sabiri,101.0,25.0,104.8,17.7,,8.229824,-1.0908458,10,42,Morocco,3857276,2022-12-01,Morocco
+Abdelhamid Sabiri,Azzedine Ounahi,101.0,14.6,91.8,14.3,,9.20489,-3.1089954,10,45,Morocco,3857276,2022-12-01,Morocco
+Azzedine Ounahi,Sofyan Amrabat,90.1,14.4,85.1,33.0,,19.260323,1.8334054,10,46,Morocco,3857276,2022-12-01,Morocco
+Sofyan Amrabat,Achraf Hakimi Mouh,82.8,37.5,85.1,69.7,,32.28204,1.4994888,10,49,Morocco,3857276,2022-12-01,Morocco
+Achraf Hakimi Mouh,Hakim Ziyech,88.6,72.8,88.2,62.2,,10.607545,-1.6085143,10,52,Morocco,3857276,2022-12-01,Morocco
+Hakim Ziyech,Achraf Hakimi Mouh,88.0,62.1,86.7,69.5,,7.5133214,1.7446976,10,53,Morocco,3857276,2022-12-01,Morocco
+Achraf Hakimi Mouh,Azzedine Ounahi,83.9,65.5,89.6,60.9,,7.324616,-0.6790053,10,55,Morocco,3857276,2022-12-01,Morocco
+Kamal Miller,Jonathan Osorio,19.1,22.4,23.1,22.7,,4.0112343,0.07485985,10,57,Canada,3857276,2022-12-01,Canada
+Jonathan Osorio,Sam Adekugbe,23.2,21.3,18.5,8.5,,13.635615,-1.9227002,10,59,Canada,3857276,2022-12-01,Canada
+Sam Adekugbe,Mark Anthony Kaye,19.4,8.5,45.9,12.7,,26.830767,0.15718316,11,2,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,Tajon Buchanan,46.8,13.5,77.8,0.1,Out,33.77218,-0.4080022,11,4,Canada,3857276,2022-12-01,Canada
+Achraf Hakimi Mouh,Azzedine Ounahi,34.7,80.0,39.4,76.6,,5.800862,-0.6262614,11,30,Morocco,3857276,2022-12-01,Morocco
+Azzedine Ounahi,Achraf Hakimi Mouh,38.7,76.6,33.8,79.2,,5.5470715,2.6537561,11,30,Morocco,3857276,2022-12-01,Morocco
+Alistair Johnston,Steven de Sousa Vitoria,44.4,35.3,33.6,26.9,,13.682105,-2.4805496,11,34,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Kamal Miller,33.4,25.1,40.7,3.0,,23.27445,-1.2517631,11,38,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Cyle Larin,45.1,3.6,70.5,11.4,,26.57066,0.29794553,11,42,Canada,3857276,2022-12-01,Canada
+Cyle Larin,Tajon Buchanan,70.5,11.4,70.7,1.4,,10.002,-1.550799,11,43,Canada,3857276,2022-12-01,Canada
+Sam Adekugbe,Mark Anthony Kaye,80.1,0.1,75.0,3.1,,5.916925,2.6098685,12,5,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,Sam Adekugbe,75.0,3.1,81.3,2.1,,6.3788714,-0.15741688,12,6,Canada,3857276,2022-12-01,Canada
+Sam Adekugbe,Tajon Buchanan,81.3,2.1,93.4,1.4,,12.120231,-0.05778683,12,7,Canada,3857276,2022-12-01,Canada
+Sofyan Amrabat,Romain Saïss,34.2,69.9,18.2,47.7,,27.36494,-2.195294,12,11,Morocco,3857276,2022-12-01,Morocco
+Romain Saïss,Noussair Mazraoui,18.0,28.4,15.0,10.6,,18.051039,-1.7377665,12,17,Morocco,3857276,2022-12-01,Morocco
+Noussair Mazraoui,Yassine Bounou,12.2,11.1,4.4,26.7,,17.44133,2.0344439,12,21,Morocco,3857276,2022-12-01,Morocco
+Yassine Bounou,Nayef Aguerd,4.4,28.3,7.1,56.7,,28.528057,1.4760108,12,24,Morocco,3857276,2022-12-01,Morocco
+Nayef Aguerd,Achraf Hakimi Mouh,9.0,61.0,18.0,78.2,,19.412367,1.0887176,12,27,Morocco,3857276,2022-12-01,Morocco
+Achraf Hakimi Mouh,Azzedine Ounahi,19.3,78.2,45.6,72.3,,26.953665,-0.22068101,12,29,Morocco,3857276,2022-12-01,Morocco
+Azzedine Ounahi,Romain Saïss,38.7,68.5,31.7,31.1,,38.049442,-1.7558213,12,34,Morocco,3857276,2022-12-01,Morocco
+Romain Saïss,Youssef En-Nesyri,32.6,31.1,57.9,26.9,,25.646248,-0.16450766,12,37,Morocco,3857276,2022-12-01,Morocco
+Milan Borjan,Alistair Johnston,26.0,57.5,32.2,61.7,,7.488658,0.59540987,12,42,Canada,3857276,2022-12-01,Canada
+Alistair Johnston,Mark Anthony Kaye,32.6,65.2,27.4,38.0,,27.692598,-1.7596935,12,45,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Mark Anthony Kaye,24.2,24.7,25.7,32.7,,8.13941,1.3854483,12,49,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,Jonathan Osorio,44.4,24.8,45.4,52.8,,28.01785,1.5350972,12,58,Canada,3857276,2022-12-01,Canada
+Jonathan Osorio,Steven de Sousa Vitoria,45.6,52.8,33.3,41.9,,16.43472,-2.4164662,13,0,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Jonathan Osorio,33.3,44.2,45.6,68.6,,27.324898,1.1038754,13,3,Canada,3857276,2022-12-01,Canada
+Jonathan Osorio,Alphonso Davies,45.6,70.5,65.7,57.2,,24.101868,-0.5845504,13,5,Canada,3857276,2022-12-01,Canada
+Alphonso Davies,Mark Anthony Kaye,65.7,57.2,62.2,41.6,Incomplete,15.987808,-1.7915006,13,6,Canada,3857276,2022-12-01,Canada
+Azzedine Ounahi,Youssef En-Nesyri,57.9,38.5,68.5,31.4,,12.758135,-0.5901765,13,8,Morocco,3857276,2022-12-01,Morocco
+Youssef En-Nesyri,Azzedine Ounahi,68.5,31.4,61.5,30.0,,7.1386275,-2.9441972,13,9,Morocco,3857276,2022-12-01,Morocco
+Azzedine Ounahi,Sofiane Boufal,64.1,28.8,84.1,13.2,,25.364542,-0.6624263,13,12,Morocco,3857276,2022-12-01,Morocco
+Abdelhamid Sabiri,Hakim Ziyech,120.0,0.1,117.3,3.4,,4.263801,2.2565258,13,49,Morocco,3857276,2022-12-01,Morocco
+Hakim Ziyech,Abdelhamid Sabiri,117.9,10.9,106.6,14.1,,11.74436,2.865632,13,51,Morocco,3857276,2022-12-01,Morocco
+Alphonso Davies,Cyle Larin,16.1,69.7,25.3,54.7,,17.59659,-1.0206306,13,55,Canada,3857276,2022-12-01,Canada
+Cyle Larin,David Junior Hoilett,51.1,64.6,67.2,73.8,,18.543192,0.5191461,14,0,Canada,3857276,2022-12-01,Canada
+David Junior Hoilett,Cyle Larin,68.6,75.7,70.0,74.7,,1.7204651,-0.6202495,14,1,Canada,3857276,2022-12-01,Canada
+Cyle Larin,Tajon Buchanan,100.8,61.9,113.3,34.9,,29.75315,-1.1372149,14,6,Canada,3857276,2022-12-01,Canada
+Yassine Bounou,Nayef Aguerd,7.0,44.1,7.0,59.3,,15.2,1.5707964,14,35,Morocco,3857276,2022-12-01,Morocco
+Nayef Aguerd,Azzedine Ounahi,6.6,59.3,33.1,61.0,,26.554472,0.06406316,14,36,Morocco,3857276,2022-12-01,Morocco
+Azzedine Ounahi,Achraf Hakimi Mouh,23.2,59.5,1.2,73.3,,25.969982,2.5813606,14,39,Morocco,3857276,2022-12-01,Morocco
+Achraf Hakimi Mouh,Hakim Ziyech,2.8,73.9,21.7,58.4,,24.442995,-0.68688095,14,44,Morocco,3857276,2022-12-01,Morocco
+Hakim Ziyech,Noussair Mazraoui,21.5,58.4,24.6,24.8,,33.742702,-1.4787949,14,46,Morocco,3857276,2022-12-01,Morocco
+Noussair Mazraoui,Romain Saïss,21.2,24.5,8.7,23.4,,12.548306,-3.0538187,14,49,Morocco,3857276,2022-12-01,Morocco
+Romain Saïss,Sofiane Boufal,9.0,23.8,37.3,7.2,,32.809296,-0.5304878,14,50,Morocco,3857276,2022-12-01,Morocco
+Noussair Mazraoui,Abdelhamid Sabiri,28.8,18.4,44.2,22.6,,15.962456,0.26625204,14,53,Morocco,3857276,2022-12-01,Morocco
+Abdelhamid Sabiri,Sofiane Boufal,44.2,22.6,39.7,39.2,,17.199127,1.8355186,14,54,Morocco,3857276,2022-12-01,Morocco
+Sofiane Boufal,Hakim Ziyech,39.4,39.2,74.5,77.1,,51.656754,0.82373554,14,57,Morocco,3857276,2022-12-01,Morocco
+Milan Borjan,Tajon Buchanan,6.0,44.0,73.8,1.9,,79.80758,-0.5556773,15,17,Canada,3857276,2022-12-01,Canada
+Tajon Buchanan,Sam Adekugbe,80.7,4.7,101.9,7.1,Incomplete,21.335417,0.11272761,15,27,Canada,3857276,2022-12-01,Canada
+Nayef Aguerd,Yassine Bounou,10.9,76.5,3.7,47.0,,30.365934,-1.810184,15,31,Morocco,3857276,2022-12-01,Morocco
+Kamal Miller,Mark Anthony Kaye,45.7,47.3,48.0,32.4,,15.076471,-1.4176427,15,43,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,Steven de Sousa Vitoria,50.6,27.2,45.6,49.9,,23.244139,1.7875987,15,48,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Alistair Johnston,47.7,49.9,51.6,56.1,,7.324616,1.0093026,15,51,Canada,3857276,2022-12-01,Canada
+Alistair Johnston,Steven de Sousa Vitoria,51.6,56.1,45.4,50.1,,8.627862,-2.3725865,15,53,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Cyle Larin,46.6,50.8,68.4,54.6,,22.128714,0.17257796,15,54,Canada,3857276,2022-12-01,Canada
+Noussair Mazraoui,Yassine Bounou,31.7,6.5,11.8,34.0,,33.944954,2.19721,15,58,Morocco,3857276,2022-12-01,Morocco
+Yassine Bounou,Youssef En-Nesyri,13.0,34.0,56.7,27.9,Pass Offside,44.12369,-0.13869193,16,1,Morocco,3857276,2022-12-01,Morocco
+Steven de Sousa Vitoria,Kamal Miller,64.1,51.5,56.5,30.7,,22.144978,-1.9211105,16,17,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Sam Adekugbe,56.5,30.7,62.0,3.3,,27.946556,-1.372699,16,19,Canada,3857276,2022-12-01,Canada
+Sam Adekugbe,Mark Anthony Kaye,63.2,3.5,72.6,22.9,,21.557365,1.1195962,16,22,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,Sam Adekugbe,74.5,21.7,63.1,30.3,,14.280056,2.4952905,16,25,Canada,3857276,2022-12-01,Canada
+Sam Adekugbe,Tajon Buchanan,64.1,28.2,81.3,1.2,,32.013123,-1.003588,16,29,Canada,3857276,2022-12-01,Canada
+Tajon Buchanan,David Junior Hoilett,82.1,2.1,86.3,7.5,,6.8410525,0.90975314,16,31,Canada,3857276,2022-12-01,Canada
+Hakim Ziyech,Azzedine Ounahi,36.1,76.6,33.1,69.4,,7.8,-1.9655875,16,38,Morocco,3857276,2022-12-01,Morocco
+Azzedine Ounahi,Yassine Bounou,32.4,67.3,9.9,41.6,,34.157578,-2.2899017,16,41,Morocco,3857276,2022-12-01,Morocco
+Yassine Bounou,Romain Saïss,9.6,40.6,14.4,21.4,,19.790907,-1.3258177,16,44,Morocco,3857276,2022-12-01,Morocco
+Romain Saïss,Sofyan Amrabat,14.4,21.4,14.8,38.7,,17.304625,1.5476791,16,47,Morocco,3857276,2022-12-01,Morocco
+Sofyan Amrabat,Nayef Aguerd,33.1,46.7,39.0,69.7,,23.744684,1.319689,16,57,Morocco,3857276,2022-12-01,Morocco
+Nayef Aguerd,Hakim Ziyech,39.9,69.7,52.3,66.6,,12.781628,-0.24497867,17,0,Morocco,3857276,2022-12-01,Morocco
+Hakim Ziyech,Nayef Aguerd,50.1,66.4,35.5,72.6,,15.861904,2.7400122,17,2,Morocco,3857276,2022-12-01,Morocco
+Nayef Aguerd,Yassine Bounou,25.1,66.4,9.0,53.9,,20.382835,-2.48141,17,6,Morocco,3857276,2022-12-01,Morocco
+Yassine Bounou,Sofyan Amrabat,10.1,54.1,25.3,53.6,,15.208221,-0.03288288,17,9,Morocco,3857276,2022-12-01,Morocco
+Sofyan Amrabat,Nayef Aguerd,25.3,53.6,14.8,69.5,,19.054132,2.154432,17,10,Morocco,3857276,2022-12-01,Morocco
+Nayef Aguerd,Achraf Hakimi Mouh,18.4,71.3,36.1,78.9,,19.26266,0.40557346,17,13,Morocco,3857276,2022-12-01,Morocco
+Achraf Hakimi Mouh,Nayef Aguerd,35.2,77.8,21.0,68.7,,16.865646,-2.57168,17,15,Morocco,3857276,2022-12-01,Morocco
+Nayef Aguerd,Sofyan Amrabat,25.1,63.6,38.7,52.2,,17.745985,-0.69762427,17,20,Morocco,3857276,2022-12-01,Morocco
+Sofyan Amrabat,Azzedine Ounahi,39.2,51.9,36.9,59.1,,7.558439,1.8799952,17,21,Morocco,3857276,2022-12-01,Morocco
+Azzedine Ounahi,Hakim Ziyech,36.9,59.1,46.5,65.7,,11.649893,0.60228735,17,22,Morocco,3857276,2022-12-01,Morocco
+Hakim Ziyech,Achraf Hakimi Mouh,46.5,65.7,35.2,78.5,,17.07425,2.294034,17,23,Morocco,3857276,2022-12-01,Morocco
+Achraf Hakimi Mouh,Nayef Aguerd,35.0,77.7,21.5,64.5,,18.880943,-2.36743,17,27,Morocco,3857276,2022-12-01,Morocco
+Nayef Aguerd,Yassine Bounou,13.0,60.2,7.0,48.6,,13.059862,-2.0481417,17,31,Morocco,3857276,2022-12-01,Morocco
+Yassine Bounou,Noussair Mazraoui,7.8,41.5,52.7,8.0,,56.020176,-0.641002,17,33,Morocco,3857276,2022-12-01,Morocco
+Alphonso Davies,Alistair Johnston,53.4,80.0,39.2,75.7,,14.836779,-2.8475535,17,43,Canada,3857276,2022-12-01,Canada
+Alistair Johnston,Steven de Sousa Vitoria,45.6,64.8,28.3,47.8,,24.25469,-2.3649406,17,50,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Kamal Miller,27.9,47.7,37.3,18.5,,30.675724,-1.2593547,17,52,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Mark Anthony Kaye,37.6,18.5,45.7,33.4,,16.959364,1.0728613,17,54,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,Kamal Miller,44.0,27.9,30.0,19.1,,16.536022,-2.5804293,17,57,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Mark Anthony Kaye,30.3,19.6,39.9,27.0,,12.121056,0.6567017,18,0,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,Jonathan Osorio,38.6,26.5,39.7,53.9,,27.422071,1.5306718,18,2,Canada,3857276,2022-12-01,Canada
+Jonathan Osorio,Alistair Johnston,38.8,56.3,63.6,75.2,,31.180923,0.6511982,18,5,Canada,3857276,2022-12-01,Canada
+Alistair Johnston,Alphonso Davies,69.5,78.0,114.4,62.7,Incomplete,47.43522,-0.32841712,18,7,Canada,3857276,2022-12-01,Canada
+Yassine Bounou,Nayef Aguerd,4.9,29.0,15.8,52.5,,25.904825,1.1365012,18,17,Morocco,3857276,2022-12-01,Morocco
+Nayef Aguerd,Hakim Ziyech,28.1,60.7,47.1,70.5,Incomplete,21.378494,0.47619924,18,22,Morocco,3857276,2022-12-01,Morocco
+Tajon Buchanan,Sam Adekugbe,68.8,1.2,66.5,2.1,Incomplete,2.4698179,2.768605,18,24,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,Kamal Miller,62.6,13.9,44.0,20.3,,19.670282,2.8101962,18,28,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Sam Adekugbe,44.7,20.3,48.7,12.7,,8.588365,-1.0863184,18,29,Canada,3857276,2022-12-01,Canada
+Sam Adekugbe,Jonathan Osorio,50.8,10.7,56.1,21.7,,12.210241,1.1217997,18,34,Canada,3857276,2022-12-01,Canada
+Jonathan Osorio,David Junior Hoilett,55.3,23.4,61.0,44.9,,22.242752,1.3116419,18,39,Canada,3857276,2022-12-01,Canada
+David Junior Hoilett,Mark Anthony Kaye,60.8,45.9,62.3,36.7,,9.321481,-1.4091749,18,40,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,David Junior Hoilett,62.3,36.7,61.9,38.0,Incomplete,1.360147,1.8692952,18,41,Canada,3857276,2022-12-01,Canada
+David Junior Hoilett,Cyle Larin,76.2,66.0,106.0,57.4,,31.016125,-0.28095686,18,48,Canada,3857276,2022-12-01,Canada
+Noussair Mazraoui,Sofiane Boufal,30.5,0.1,56.9,6.8,Incomplete,27.236923,0.24854054,19,22,Morocco,3857276,2022-12-01,Morocco
+Steven de Sousa Vitoria,Mark Anthony Kaye,56.8,70.2,43.7,38.3,,34.48507,-1.960457,19,52,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,Kamal Miller,45.9,36.7,50.9,20.6,,16.858528,-1.2696807,19,55,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Mark Anthony Kaye,56.0,15.6,59.1,22.0,,7.1112585,1.1197267,19,59,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,Kamal Miller,59.1,22.0,55.3,14.7,,8.229824,-2.050747,19,59,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Steven de Sousa Vitoria,55.3,14.7,45.6,46.8,,33.533566,1.8642526,20,0,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Sam Adekugbe,50.3,45.2,94.8,0.1,Out,63.35819,-0.79209447,20,4,Canada,3857276,2022-12-01,Canada
+Achraf Hakimi Mouh,Youssef En-Nesyri,26.2,80.0,34.7,70.4,,12.822247,-0.846097,20,27,Morocco,3857276,2022-12-01,Morocco
+Youssef En-Nesyri,Noussair Mazraoui,34.8,70.4,34.7,30.0,,40.400124,-1.5732715,20,29,Morocco,3857276,2022-12-01,Morocco
+Noussair Mazraoui,Sofiane Boufal,51.5,17.4,62.0,24.1,,12.455521,0.56796074,20,34,Morocco,3857276,2022-12-01,Morocco
+Sofiane Boufal,Sofyan Amrabat,62.9,24.1,43.5,29.3,,20.08482,2.8797073,20,35,Morocco,3857276,2022-12-01,Morocco
+Sofyan Amrabat,Azzedine Ounahi,46.5,28.8,57.4,41.5,,16.736189,0.86152196,20,38,Morocco,3857276,2022-12-01,Morocco
+Azzedine Ounahi,Sofyan Amrabat,54.3,37.0,46.6,25.7,,13.674063,-2.1689405,20,40,Morocco,3857276,2022-12-01,Morocco
+Sofyan Amrabat,Romain Saïss,42.8,23.4,27.4,41.3,,23.61292,2.28126,20,47,Morocco,3857276,2022-12-01,Morocco
+Romain Saïss,Nayef Aguerd,33.8,41.8,38.7,72.3,,30.8911,1.4115018,20,52,Morocco,3857276,2022-12-01,Morocco
+Nayef Aguerd,Yassine Bounou,35.9,72.0,18.0,44.8,,32.56148,-2.1528366,20,55,Morocco,3857276,2022-12-01,Morocco
+Yassine Bounou,Sofyan Amrabat,17.0,42.2,31.6,21.0,,25.741018,-0.96770865,20,59,Morocco,3857276,2022-12-01,Morocco
+Sofyan Amrabat,Romain Saïss,33.6,22.6,19.6,31.4,,16.536022,2.5804293,21,3,Morocco,3857276,2022-12-01,Morocco
+Romain Saïss,Nayef Aguerd,19.6,31.4,28.6,63.6,,33.434113,1.2982484,21,6,Morocco,3857276,2022-12-01,Morocco
+Nayef Aguerd,Achraf Hakimi Mouh,33.8,69.2,51.1,63.5,,18.214828,-0.31827834,21,9,Morocco,3857276,2022-12-01,Morocco
+Achraf Hakimi Mouh,Nayef Aguerd,51.1,63.5,37.6,78.2,,19.958456,2.313667,21,10,Morocco,3857276,2022-12-01,Morocco
+Nayef Aguerd,Yassine Bounou,33.6,76.6,9.9,53.6,,33.025597,-2.3711827,21,14,Morocco,3857276,2022-12-01,Morocco
+Yassine Bounou,Sofyan Amrabat,14.2,43.4,21.3,53.1,,12.020815,0.93894196,21,22,Morocco,3857276,2022-12-01,Morocco
+Sofyan Amrabat,Yassine Bounou,21.3,53.2,16.0,42.8,,11.672618,-2.0421066,21,24,Morocco,3857276,2022-12-01,Morocco
+Yassine Bounou,Abdelhamid Sabiri,16.0,42.8,29.3,40.8,,13.449535,-0.1492576,21,25,Morocco,3857276,2022-12-01,Morocco
+Abdelhamid Sabiri,Sofyan Amrabat,28.8,40.8,25.5,47.9,,7.8294315,2.0058804,21,26,Morocco,3857276,2022-12-01,Morocco
+Sofyan Amrabat,Achraf Hakimi Mouh,26.7,48.9,44.9,40.2,,20.172506,-0.4459111,21,27,Morocco,3857276,2022-12-01,Morocco
+Achraf Hakimi Mouh,Abdelhamid Sabiri,44.9,40.2,45.4,47.5,,7.3171034,1.5024099,21,29,Morocco,3857276,2022-12-01,Morocco
+Abdelhamid Sabiri,Hakim Ziyech,46.6,47.7,85.4,78.5,,49.538673,0.67095786,21,30,Morocco,3857276,2022-12-01,Morocco
+Achraf Hakimi Mouh,Azzedine Ounahi,81.3,80.0,86.8,76.1,,6.742403,-0.6168012,22,1,Morocco,3857276,2022-12-01,Morocco
+Azzedine Ounahi,Achraf Hakimi Mouh,86.8,75.9,81.6,77.8,Incomplete,5.5362444,2.7912784,22,3,Morocco,3857276,2022-12-01,Morocco
+Achraf Hakimi Mouh,Nayef Aguerd,63.3,80.0,45.6,76.6,,18.023596,-2.951814,22,12,Morocco,3857276,2022-12-01,Morocco
+Nayef Aguerd,Noussair Mazraoui,43.3,57.9,44.6,24.0,,33.924915,-1.532467,22,16,Morocco,3857276,2022-12-01,Morocco
+Noussair Mazraoui,Romain Saïss,43.5,24.8,23.1,35.4,,22.989563,2.6623821,22,20,Morocco,3857276,2022-12-01,Morocco
+Romain Saïss,Nayef Aguerd,23.6,39.4,23.1,62.9,,23.505318,1.5920697,22,26,Morocco,3857276,2022-12-01,Morocco
+Nayef Aguerd,Achraf Hakimi Mouh,22.2,62.4,36.8,78.7,,21.88264,0.8403589,22,28,Morocco,3857276,2022-12-01,Morocco
+Achraf Hakimi Mouh,Youssef En-Nesyri,39.0,79.2,97.9,56.4,,63.158928,-0.36933365,22,31,Morocco,3857276,2022-12-01,Morocco
+Alphonso Davies,Mark Anthony Kaye,60.0,40.0,45.9,36.6,,14.504137,-2.904975,24,3,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,Steven de Sousa Vitoria,45.7,35.7,39.5,48.0,,13.774251,2.0376906,24,5,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Alistair Johnston,39.3,50.2,45.9,55.3,,8.340863,0.6578886,24,7,Canada,3857276,2022-12-01,Canada
+Alistair Johnston,Steven de Sousa Vitoria,45.9,54.2,37.1,41.4,,15.533191,-2.1730838,24,9,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Mark Anthony Kaye,37.1,41.4,43.5,36.2,,8.246211,-0.68231654,24,10,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,Kamal Miller,44.7,36.2,36.4,20.3,,17.935997,-2.0518985,24,11,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Sam Adekugbe,36.6,18.0,49.9,1.0,,21.584486,-0.9069088,24,14,Canada,3857276,2022-12-01,Canada
+Sam Adekugbe,Alphonso Davies,51.1,1.0,98.1,17.7,Incomplete,49.878754,0.3414056,24,16,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,Alphonso Davies,95.6,1.0,105.2,0.1,Out,9.642096,-0.09347678,24,27,Canada,3857276,2022-12-01,Canada
+Achraf Hakimi Mouh,Hakim Ziyech,14.2,80.0,19.9,75.9,,7.0213957,-0.6235607,24,56,Morocco,3857276,2022-12-01,Morocco
+Hakim Ziyech,Achraf Hakimi Mouh,19.3,75.6,14.4,79.6,,6.325346,2.4569755,24,57,Morocco,3857276,2022-12-01,Morocco
+Achraf Hakimi Mouh,Hakim Ziyech,14.2,78.7,15.3,75.8,,3.1016126,-1.2082521,24,59,Morocco,3857276,2022-12-01,Morocco
+Hakim Ziyech,Youssef En-Nesyri,15.7,77.4,22.1,80.0,Out,6.9079666,0.38588268,24,59,Morocco,3857276,2022-12-01,Morocco
+Kamal Miller,Mark Anthony Kaye,92.5,0.1,76.6,4.0,,16.371317,2.9010584,25,7,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,Steven de Sousa Vitoria,70.9,15.4,63.8,29.5,,15.786703,2.0372767,25,11,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Mark Anthony Kaye,63.8,29.5,68.6,19.8,,10.822661,-1.1112809,25,13,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,Kamal Miller,68.8,19.8,74.7,2.3,,18.46781,-1.2456211,25,15,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Alphonso Davies,81.1,3.5,92.4,19.8,,19.833809,0.9646139,25,18,Canada,3857276,2022-12-01,Canada
+Alphonso Davies,David Junior Hoilett,94.3,25.5,97.7,61.7,,36.359318,1.4771484,25,21,Canada,3857276,2022-12-01,Canada
+David Junior Hoilett,Jonathan Osorio,97.4,61.5,112.3,53.5,,16.91183,-0.49273992,25,24,Canada,3857276,2022-12-01,Canada
+Sam Adekugbe,Jonathan Osorio,79.2,39.7,89.2,59.8,,22.450167,1.1091408,25,35,Canada,3857276,2022-12-01,Canada
+Romain Saïss,Youssef En-Nesyri,21.2,21.4,70.0,25.5,,48.97193,0.083819546,26,30,Morocco,3857276,2022-12-01,Morocco
+Kamal Miller,Tajon Buchanan,43.0,39.0,57.5,19.2,,24.541597,-0.93870467,26,37,Canada,3857276,2022-12-01,Canada
+Tajon Buchanan,Sam Adekugbe,49.6,0.1,32.1,4.2,,17.97387,2.9114578,26,46,Canada,3857276,2022-12-01,Canada
+Sam Adekugbe,Mark Anthony Kaye,32.2,4.2,38.5,17.9,,15.079124,1.1397781,26,49,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,Steven de Sousa Vitoria,39.7,20.8,40.6,54.4,,33.612053,1.544017,26,52,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,David Junior Hoilett,47.5,56.3,68.8,77.1,,29.771296,0.77352226,26,56,Canada,3857276,2022-12-01,Canada
+Sofiane Boufal,Abdelhamid Sabiri,33.5,1.1,42.5,10.1,,12.727922,0.7853982,27,2,Morocco,3857276,2022-12-01,Morocco
+Steven de Sousa Vitoria,Alistair Johnston,74.5,56.0,68.3,64.3,,10.36002,2.2123668,27,7,Canada,3857276,2022-12-01,Canada
+Alistair Johnston,Kamal Miller,69.5,64.5,43.8,39.5,,35.85373,-2.3700004,27,11,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Steven de Sousa Vitoria,47.1,39.0,51.6,53.2,,14.895972,1.2639067,27,16,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Alistair Johnston,50.8,52.0,57.9,70.2,,19.535864,1.1988449,27,19,Canada,3857276,2022-12-01,Canada
+Alistair Johnston,Steven de Sousa Vitoria,57.4,69.7,54.9,58.6,,11.378049,-1.7923251,27,21,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Mark Anthony Kaye,55.1,58.4,64.5,52.3,,11.205802,-0.57562697,27,22,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,Jonathan Osorio,67.4,52.3,79.0,74.7,,25.225384,1.0929652,27,24,Canada,3857276,2022-12-01,Canada
+Jonathan Osorio,Cyle Larin,80.1,76.8,85.4,57.5,,20.014494,-1.3027915,27,26,Canada,3857276,2022-12-01,Canada
+Cyle Larin,Jonathan Osorio,85.4,57.5,78.8,66.0,,10.761505,2.2310245,27,27,Canada,3857276,2022-12-01,Canada
+Jonathan Osorio,Kamal Miller,76.2,64.6,53.2,33.3,,38.841858,-2.204514,27,30,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Steven de Sousa Vitoria,62.6,26.5,57.2,47.0,,21.199293,1.8283601,27,36,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Jonathan Osorio,63.1,50.4,68.6,52.3,,5.8189344,0.3326197,27,40,Canada,3857276,2022-12-01,Canada
+Jonathan Osorio,Mark Anthony Kaye,67.9,51.5,76.2,41.6,,12.918979,-0.87308484,27,41,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,David Junior Hoilett,82.5,49.4,116.8,56.3,Incomplete,34.98714,0.19851664,27,44,Canada,3857276,2022-12-01,Canada
+Romain Saïss,Noussair Mazraoui,6.4,13.4,19.4,7.8,,14.154858,-0.40674707,27,50,Morocco,3857276,2022-12-01,Morocco
+Noussair Mazraoui,Achraf Hakimi Mouh,27.7,6.8,20.1,75.9,,69.516685,1.6803416,28,10,Morocco,3857276,2022-12-01,Morocco
+Achraf Hakimi Mouh,Hakim Ziyech,23.4,76.6,37.3,77.1,,13.90899,0.03595572,28,16,Morocco,3857276,2022-12-01,Morocco
+Hakim Ziyech,Achraf Hakimi Mouh,35.0,77.7,26.5,78.5,,8.537564,3.0477514,28,18,Morocco,3857276,2022-12-01,Morocco
+Achraf Hakimi Mouh,Azzedine Ounahi,27.7,78.5,39.7,74.0,,12.816006,-0.35877067,28,21,Morocco,3857276,2022-12-01,Morocco
+Hakim Ziyech,Nayef Aguerd,35.0,77.1,17.3,62.4,,23.008259,-2.4485238,29,0,Morocco,3857276,2022-12-01,Morocco
+Nayef Aguerd,Romain Saïss,17.3,62.6,14.9,20.3,,42.36803,-1.6274731,29,3,Morocco,3857276,2022-12-01,Morocco
+Romain Saïss,Noussair Mazraoui,14.4,17.9,29.8,7.0,,18.867167,-0.6159365,29,6,Morocco,3857276,2022-12-01,Morocco
+Noussair Mazraoui,Romain Saïss,25.3,12.2,16.3,5.4,,11.280071,-2.4945455,29,9,Morocco,3857276,2022-12-01,Morocco
+Alistair Johnston,Steven de Sousa Vitoria,57.9,70.0,44.5,61.2,,16.03122,-2.5605104,29,26,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Kamal Miller,44.9,61.2,37.6,21.8,,40.070564,-1.753998,29,27,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Steven de Sousa Vitoria,47.1,21.8,43.8,50.2,,28.591082,1.6864748,29,35,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Sam Adekugbe,45.4,51.1,100.7,0.1,Out,75.22692,-0.74496865,29,38,Canada,3857276,2022-12-01,Canada
+Achraf Hakimi Mouh,Youssef En-Nesyri,19.1,80.0,36.0,77.6,Incomplete,17.069563,-0.14106855,29,58,Morocco,3857276,2022-12-01,Morocco
+Azzedine Ounahi,Youssef En-Nesyri,52.2,53.2,79.5,57.4,Pass Offside,27.621187,0.15264933,30,4,Morocco,3857276,2022-12-01,Morocco
+Sam Adekugbe,Mark Anthony Kaye,27.9,1.2,33.6,10.6,,10.993179,1.0256966,30,20,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,Steven de Sousa Vitoria,38.6,16.6,31.9,29.6,,14.624979,2.0466757,30,26,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Alistair Johnston,32.6,29.5,37.1,47.8,,18.845158,1.3296787,30,28,Canada,3857276,2022-12-01,Canada
+Alistair Johnston,Steven de Sousa Vitoria,50.6,52.8,39.9,34.3,,21.371477,-2.0951657,30,34,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Kamal Miller,42.3,33.4,43.7,17.0,,16.459648,-1.485637,30,37,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Steven de Sousa Vitoria,43.5,16.8,38.5,37.6,,21.392523,1.806705,30,40,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Alistair Johnston,40.7,39.5,44.0,50.8,,11.772,1.2866625,30,43,Canada,3857276,2022-12-01,Canada
+Alistair Johnston,Steven de Sousa Vitoria,49.2,53.9,45.1,36.6,,17.779202,-1.8034973,30,47,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Kamal Miller,54.4,36.2,49.2,15.9,,20.95543,-1.8215619,30,51,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Mark Anthony Kaye,51.6,13.0,57.4,19.9,,9.013878,0.8717967,30,56,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,Sam Adekugbe,57.2,19.9,63.6,0.9,,20.04894,-1.2458912,30,57,Canada,3857276,2022-12-01,Canada
+Achraf Hakimi Mouh,Hakim Ziyech,48.0,80.0,56.3,74.9,,9.741663,-0.5509825,31,29,Morocco,3857276,2022-12-01,Morocco
+Sam Adekugbe,Kamal Miller,55.3,0.1,37.8,7.1,,18.848078,2.7610862,31,36,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Mark Anthony Kaye,37.3,13.0,45.6,33.1,,21.746264,1.1791887,31,40,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,Alistair Johnston,47.5,41.1,50.1,53.0,,12.180722,1.3556893,31,44,Canada,3857276,2022-12-01,Canada
+Alistair Johnston,David Junior Hoilett,57.2,58.4,75.0,72.1,,22.461744,0.65596706,31,47,Canada,3857276,2022-12-01,Canada
+David Junior Hoilett,Steven de Sousa Vitoria,76.2,67.1,57.4,44.9,,29.090893,-2.273457,31,51,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Kamal Miller,63.1,41.8,68.4,14.0,,28.300707,-1.3824096,31,55,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Sam Adekugbe,67.9,13.0,76.1,1.2,,14.369412,-0.9634911,31,58,Canada,3857276,2022-12-01,Canada
+Sam Adekugbe,Kamal Miller,76.1,1.6,57.0,14.7,,23.160742,2.5404172,31,59,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Steven de Sousa Vitoria,57.2,14.9,50.3,39.3,,25.356853,1.8463874,32,2,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Alistair Johnston,45.9,43.7,52.0,54.2,,12.143311,1.0445002,32,5,Canada,3857276,2022-12-01,Canada
+Alistair Johnston,David Junior Hoilett,70.4,60.3,74.7,76.9,,17.147886,1.3173313,32,9,Canada,3857276,2022-12-01,Canada
+David Junior Hoilett,Mark Anthony Kaye,74.2,76.2,75.2,59.4,,16.829735,-1.5113426,32,11,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,Alistair Johnston,76.2,59.4,92.5,50.8,,18.429596,-0.4854888,32,13,Canada,3857276,2022-12-01,Canada
+Abdelhamid Sabiri,Yassine Bounou,26.5,28.3,8.2,36.3,,19.97223,2.7294688,32,17,Morocco,3857276,2022-12-01,Morocco
+Yassine Bounou,Sofyan Amrabat,8.2,36.3,20.5,35.9,,12.306502,-0.03250887,32,20,Morocco,3857276,2022-12-01,Morocco
+Sofyan Amrabat,Hakim Ziyech,20.1,43.2,34.0,74.9,,34.613583,1.1575588,32,23,Morocco,3857276,2022-12-01,Morocco
+Hakim Ziyech,Yassine Bounou,33.5,74.7,5.6,49.6,,37.528923,-2.4089756,32,25,Morocco,3857276,2022-12-01,Morocco
+Yassine Bounou,Romain Saïss,4.9,45.6,19.9,35.2,,18.25267,-0.60623765,32,30,Morocco,3857276,2022-12-01,Morocco
+Romain Saïss,Achraf Hakimi Mouh,26.7,31.2,75.2,78.0,,67.397995,0.7675617,32,33,Morocco,3857276,2022-12-01,Morocco
+Achraf Hakimi Mouh,Hakim Ziyech,75.7,78.2,69.5,75.6,,6.7230945,-2.7445133,32,36,Morocco,3857276,2022-12-01,Morocco
+Hakim Ziyech,Achraf Hakimi Mouh,82.0,71.8,110.9,76.6,,29.295904,0.16458751,32,39,Morocco,3857276,2022-12-01,Morocco
+Achraf Hakimi Mouh,Sofiane Boufal,110.9,76.6,104.2,41.3,,35.93021,-1.7583668,32,42,Morocco,3857276,2022-12-01,Morocco
+Sofiane Boufal,Abdelhamid Sabiri,104.2,41.3,107.9,34.2,,8.0062475,-1.0903906,32,43,Morocco,3857276,2022-12-01,Morocco
+Milan Borjan,Steven de Sousa Vitoria,15.6,48.9,28.9,48.0,,13.330417,-0.067566164,34,55,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Kamal Miller,32.1,44.7,36.7,22.0,,23.16139,-1.3708606,34,58,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Steven de Sousa Vitoria,44.0,23.7,39.3,49.7,,26.421392,1.7496343,35,6,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Alistair Johnston,43.5,51.5,45.4,58.0,,6.7720013,1.2864115,35,9,Canada,3857276,2022-12-01,Canada
+Alistair Johnston,Tajon Buchanan,54.8,54.2,78.3,8.1,Incomplete,51.74418,-1.0993701,35,12,Canada,3857276,2022-12-01,Canada
+Achraf Hakimi Mouh,Sofyan Amrabat,48.0,54.6,43.9,41.6,,13.631214,-1.876307,35,17,Morocco,3857276,2022-12-01,Morocco
+Sofyan Amrabat,Nayef Aguerd,42.5,41.6,28.6,60.5,,23.461031,2.20492,35,19,Morocco,3857276,2022-12-01,Morocco
+Nayef Aguerd,Yassine Bounou,26.2,59.3,10.1,44.9,,21.600231,-2.4118745,35,21,Morocco,3857276,2022-12-01,Morocco
+Yassine Bounou,Romain Saïss,9.9,43.7,14.9,11.7,,32.38827,-1.4157996,35,24,Morocco,3857276,2022-12-01,Morocco
+Romain Saïss,Sofiane Boufal,24.6,7.8,50.1,18.2,,27.539246,0.38724935,35,28,Morocco,3857276,2022-12-01,Morocco
+Sofiane Boufal,Noussair Mazraoui,49.6,16.3,54.8,6.8,,10.83005,-1.0699757,35,29,Morocco,3857276,2022-12-01,Morocco
+Noussair Mazraoui,Youssef En-Nesyri,56.5,5.8,70.0,24.5,Incomplete,23.063824,0.9455066,35,30,Morocco,3857276,2022-12-01,Morocco
+Alistair Johnston,David Junior Hoilett,50.1,65.8,40.6,74.0,,12.549502,2.4295092,35,35,Canada,3857276,2022-12-01,Canada
+David Junior Hoilett,Jonathan Osorio,39.9,74.3,71.0,69.1,,31.53173,-0.16567005,35,36,Canada,3857276,2022-12-01,Canada
+Jonathan Osorio,David Junior Hoilett,70.4,68.1,61.0,73.1,,10.647065,2.6527402,35,40,Canada,3857276,2022-12-01,Canada
+Noussair Mazraoui,Sofiane Boufal,57.4,0.1,77.6,3.7,,20.518284,0.17636615,36,4,Morocco,3857276,2022-12-01,Morocco
+Alistair Johnston,Steven de Sousa Vitoria,43.8,73.6,34.0,66.0,,12.401613,-2.4819639,36,7,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Mark Anthony Kaye,33.6,66.0,38.5,52.2,,14.644112,-1.2296097,36,8,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,Alphonso Davies,40.4,49.2,56.8,44.5,,17.060188,-0.2791048,36,11,Canada,3857276,2022-12-01,Canada
+Alphonso Davies,Kamal Miller,57.0,44.5,31.4,20.6,,35.022423,-2.3905244,36,12,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Mark Anthony Kaye,32.9,21.3,40.6,37.9,,18.298906,1.1364802,36,15,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,Alphonso Davies,40.2,36.4,56.5,32.2,Incomplete,16.832409,-0.25218314,36,17,Canada,3857276,2022-12-01,Canada
+Azzedine Ounahi,Sofyan Amrabat,74.5,48.7,64.1,43.9,,11.454257,-2.709185,36,21,Morocco,3857276,2022-12-01,Morocco
+Sofyan Amrabat,Abdelhamid Sabiri,64.0,43.9,71.9,34.0,,12.665702,-0.89728844,36,22,Morocco,3857276,2022-12-01,Morocco
+Abdelhamid Sabiri,Noussair Mazraoui,64.8,30.4,57.7,0.6,Out,30.63413,-1.8046907,36,25,Morocco,3857276,2022-12-01,Morocco
+Alistair Johnston,Jonathan Osorio,54.1,80.0,55.8,71.2,,8.962701,-1.3799652,36,43,Canada,3857276,2022-12-01,Canada
+Jonathan Osorio,Alistair Johnston,51.1,70.5,55.5,75.7,,6.8117547,0.8685394,36,47,Canada,3857276,2022-12-01,Canada
+Alistair Johnston,Cyle Larin,56.8,77.1,80.2,75.7,,23.441843,-0.059757825,36,48,Canada,3857276,2022-12-01,Canada
+Cyle Larin,Tajon Buchanan,92.9,71.7,95.5,67.6,Incomplete,4.8548946,-1.005647,36,53,Canada,3857276,2022-12-01,Canada
+Milan Borjan,Kamal Miller,38.3,50.2,53.9,27.2,,27.791365,-0.9748099,37,15,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Steven de Sousa Vitoria,56.0,27.2,47.0,51.5,,25.913124,1.925502,37,20,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Alistair Johnston,46.4,61.2,47.7,70.0,,8.895505,1.4241298,37,23,Canada,3857276,2022-12-01,Canada
+Alistair Johnston,Milan Borjan,47.5,70.0,24.8,41.4,,36.513695,-2.2416878,37,24,Canada,3857276,2022-12-01,Canada
+Milan Borjan,Kamal Miller,27.9,39.0,37.1,19.8,,21.290373,-1.1239538,37,28,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Alphonso Davies,44.9,18.0,60.6,29.3,,19.343733,0.62385523,37,33,Canada,3857276,2022-12-01,Canada
+Alphonso Davies,Mark Anthony Kaye,51.1,22.4,51.1,6.4,,16.0,-1.5707964,37,36,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,Kamal Miller,51.1,6.1,38.1,12.8,,14.624979,2.6657133,37,39,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Steven de Sousa Vitoria,38.6,13.9,34.5,50.8,,37.12708,1.6814536,37,40,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Mark Anthony Kaye,44.0,50.1,46.8,39.3,,11.157061,-1.3171222,37,46,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,Kamal Miller,54.9,30.0,54.4,7.8,,22.20563,-1.593315,37,51,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Cyle Larin,57.0,7.8,91.1,26.0,Incomplete,38.652943,0.4902617,37,54,Canada,3857276,2022-12-01,Canada
+Romain Saïss,Sofyan Amrabat,29.0,54.1,33.8,56.0,,5.162364,0.37690926,37,55,Morocco,3857276,2022-12-01,Morocco
+Sofyan Amrabat,Nayef Aguerd,28.6,54.6,22.0,59.0,,7.932213,2.55359,37,57,Morocco,3857276,2022-12-01,Morocco
+Nayef Aguerd,Achraf Hakimi Mouh,21.0,58.4,20.6,72.5,,14.105673,1.5991576,37,59,Morocco,3857276,2022-12-01,Morocco
+Achraf Hakimi Mouh,Nayef Aguerd,20.5,67.3,6.8,68.5,,13.752455,3.0542245,38,2,Morocco,3857276,2022-12-01,Morocco
+Nayef Aguerd,Youssef En-Nesyri,7.0,61.4,45.9,55.8,Unknown,39.301018,-0.14297658,38,5,Morocco,3857276,2022-12-01,Morocco
+Achraf Hakimi Mouh,Sofyan Amrabat,46.1,57.4,44.0,54.1,,3.9115214,-2.1375256,38,34,Morocco,3857276,2022-12-01,Morocco
+Sofyan Amrabat,Achraf Hakimi Mouh,44.0,54.1,46.3,57.4,,4.022437,0.962107,38,35,Morocco,3857276,2022-12-01,Morocco
+Achraf Hakimi Mouh,Sofyan Amrabat,46.5,59.0,43.9,53.2,,6.3560996,-1.9922155,38,35,Morocco,3857276,2022-12-01,Morocco
+Sofyan Amrabat,Achraf Hakimi Mouh,43.3,53.6,46.1,61.2,,8.099382,1.217806,38,36,Morocco,3857276,2022-12-01,Morocco
+Achraf Hakimi Mouh,Nayef Aguerd,46.1,61.2,30.5,56.4,,16.321764,-2.8430936,38,36,Morocco,3857276,2022-12-01,Morocco
+Nayef Aguerd,Sofyan Amrabat,30.7,56.4,39.4,51.2,,10.135581,-0.53872746,38,37,Morocco,3857276,2022-12-01,Morocco
+Sofyan Amrabat,Achraf Hakimi Mouh,39.0,51.2,38.7,71.6,,20.402206,1.5855012,38,39,Morocco,3857276,2022-12-01,Morocco
+Achraf Hakimi Mouh,Sofyan Amrabat,38.7,71.6,40.2,59.1,,12.589679,-1.4513674,38,40,Morocco,3857276,2022-12-01,Morocco
+Sofyan Amrabat,Azzedine Ounahi,40.2,59.1,49.6,74.0,,17.617321,1.0079852,38,41,Morocco,3857276,2022-12-01,Morocco
+Azzedine Ounahi,Hakim Ziyech,48.5,77.0,54.9,79.1,,6.735726,0.31705576,38,43,Morocco,3857276,2022-12-01,Morocco
+Hakim Ziyech,Azzedine Ounahi,53.9,78.5,61.9,77.0,,8.13941,-0.18534794,38,45,Morocco,3857276,2022-12-01,Morocco
+Azzedine Ounahi,Sofiane Boufal,88.7,57.9,109.3,61.9,,20.984756,0.19178814,38,49,Morocco,3857276,2022-12-01,Morocco
+David Junior Hoilett,Tajon Buchanan,22.7,70.7,45.4,75.0,Incomplete,23.10368,0.18720916,39,4,Canada,3857276,2022-12-01,Canada
+Romain Saïss,Abdelhamid Sabiri,74.7,5.1,82.5,8.9,,8.676405,0.45333868,39,5,Morocco,3857276,2022-12-01,Morocco
+Abdelhamid Sabiri,Azzedine Ounahi,80.2,21.5,80.4,35.0,,13.501481,1.5559826,39,7,Morocco,3857276,2022-12-01,Morocco
+Azzedine Ounahi,Sofyan Amrabat,75.4,13.6,71.1,5.9,,8.819297,-2.0800974,39,13,Morocco,3857276,2022-12-01,Morocco
+Sofyan Amrabat,Romain Saïss,70.5,5.9,49.1,4.7,,21.433619,-3.0855765,39,13,Morocco,3857276,2022-12-01,Morocco
+Romain Saïss,Azzedine Ounahi,49.4,5.2,63.6,20.8,,21.095022,0.8323435,39,16,Morocco,3857276,2022-12-01,Morocco
+Azzedine Ounahi,Sofiane Boufal,65.0,25.5,91.7,76.6,Pass Offside,57.65501,1.0893073,39,20,Morocco,3857276,2022-12-01,Morocco
+Kamal Miller,Sam Adekugbe,28.3,9.9,40.7,11.6,,12.515989,0.1362474,39,34,Canada,3857276,2022-12-01,Canada
+Sam Adekugbe,Kamal Miller,40.7,11.6,25.8,10.4,,14.948244,-3.0612292,39,35,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Tajon Buchanan,28.1,10.6,52.3,1.0,,26.034592,-0.37765333,39,38,Canada,3857276,2022-12-01,Canada
+Tajon Buchanan,Sam Adekugbe,82.8,6.6,96.9,2.3,,14.741099,-0.29600516,39,44,Canada,3857276,2022-12-01,Canada
+Youssef En-Nesyri,Hakim Ziyech,61.0,40.1,33.6,78.7,,47.336243,2.188099,40,33,Morocco,3857276,2022-12-01,Morocco
+Hakim Ziyech,Nayef Aguerd,31.7,78.5,21.0,67.3,Incomplete,15.489674,-2.3333673,40,37,Morocco,3857276,2022-12-01,Morocco
+Alphonso Davies,Sam Adekugbe,75.2,0.1,65.2,18.5,,20.941824,2.0686188,41,58,Canada,3857276,2022-12-01,Canada
+Sam Adekugbe,Alistair Johnston,67.8,22.9,67.8,40.0,,17.1,1.5707964,42,2,Canada,3857276,2022-12-01,Canada
+Alistair Johnston,Jonathan Osorio,72.4,48.9,76.8,71.9,,23.417088,1.3817757,42,5,Canada,3857276,2022-12-01,Canada
+Jonathan Osorio,Tajon Buchanan,77.1,72.3,83.3,76.2,,7.324616,0.56149364,42,7,Canada,3857276,2022-12-01,Canada
+Romain Saïss,Youssef En-Nesyri,25.3,8.5,88.7,12.5,Incomplete,63.52606,0.063007966,42,46,Morocco,3857276,2022-12-01,Morocco
+Steven de Sousa Vitoria,Alphonso Davies,43.8,71.2,52.3,56.5,,16.980577,-1.046537,43,38,Canada,3857276,2022-12-01,Canada
+Alphonso Davies,Steven de Sousa Vitoria,52.3,56.1,44.9,70.0,,15.747064,2.0600066,43,39,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Mark Anthony Kaye,44.9,70.0,36.6,42.8,,28.438179,-1.8669685,43,40,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,Kamal Miller,34.5,38.5,36.7,14.0,,24.598577,-1.4812406,43,43,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Steven de Sousa Vitoria,34.0,13.9,31.5,57.0,,43.172443,1.628736,43,46,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Alphonso Davies,33.1,58.0,46.6,49.2,,16.1149,-0.57767594,43,48,Canada,3857276,2022-12-01,Canada
+Alphonso Davies,Sam Adekugbe,69.6,29.7,69.6,27.5,Incomplete,2.2,-1.5707964,43,55,Canada,3857276,2022-12-01,Canada
+Youssef En-Nesyri,Abdelhamid Sabiri,57.2,42.9,45.8,40.6,,11.6297035,-2.9425108,43,56,Morocco,3857276,2022-12-01,Morocco
+Abdelhamid Sabiri,Sofyan Amrabat,47.0,41.5,43.5,46.3,,5.940539,2.2008302,43,58,Morocco,3857276,2022-12-01,Morocco
+Sofyan Amrabat,Noussair Mazraoui,57.0,29.3,87.2,21.5,Incomplete,31.191025,-0.25275457,44,2,Morocco,3857276,2022-12-01,Morocco
+Alistair Johnston,David Junior Hoilett,32.9,58.6,42.8,72.6,,17.146719,0.9552926,44,4,Canada,3857276,2022-12-01,Canada
+David Junior Hoilett,Jonathan Osorio,41.4,76.1,43.5,62.4,,13.860014,-1.4186956,44,8,Canada,3857276,2022-12-01,Canada
+Jonathan Osorio,Mark Anthony Kaye,44.0,61.9,39.9,52.3,,10.438869,-1.9744302,44,10,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,Milan Borjan,40.4,52.5,16.8,41.8,,25.912352,-2.7159233,44,11,Canada,3857276,2022-12-01,Canada
+Milan Borjan,Sam Adekugbe,22.2,42.6,67.2,6.2,,57.878838,-0.6801375,44,16,Canada,3857276,2022-12-01,Canada
+Nayef Aguerd,Yassine Bounou,22.5,65.4,2.6,38.5,,33.460724,-2.2077224,44,23,Morocco,3857276,2022-12-01,Morocco
+Yassine Bounou,Sofiane Boufal,2.2,28.8,46.5,22.2,Incomplete,44.788948,-0.14789635,44,27,Morocco,3857276,2022-12-01,Morocco
+Alistair Johnston,David Junior Hoilett,87.8,63.2,108.3,79.3,Out,26.066454,0.6657538,44,32,Canada,3857276,2022-12-01,Canada
+Noussair Mazraoui,Youssef En-Nesyri,17.5,0.1,39.2,3.9,,22.030207,0.17335744,44,53,Morocco,3857276,2022-12-01,Morocco
+Mark Anthony Kaye,Kamal Miller,69.0,54.9,69.3,53.5,,1.4317821,-1.359703,44,57,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Steven de Sousa Vitoria,55.5,57.5,54.1,65.8,,8.417244,1.7378981,44,59,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Milan Borjan,54.2,65.8,21.1,48.2,,37.488266,-2.6528907,45,0,Canada,3857276,2022-12-01,Canada
+Milan Borjan,Steven de Sousa Vitoria,22.2,48.7,36.4,63.9,,20.800962,0.81939864,45,4,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Milan Borjan,35.5,63.8,15.9,47.8,,25.301384,-2.4569755,45,6,Canada,3857276,2022-12-01,Canada
+Milan Borjan,Sam Adekugbe,16.5,47.7,63.2,21.7,,53.449883,-0.5080071,45,10,Canada,3857276,2022-12-01,Canada
+Sam Adekugbe,Kamal Miller,59.6,21.7,29.3,5.0,,34.597397,-2.637863,45,14,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Mark Anthony Kaye,31.4,5.7,34.7,18.2,,12.928264,1.3126853,45,20,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,Steven de Sousa Vitoria,38.5,29.3,46.8,51.1,,23.326593,1.2070081,45,23,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Tajon Buchanan,53.2,52.5,97.4,6.1,Incomplete,64.082756,-0.80967593,45,26,Canada,3857276,2022-12-01,Canada
+Achraf Hakimi Mouh,Hakim Ziyech,22.7,74.0,32.6,74.0,Incomplete,9.9,0.0,45,29,Morocco,3857276,2022-12-01,Morocco
+Achraf Hakimi Mouh,Sofyan Amrabat,18.2,68.8,31.0,57.4,,17.140594,-0.7276113,45,32,Morocco,3857276,2022-12-01,Morocco
+Sofyan Amrabat,Azzedine Ounahi,32.1,57.4,43.0,67.4,,14.792228,0.74236256,45,34,Morocco,3857276,2022-12-01,Morocco
+Azzedine Ounahi,Hakim Ziyech,45.6,74.7,47.1,78.0,,3.6249137,1.1441689,45,37,Morocco,3857276,2022-12-01,Morocco
+Achraf Hakimi Mouh,Youssef En-Nesyri,54.4,80.0,69.8,74.0,,16.527554,-0.37151787,46,0,Morocco,3857276,2022-12-01,Morocco
+Youssef En-Nesyri,Noussair Mazraoui,67.4,73.0,60.1,21.0,,52.509903,-1.7102695,46,2,Morocco,3857276,2022-12-01,Morocco
+Noussair Mazraoui,Sofiane Boufal,80.7,10.4,83.0,14.5,,4.7010636,1.0595657,46,9,Morocco,3857276,2022-12-01,Morocco
+Sofiane Boufal,Abdelhamid Sabiri,81.3,15.6,73.6,25.8,,12.780063,2.2174273,46,10,Morocco,3857276,2022-12-01,Morocco
+Abdelhamid Sabiri,Sofyan Amrabat,72.8,21.6,58.0,23.9,,14.97765,2.9874206,46,12,Morocco,3857276,2022-12-01,Morocco
+Sofyan Amrabat,Achraf Hakimi Mouh,56.7,26.0,58.4,67.6,,41.63472,1.5299537,46,14,Morocco,3857276,2022-12-01,Morocco
+Achraf Hakimi Mouh,Hakim Ziyech,61.9,67.8,75.7,78.9,,17.710167,0.67738646,46,18,Morocco,3857276,2022-12-01,Morocco
+Hakim Ziyech,Achraf Hakimi Mouh,74.7,78.0,69.2,67.3,,12.030794,-2.045596,46,21,Morocco,3857276,2022-12-01,Morocco
+Achraf Hakimi Mouh,Azzedine Ounahi,71.9,64.7,86.0,76.6,Incomplete,18.450474,0.7009839,46,23,Morocco,3857276,2022-12-01,Morocco
+Hakim Ziyech,Nayef Aguerd,80.9,75.7,110.6,46.3,Incomplete,41.79055,-0.7803221,47,15,Morocco,3857276,2022-12-01,Morocco
+Milan Borjan,Kamal Miller,10.1,32.6,21.1,20.6,,16.27882,-0.8288491,48,6,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Mark Anthony Kaye,31.5,9.5,37.8,14.7,,8.168843,0.6900361,48,11,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,Steven de Sousa Vitoria,43.5,22.2,28.4,39.0,,22.588715,2.3029532,48,15,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Alistair Johnston,43.8,48.3,43.8,57.2,,8.9,1.5707964,48,21,Canada,3857276,2022-12-01,Canada
+Alistair Johnston,Alphonso Davies,50.8,59.8,74.7,55.6,,24.266232,-0.17395604,48,24,Canada,3857276,2022-12-01,Canada
+Abdelhamid Sabiri,Sofyan Amrabat,50.3,21.1,50.7,23.9,,2.828427,1.4288993,48,26,Morocco,3857276,2022-12-01,Morocco
+Sofyan Amrabat,Abdelhamid Sabiri,67.1,23.1,65.0,27.3,Incomplete,4.6957426,2.0344439,48,29,Morocco,3857276,2022-12-01,Morocco
+Alphonso Davies,Kamal Miller,54.8,22.0,39.2,28.9,,17.057842,2.725154,48,36,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Alphonso Davies,45.9,23.9,54.2,25.8,,8.514693,0.22503829,48,40,Canada,3857276,2022-12-01,Canada
+Alphonso Davies,David Junior Hoilett,58.1,28.2,117.1,79.4,Out,78.11812,0.7147356,48,43,Canada,3857276,2022-12-01,Canada
+Noussair Mazraoui,Abdelhamid Sabiri,5.2,0.1,18.4,2.9,Incomplete,13.493702,0.20902294,49,9,Morocco,3857276,2022-12-01,Morocco
+Mark Anthony Kaye,Cyle Larin,101.7,77.2,101.7,65.4,,11.8,-1.5707964,49,11,Canada,3857276,2022-12-01,Canada
+Cyle Larin,Jonathan Osorio,101.7,65.4,99.5,57.3,Incomplete,8.39345,-1.8360034,49,12,Canada,3857276,2022-12-01,Canada
+Noussair Mazraoui,Achraf Hakimi Mouh,37.8,18.8,46.3,77.5,,59.312225,1.4269918,49,42,Morocco,3857276,2022-12-01,Morocco
+Achraf Hakimi Mouh,Nayef Aguerd,47.1,77.5,33.1,65.0,,18.768324,-2.4127378,49,46,Morocco,3857276,2022-12-01,Morocco
+Nayef Aguerd,Sofiane Boufal,33.8,65.0,76.3,11.3,,68.48314,-0.9013005,49,49,Morocco,3857276,2022-12-01,Morocco
+Alistair Johnston,Milan Borjan,17.0,80.0,6.4,52.3,,29.658894,-1.9362756,50,1,Canada,3857276,2022-12-01,Canada
+Alphonso Davies,Jonathan Osorio,61.0,40.1,48.2,46.2,,14.17921,2.6968703,45,0,Canada,3857276,2022-12-01,Canada
+Jonathan Osorio,Kamal Miller,46.0,42.7,40.3,25.6,,18.024982,-1.8925469,45,2,Canada,3857276,2022-12-01,Canada
+Alistair Johnston,Mark Anthony Kaye,67.8,57.7,66.4,65.8,,8.220098,1.7419449,45,14,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,Kamal Miller,63.8,59.8,57.2,26.9,,33.555477,-1.7687763,45,16,Canada,3857276,2022-12-01,Canada
+Yassine Bounou,Nayef Aguerd,10.3,40.8,14.2,62.4,,21.949259,1.3921653,45,32,Morocco,3857276,2022-12-01,Morocco
+Nayef Aguerd,Achraf Hakimi Mouh,21.5,65.8,28.1,76.3,,12.402016,1.009633,45,36,Morocco,3857276,2022-12-01,Morocco
+Hakim Ziyech,Romain Saïss,43.7,73.9,28.1,16.6,,59.385605,-1.8366053,45,57,Morocco,3857276,2022-12-01,Morocco
+Romain Saïss,Youssef En-Nesyri,53.7,12.1,76.9,25.8,,26.943089,0.5334177,46,6,Morocco,3857276,2022-12-01,Morocco
+Youssef En-Nesyri,Sofiane Boufal,75.6,25.8,70.6,23.9,,5.3488317,-2.7784457,46,7,Morocco,3857276,2022-12-01,Morocco
+Sofiane Boufal,Azzedine Ounahi,70.6,23.9,88.6,37.6,,22.620565,0.6505744,46,8,Morocco,3857276,2022-12-01,Morocco
+Milan Borjan,Kamal Miller,20.8,41.0,24.6,26.0,,15.473849,-1.3226829,46,24,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Mark Anthony Kaye,26.1,23.9,38.5,31.0,,14.288807,0.52001417,46,26,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,Tajon Buchanan,38.3,33.5,53.5,17.5,,22.068983,-0.81103355,46,28,Canada,3857276,2022-12-01,Canada
+Azzedine Ounahi,Nayef Aguerd,34.1,76.9,25.7,73.5,,9.062009,-2.756988,46,34,Morocco,3857276,2022-12-01,Morocco
+Nayef Aguerd,Sofyan Amrabat,23.4,68.6,31.5,60.7,,11.314592,-0.7728988,46,37,Morocco,3857276,2022-12-01,Morocco
+Sofyan Amrabat,Romain Saïss,41.8,48.9,30.6,20.0,,30.994354,-1.9405183,46,42,Morocco,3857276,2022-12-01,Morocco
+Romain Saïss,Nayef Aguerd,31.7,18.5,31.1,48.9,,30.40592,1.5905306,46,46,Morocco,3857276,2022-12-01,Morocco
+Nayef Aguerd,Azzedine Ounahi,31.5,51.1,42.8,72.7,,24.377243,1.0888021,46,49,Morocco,3857276,2022-12-01,Morocco
+Azzedine Ounahi,Hakim Ziyech,46.7,75.0,61.9,76.1,,15.239751,0.07224248,46,52,Morocco,3857276,2022-12-01,Morocco
+Hakim Ziyech,Youssef En-Nesyri,61.9,76.1,98.7,56.8,,41.55394,-0.48302087,46,54,Morocco,3857276,2022-12-01,Morocco
+Youssef En-Nesyri,Hakim Ziyech,105.3,76.3,92.9,70.5,,13.689412,-2.704083,47,1,Morocco,3857276,2022-12-01,Morocco
+Milan Borjan,David Junior Hoilett,3.3,45.1,18.4,59.8,,21.07368,0.7719762,47,7,Canada,3857276,2022-12-01,Canada
+David Junior Hoilett,Alphonso Davies,50.5,73.7,72.8,78.0,,22.71079,0.1904872,47,15,Canada,3857276,2022-12-01,Canada
+Romain Saïss,Sofiane Boufal,55.9,3.4,62.3,1.2,,6.7675695,-0.33109608,47,22,Morocco,3857276,2022-12-01,Morocco
+Sofiane Boufal,Abdelhamid Sabiri,63.2,1.9,51.2,2.1,,12.001667,3.1249275,47,23,Morocco,3857276,2022-12-01,Morocco
+Abdelhamid Sabiri,Noussair Mazraoui,51.2,2.3,50.1,7.8,,5.6089215,1.7681919,47,25,Morocco,3857276,2022-12-01,Morocco
+Noussair Mazraoui,Abdelhamid Sabiri,50.1,7.8,46.3,3.8,,5.517246,-2.330559,47,25,Morocco,3857276,2022-12-01,Morocco
+Abdelhamid Sabiri,Sofyan Amrabat,46.7,10.6,39.2,18.1,,10.606602,2.3561945,47,27,Morocco,3857276,2022-12-01,Morocco
+Sofyan Amrabat,Abdelhamid Sabiri,39.2,18.1,45.2,20.3,,6.3906183,0.35144478,47,28,Morocco,3857276,2022-12-01,Morocco
+Abdelhamid Sabiri,Sofyan Amrabat,45.2,20.5,40.3,20.5,,4.9,3.1415927,47,29,Morocco,3857276,2022-12-01,Morocco
+Sofyan Amrabat,Romain Saïss,39.4,20.7,44.1,13.8,,8.348653,-0.97282726,47,30,Morocco,3857276,2022-12-01,Morocco
+Romain Saïss,Sofyan Amrabat,44.1,13.8,43.3,19.0,,5.2611785,1.7234457,47,31,Morocco,3857276,2022-12-01,Morocco
+Sofyan Amrabat,Noussair Mazraoui,43.3,19.0,56.5,3.8,,20.131567,-0.8557046,47,32,Morocco,3857276,2022-12-01,Morocco
+Noussair Mazraoui,Sofiane Boufal,56.1,4.2,63.4,3.6,,7.324616,-0.082007445,47,34,Morocco,3857276,2022-12-01,Morocco
+Sofiane Boufal,Sofyan Amrabat,63.6,3.4,50.8,17.5,,19.043371,2.307905,47,35,Morocco,3857276,2022-12-01,Morocco
+Sofyan Amrabat,Abdelhamid Sabiri,50.1,17.5,54.2,21.5,,5.7280016,0.7730531,47,37,Morocco,3857276,2022-12-01,Morocco
+Abdelhamid Sabiri,Sofyan Amrabat,54.2,21.5,49.0,17.3,,6.68431,-2.462179,47,37,Morocco,3857276,2022-12-01,Morocco
+Sofyan Amrabat,Abdelhamid Sabiri,49.3,16.4,53.7,21.8,,6.96563,0.887087,47,39,Morocco,3857276,2022-12-01,Morocco
+Abdelhamid Sabiri,Achraf Hakimi Mouh,51.8,25.6,49.0,72.0,,46.484406,1.6310681,47,41,Morocco,3857276,2022-12-01,Morocco
+Achraf Hakimi Mouh,Sofyan Amrabat,48.2,60.5,43.3,40.8,,20.300247,-1.8145802,47,46,Morocco,3857276,2022-12-01,Morocco
+Sofyan Amrabat,Noussair Mazraoui,46.9,38.6,52.5,6.8,,32.289318,-1.396483,47,49,Morocco,3857276,2022-12-01,Morocco
+Noussair Mazraoui,Romain Saïss,52.3,6.1,33.2,4.6,,19.15881,-3.0632195,47,51,Morocco,3857276,2022-12-01,Morocco
+Romain Saïss,Sofyan Amrabat,32.8,6.8,37.9,24.1,,18.036076,1.2841191,47,55,Morocco,3857276,2022-12-01,Morocco
+Sofyan Amrabat,Yassine Bounou,37.9,24.1,9.3,25.4,,28.62953,3.0961695,47,56,Morocco,3857276,2022-12-01,Morocco
+Yassine Bounou,Nayef Aguerd,10.8,33.5,14.8,55.1,,21.967249,1.3876855,48,0,Morocco,3857276,2022-12-01,Morocco
+Nayef Aguerd,Achraf Hakimi Mouh,20.0,58.8,27.9,75.7,,18.655294,1.1335216,48,2,Morocco,3857276,2022-12-01,Morocco
+Sam Adekugbe,Kamal Miller,58.7,0.1,26.4,7.4,,33.11465,2.9193208,48,20,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Sam Adekugbe,27.4,11.1,39.0,5.3,,12.969194,-0.4636476,48,27,Canada,3857276,2022-12-01,Canada
+Sam Adekugbe,Cyle Larin,41.5,5.1,70.4,14.1,,30.26896,0.30189946,48,30,Canada,3857276,2022-12-01,Canada
+Cyle Larin,Tajon Buchanan,70.4,16.9,79.8,11.3,Incomplete,10.941664,-0.53728473,48,32,Canada,3857276,2022-12-01,Canada
+Nayef Aguerd,Achraf Hakimi Mouh,36.9,69.2,47.1,73.7,,11.148542,0.4154921,48,34,Morocco,3857276,2022-12-01,Morocco
+Achraf Hakimi Mouh,Azzedine Ounahi,46.3,73.1,50.5,62.2,,11.681182,-1.2030078,48,36,Morocco,3857276,2022-12-01,Morocco
+Azzedine Ounahi,Hakim Ziyech,88.2,44.4,99.3,69.7,,27.627884,1.1573496,48,45,Morocco,3857276,2022-12-01,Morocco
+Hakim Ziyech,Achraf Hakimi Mouh,104.7,63.0,95.5,52.3,,14.111343,-2.2809598,48,48,Morocco,3857276,2022-12-01,Morocco
+Achraf Hakimi Mouh,Azzedine Ounahi,95.0,51.9,104.0,49.6,,9.289241,-0.25020054,48,49,Morocco,3857276,2022-12-01,Morocco
+Azzedine Ounahi,Achraf Hakimi Mouh,103.8,50.4,107.9,52.6,Incomplete,4.652956,0.49248576,48,50,Morocco,3857276,2022-12-01,Morocco
+Kamal Miller,Sam Adekugbe,13.5,26.3,15.0,20.7,,5.7974133,-1.3090829,48,52,Canada,3857276,2022-12-01,Canada
+Sam Adekugbe,Tajon Buchanan,15.0,20.7,19.5,31.4,,11.607756,1.1726918,48,54,Canada,3857276,2022-12-01,Canada
+Tajon Buchanan,Sam Adekugbe,41.3,24.6,59.1,9.4,,23.406837,-0.7067727,48,58,Canada,3857276,2022-12-01,Canada
+Sam Adekugbe,Alphonso Davies,79.0,10.0,96.5,10.2,Incomplete,17.501143,0.011428074,49,2,Canada,3857276,2022-12-01,Canada
+Sofyan Amrabat,Romain Saïss,23.6,69.9,13.5,51.9,,20.640009,-2.0821302,49,4,Morocco,3857276,2022-12-01,Morocco
+Sam Adekugbe,Kamal Miller,99.7,0.1,67.2,13.2,,35.040833,2.7584367,49,17,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Sam Adekugbe,68.5,14.3,76.4,5.3,,11.975391,-0.85039526,49,23,Canada,3857276,2022-12-01,Canada
+Sam Adekugbe,Tajon Buchanan,74.9,7.0,90.1,16.0,,17.664654,0.5345943,49,26,Canada,3857276,2022-12-01,Canada
+Tajon Buchanan,Alphonso Davies,94.4,15.4,96.1,5.1,,10.439348,-1.4072225,49,28,Canada,3857276,2022-12-01,Canada
+Alphonso Davies,Tajon Buchanan,101.0,5.3,102.3,11.1,Incomplete,5.9439044,1.3503026,49,32,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,Kamal Miller,83.2,0.1,63.4,13.2,,23.741314,2.5570948,49,40,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Sam Adekugbe,66.1,13.2,73.6,10.9,,7.8447433,-0.29756173,49,43,Canada,3857276,2022-12-01,Canada
+Sam Adekugbe,Mark Anthony Kaye,73.4,10.4,79.2,16.0,,8.062258,0.7678561,49,45,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,Kamal Miller,79.2,16.0,59.3,18.3,,20.032475,3.0265253,49,46,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Mark Anthony Kaye,64.6,23.5,77.5,38.5,,19.784084,0.8605253,49,51,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,Steven de Sousa Vitoria,77.5,38.5,58.4,47.0,,20.90598,2.7228827,49,52,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Alistair Johnston,65.7,53.9,68.5,67.5,,13.885244,1.3677511,49,55,Canada,3857276,2022-12-01,Canada
+Alistair Johnston,Steven de Sousa Vitoria,69.1,70.3,65.5,54.9,,15.815183,-1.8004388,49,59,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Kamal Miller,64.9,53.0,58.2,28.2,,25.689102,-1.8346585,50,1,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Alphonso Davies,61.9,28.4,82.2,31.0,,20.465826,0.12738529,50,4,Canada,3857276,2022-12-01,Canada
+Alphonso Davies,Sam Adekugbe,71.5,25.4,68.9,13.0,,12.669649,-1.7774795,50,10,Canada,3857276,2022-12-01,Canada
+Sam Adekugbe,Mark Anthony Kaye,69.6,11.7,83.0,32.0,,24.323856,0.9873547,50,12,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,Alistair Johnston,80.3,35.2,80.0,49.4,,14.203169,1.5919199,50,14,Canada,3857276,2022-12-01,Canada
+Alistair Johnston,Steven de Sousa Vitoria,80.0,49.4,62.5,46.6,,17.722584,-2.9829373,50,16,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Mark Anthony Kaye,67.4,45.7,88.2,44.0,,20.869356,-0.08154951,50,19,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,Alphonso Davies,88.2,44.0,96.7,38.5,Incomplete,10.1242285,-0.5743048,50,21,Canada,3857276,2022-12-01,Canada
+Nayef Aguerd,Azzedine Ounahi,24.2,40.1,34.3,44.0,,10.826818,0.36850008,50,22,Morocco,3857276,2022-12-01,Morocco
+Azzedine Ounahi,Youssef En-Nesyri,34.3,44.0,40.3,36.7,,9.449339,-0.882833,50,24,Morocco,3857276,2022-12-01,Morocco
+Youssef En-Nesyri,Hakim Ziyech,40.3,36.7,48.0,71.8,,35.93466,1.354844,50,25,Morocco,3857276,2022-12-01,Morocco
+Hakim Ziyech,Sofiane Boufal,45.0,64.3,85.0,12.8,Incomplete,65.20928,-0.91042566,50,28,Morocco,3857276,2022-12-01,Morocco
+Alistair Johnston,Jonathan Osorio,33.8,70.5,39.6,63.7,,8.937561,-0.86459726,50,42,Canada,3857276,2022-12-01,Canada
+Jonathan Osorio,Kamal Miller,39.2,50.0,39.4,27.3,,22.700882,-1.561986,50,45,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Tajon Buchanan,39.4,24.1,51.8,24.8,,12.419743,0.05639176,50,48,Canada,3857276,2022-12-01,Canada
+Tajon Buchanan,Kamal Miller,50.7,24.1,40.3,21.3,,10.770329,-2.878598,50,49,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Jonathan Osorio,42.8,23.1,50.9,54.3,,32.2343,1.3167886,50,53,Canada,3857276,2022-12-01,Canada
+Jonathan Osorio,David Junior Hoilett,50.9,60.7,69.6,79.1,,26.23452,0.7773121,50,57,Canada,3857276,2022-12-01,Canada
+David Junior Hoilett,Jonathan Osorio,74.9,67.5,67.0,62.4,,9.403191,-2.5683382,51,2,Canada,3857276,2022-12-01,Canada
+Jonathan Osorio,Kamal Miller,67.4,60.3,61.0,26.7,,34.204094,-1.7590178,51,4,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Mark Anthony Kaye,69.6,28.2,81.3,34.4,,13.241223,0.48729184,51,9,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,Sam Adekugbe,86.7,30.8,94.6,4.7,,27.269396,-1.2768809,51,12,Canada,3857276,2022-12-01,Canada
+Sam Adekugbe,Tajon Buchanan,94.2,4.0,85.0,8.7,,10.331021,2.6692872,51,16,Canada,3857276,2022-12-01,Canada
+Tajon Buchanan,Alistair Johnston,85.0,39.7,80.7,74.8,,35.362408,1.6926961,51,24,Canada,3857276,2022-12-01,Canada
+Alistair Johnston,Jonathan Osorio,80.7,62.6,72.6,46.2,,18.291254,-2.029554,51,28,Canada,3857276,2022-12-01,Canada
+Jonathan Osorio,Kamal Miller,72.6,46.2,73.2,28.4,,17.81011,-1.5371013,51,30,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Mark Anthony Kaye,74.3,26.0,82.6,17.1,,12.169634,-0.82026774,51,32,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,Kamal Miller,82.6,16.4,74.1,23.5,,11.075197,2.4456983,51,34,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Sam Adekugbe,74.1,23.5,82.2,25.4,,8.319856,0.23040244,51,36,Canada,3857276,2022-12-01,Canada
+Sam Adekugbe,Mark Anthony Kaye,82.0,25.2,82.4,7.7,,17.50457,-1.5479431,51,37,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,Milan Borjan,70.2,3.6,30.0,39.5,,53.89666,2.4126391,51,40,Canada,3857276,2022-12-01,Canada
+Milan Borjan,Steven de Sousa Vitoria,33.0,44.4,39.8,54.5,,12.175796,0.9782379,51,43,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Alistair Johnston,42.4,56.6,52.9,68.6,,15.945219,0.8519663,51,48,Canada,3857276,2022-12-01,Canada
+Alistair Johnston,Cyle Larin,53.5,71.0,73.2,78.2,,20.974508,0.35040033,51,51,Canada,3857276,2022-12-01,Canada
+Cyle Larin,Alistair Johnston,74.5,78.7,65.3,73.3,,10.667708,-2.610819,51,54,Canada,3857276,2022-12-01,Canada
+Alistair Johnston,Jonathan Osorio,69.8,74.0,74.7,63.3,,11.768602,-1.1413559,51,57,Canada,3857276,2022-12-01,Canada
+Jonathan Osorio,David Junior Hoilett,78.5,60.7,84.1,62.2,Incomplete,5.7974133,0.2617135,52,1,Canada,3857276,2022-12-01,Canada
+Alphonso Davies,Alistair Johnston,99.9,58.3,94.2,61.3,Incomplete,6.441273,2.6571147,52,5,Canada,3857276,2022-12-01,Canada
+Romain Saïss,Youssef En-Nesyri,36.6,26.7,51.2,29.9,,14.946571,0.21576619,52,9,Morocco,3857276,2022-12-01,Morocco
+Tajon Buchanan,Mark Anthony Kaye,76.0,51.1,68.5,49.6,,7.648529,-2.9441972,52,11,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Mark Anthony Kaye,63.1,43.8,60.6,34.0,,10.113852,-1.8205711,52,42,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,Kamal Miller,63.8,30.5,62.9,20.3,,10.239629,-1.6588037,52,44,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Tajon Buchanan,62.7,17.9,79.6,3.6,,22.138203,-0.7022569,52,46,Canada,3857276,2022-12-01,Canada
+Achraf Hakimi Mouh,Azzedine Ounahi,9.5,75.0,18.5,75.2,,9.002222,0.022218565,52,57,Morocco,3857276,2022-12-01,Morocco
+Azzedine Ounahi,Hakim Ziyech,17.2,75.0,13.5,70.7,,5.672742,-2.2813346,52,59,Morocco,3857276,2022-12-01,Morocco
+Hakim Ziyech,Achraf Hakimi Mouh,19.7,64.7,11.6,71.6,,10.640489,2.4360244,53,2,Morocco,3857276,2022-12-01,Morocco
+Achraf Hakimi Mouh,Youssef En-Nesyri,11.2,72.4,42.8,75.7,,31.771843,0.104053214,53,5,Morocco,3857276,2022-12-01,Morocco
+Azzedine Ounahi,Romain Saïss,64.2,66.2,49.7,13.8,,54.3692,-1.8407587,53,33,Morocco,3857276,2022-12-01,Morocco
+Romain Saïss,Abdelhamid Sabiri,50.5,10.0,56.5,0.6,,11.151682,-1.0026916,53,40,Morocco,3857276,2022-12-01,Morocco
+Abdelhamid Sabiri,Romain Saïss,52.7,2.9,40.9,3.6,,11.8207445,3.08234,53,43,Morocco,3857276,2022-12-01,Morocco
+Romain Saïss,Noussair Mazraoui,45.0,1.9,73.9,4.2,Incomplete,28.991379,0.079417385,53,45,Morocco,3857276,2022-12-01,Morocco
+David Junior Hoilett,Mark Anthony Kaye,46.2,75.9,55.0,67.8,,11.960351,-0.7440017,53,47,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,Steven de Sousa Vitoria,51.4,54.5,38.8,62.8,,15.088075,2.5591047,53,50,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Alistair Johnston,39.0,63.1,45.0,71.4,,10.241582,0.94487154,53,52,Canada,3857276,2022-12-01,Canada
+Alistair Johnston,Mark Anthony Kaye,49.7,70.3,49.7,54.9,,15.4,-1.5707964,53,55,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,Alistair Johnston,49.9,55.8,58.2,69.9,,16.36154,1.0387623,53,57,Canada,3857276,2022-12-01,Canada
+Alistair Johnston,Steven de Sousa Vitoria,58.2,70.1,39.0,63.5,,20.30271,-2.8104966,53,58,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Kamal Miller,39.4,55.8,39.8,28.4,,27.40292,-1.5561988,54,1,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Steven de Sousa Vitoria,39.8,28.4,34.9,52.8,,24.887146,1.7689799,54,3,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Kamal Miller,39.2,51.5,37.0,28.4,,23.204525,-1.665748,54,8,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Sam Adekugbe,44.7,23.3,50.9,7.7,,16.7869,-1.1925024,54,13,Canada,3857276,2022-12-01,Canada
+Sam Adekugbe,Jonathan Osorio,51.2,13.9,57.4,25.4,,13.064838,1.0763365,54,16,Canada,3857276,2022-12-01,Canada
+Jonathan Osorio,Sam Adekugbe,57.4,25.4,50.5,17.1,,10.793516,-2.2643483,54,17,Canada,3857276,2022-12-01,Canada
+Sam Adekugbe,Alphonso Davies,51.6,12.4,69.1,7.7,,18.120155,-0.26237985,54,19,Canada,3857276,2022-12-01,Canada
+Alphonso Davies,Mark Anthony Kaye,74.7,5.1,77.5,25.8,,20.888514,1.4363467,54,35,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,Sam Adekugbe,75.5,23.7,69.8,17.3,,8.570297,-2.2984076,54,37,Canada,3857276,2022-12-01,Canada
+Sam Adekugbe,Jonathan Osorio,69.8,17.3,64.4,38.7,,22.070795,1.8179728,54,38,Canada,3857276,2022-12-01,Canada
+Jonathan Osorio,Sam Adekugbe,62.5,49.6,64.0,26.5,,23.14865,-1.5059524,54,43,Canada,3857276,2022-12-01,Canada
+Sam Adekugbe,Kamal Miller,63.1,22.8,70.8,9.2,,15.6285,-1.0556184,54,46,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Tajon Buchanan,74.7,8.1,87.5,17.5,,15.880806,0.6334259,54,50,Canada,3857276,2022-12-01,Canada
+Tajon Buchanan,Alphonso Davies,87.5,17.5,91.8,2.7,,15.412008,-1.2880404,54,50,Canada,3857276,2022-12-01,Canada
+Alphonso Davies,Kamal Miller,86.2,4.2,64.6,4.7,,21.605785,3.1184487,54,54,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Steven de Sousa Vitoria,63.8,8.9,58.4,40.2,,31.7624,1.7416385,54,56,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Alistair Johnston,75.5,54.3,65.3,61.8,,12.660568,2.50757,55,2,Canada,3857276,2022-12-01,Canada
+Alistair Johnston,David Junior Hoilett,65.1,64.6,83.5,77.4,,22.414282,0.607802,55,4,Canada,3857276,2022-12-01,Canada
+Yassine Bounou,Abdelhamid Sabiri,6.0,44.0,65.3,67.3,,63.713264,0.37438577,56,32,Morocco,3857276,2022-12-01,Morocco
+Kamal Miller,Alphonso Davies,37.3,22.0,64.6,26.9,Incomplete,27.736258,0.17759617,56,36,Canada,3857276,2022-12-01,Canada
+Sofyan Amrabat,Romain Saïss,51.0,50.6,42.4,42.9,,11.543396,-2.411353,56,40,Morocco,3857276,2022-12-01,Morocco
+Hakim Ziyech,Sofiane Boufal,70.4,54.7,74.3,49.3,,6.661081,-0.9453113,56,52,Morocco,3857276,2022-12-01,Morocco
+Alistair Johnston,Jonathan Osorio,42.2,42.7,44.7,53.4,,10.988175,1.341269,56,57,Canada,3857276,2022-12-01,Canada
+Jonathan Osorio,David Junior Hoilett,45.2,54.9,81.3,77.8,,42.75067,0.56529397,56,59,Canada,3857276,2022-12-01,Canada
+David Junior Hoilett,Alphonso Davies,96.1,68.4,105.1,41.2,,28.650305,-1.2512532,57,5,Canada,3857276,2022-12-01,Canada
+Yassine Bounou,Abdelhamid Sabiri,6.0,36.0,32.8,37.6,,26.84772,0.059630714,57,31,Morocco,3857276,2022-12-01,Morocco
+Milan Borjan,Steven de Sousa Vitoria,12.0,35.7,24.9,50.6,,19.708374,0.8572169,57,38,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Mark Anthony Kaye,26.1,51.5,39.4,51.3,,13.301504,-0.015036461,57,41,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,Alistair Johnston,53.7,57.5,51.6,72.0,,14.651279,1.7146239,57,46,Canada,3857276,2022-12-01,Canada
+Alistair Johnston,Mark Anthony Kaye,63.4,74.8,69.3,60.9,,15.100331,-1.1693828,57,50,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,Alistair Johnston,69.3,60.9,68.1,76.3,,15.446683,1.6485612,57,51,Canada,3857276,2022-12-01,Canada
+Alistair Johnston,Steven de Sousa Vitoria,73.2,76.5,51.4,60.3,,27.160265,-2.5025098,57,54,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Sam Adekugbe,56.1,56.6,48.6,31.6,,26.100767,-1.8622531,57,58,Canada,3857276,2022-12-01,Canada
+Sam Adekugbe,Kamal Miller,45.8,28.8,50.9,8.5,,20.930838,-1.3246589,58,1,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Sam Adekugbe,51.6,15.8,40.9,30.8,,18.425255,2.190415,58,4,Canada,3857276,2022-12-01,Canada
+Sam Adekugbe,Mark Anthony Kaye,43.9,28.2,55.7,29.3,,11.85116,0.09295171,58,7,Canada,3857276,2022-12-01,Canada
+Mark Anthony Kaye,Kamal Miller,55.9,29.3,49.2,16.2,,14.713939,-2.0435622,58,8,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Tajon Buchanan,50.9,12.4,93.5,20.5,Incomplete,43.36323,0.18789788,58,10,Canada,3857276,2022-12-01,Canada
+Achraf Hakimi Mouh,Nayef Aguerd,26.6,59.6,9.5,59.6,,17.1,3.1415927,58,13,Morocco,3857276,2022-12-01,Morocco
+Nayef Aguerd,Sofyan Amrabat,8.6,59.4,17.8,59.8,,9.208692,0.043450896,58,16,Morocco,3857276,2022-12-01,Morocco
+Sofyan Amrabat,Nayef Aguerd,14.6,60.3,3.1,64.3,,12.175796,2.806856,58,17,Morocco,3857276,2022-12-01,Morocco
+Nayef Aguerd,Hakim Ziyech,3.1,64.3,43.1,75.9,,41.64805,0.2822574,58,19,Morocco,3857276,2022-12-01,Morocco
+Hakim Ziyech,Azzedine Ounahi,37.7,77.8,49.0,71.4,,12.986531,-0.51532567,58,23,Morocco,3857276,2022-12-01,Morocco
+Azzedine Ounahi,Achraf Hakimi Mouh,116.2,65.2,108.9,73.9,,11.356936,2.2689168,58,39,Morocco,3857276,2022-12-01,Morocco
+Achraf Hakimi Mouh,Sofiane Boufal,106.2,72.4,105.3,65.8,,6.661081,-1.706324,58,41,Morocco,3857276,2022-12-01,Morocco
+Sofiane Boufal,Achraf Hakimi Mouh,105.3,66.2,102.5,72.9,,7.2615423,1.9666468,58,42,Morocco,3857276,2022-12-01,Morocco
+Achraf Hakimi Mouh,Sofyan Amrabat,94.6,71.2,82.6,26.5,,46.28272,-1.8330688,58,45,Morocco,3857276,2022-12-01,Morocco
+Sofyan Amrabat,Noussair Mazraoui,92.9,9.6,111.7,2.3,,20.16755,-0.3703778,58,56,Morocco,3857276,2022-12-01,Morocco
+Abdelhamid Sabiri,Sofiane Boufal,106.2,2.7,98.2,1.0,,8.178631,-2.9322073,60,39,Morocco,3857276,2022-12-01,Morocco
+Sofiane Boufal,Romain Saïss,96.1,2.3,52.0,25.0,,49.599396,2.6662233,60,42,Morocco,3857276,2022-12-01,Morocco
+Romain Saïss,Achraf Hakimi Mouh,53.1,30.5,61.9,66.7,,37.25426,1.332328,60,46,Morocco,3857276,2022-12-01,Morocco
+Achraf Hakimi Mouh,Youssef En-Nesyri,62.9,68.6,95.5,50.8,,37.142967,-0.49977645,60,50,Morocco,3857276,2022-12-01,Morocco
+Youssef En-Nesyri,Azzedine Ounahi,95.5,50.8,98.5,61.5,Incomplete,11.112605,1.297441,60,52,Morocco,3857276,2022-12-01,Morocco
+Atiba Hutchinson,Tajon Buchanan,12.4,4.0,21.9,4.4,,9.508417,0.042080406,60,56,Canada,3857276,2022-12-01,Canada
+Tajon Buchanan,Alphonso Davies,21.2,0.1,50.5,4.2,,29.58547,0.139029,61,10,Canada,3857276,2022-12-01,Canada
+Nayef Aguerd,Yassine Bounou,45.4,72.4,15.5,49.6,,37.601196,-2.490113,61,15,Morocco,3857276,2022-12-01,Morocco
+Yassine Bounou,Nayef Aguerd,15.0,45.9,22.7,69.7,,25.014595,1.2578951,61,19,Morocco,3857276,2022-12-01,Morocco
+Sofyan Amrabat,Youssef En-Nesyri,50.1,65.8,65.5,66.5,,15.415901,0.04542328,61,30,Morocco,3857276,2022-12-01,Morocco
+David Junior Hoilett,Steven de Sousa Vitoria,55.7,47.2,40.7,40.6,,16.3878,-2.7270858,61,35,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Kamal Miller,39.4,40.4,23.4,8.5,,35.68767,-2.035697,61,39,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Tajon Buchanan,19.7,3.8,31.7,4.7,,12.033703,0.07485985,61,44,Canada,3857276,2022-12-01,Canada
+Tajon Buchanan,Jonathan Osorio,64.0,7.2,62.1,4.4,,3.3837848,-2.1669955,61,52,Canada,3857276,2022-12-01,Canada
+Jonathan Osorio,Steven de Sousa Vitoria,62.3,7.7,44.7,37.0,,34.179672,2.1117177,61,55,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Ismael Koné,45.8,38.0,62.3,70.3,,36.270374,1.0985177,61,58,Canada,3857276,2022-12-01,Canada
+Ismael Koné,Jonathan David,79.4,62.2,84.1,54.5,,9.021087,-1.0227724,62,5,Canada,3857276,2022-12-01,Canada
+Jonathan David,Ismael Koné,84.1,54.5,77.3,55.6,,6.8883963,2.9812171,62,6,Canada,3857276,2022-12-01,Canada
+Ismael Koné,David Junior Hoilett,75.1,60.1,88.6,77.4,,21.94402,0.9081544,62,9,Canada,3857276,2022-12-01,Canada
+Jonathan David,Atiba Hutchinson,93.7,54.3,85.0,53.0,,8.79659,-2.993265,62,17,Canada,3857276,2022-12-01,Canada
+Atiba Hutchinson,Jonathan Osorio,84.1,49.8,87.7,45.3,,5.7628117,-0.8960554,62,18,Canada,3857276,2022-12-01,Canada
+Jonathan Osorio,Atiba Hutchinson,88.0,45.1,82.6,49.8,,7.1589108,2.4253907,62,19,Canada,3857276,2022-12-01,Canada
+Atiba Hutchinson,David Junior Hoilett,82.6,51.5,91.4,58.1,,11.0,0.6435011,62,20,Canada,3857276,2022-12-01,Canada
+David Junior Hoilett,Jonathan Osorio,87.1,53.2,99.3,46.6,Incomplete,13.870832,-0.4958945,62,27,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Steven de Sousa Vitoria,75.5,36.5,57.2,47.7,,21.455303,2.5923805,62,36,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Kamal Miller,57.8,47.4,62.9,30.5,,17.652761,-1.2777117,62,39,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Tajon Buchanan,64.0,28.2,84.7,6.4,,30.062103,-0.81127477,62,42,Canada,3857276,2022-12-01,Canada
+Tajon Buchanan,Jonathan David,90.1,26.5,100.8,22.4,,11.458621,-0.3659207,62,49,Canada,3857276,2022-12-01,Canada
+Youssef En-Nesyri,Achraf Hakimi Mouh,7.5,67.7,6.0,63.5,,4.4598207,-1.9138203,62,57,Morocco,3857276,2022-12-01,Morocco
+Jonathan Osorio,Kamal Miller,98.0,5.1,74.3,14.3,,25.423021,2.7713125,63,1,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Ismael Koné,74.3,14.3,80.0,32.9,,19.45379,1.2734312,63,3,Canada,3857276,2022-12-01,Canada
+Ismael Koné,Jonathan Osorio,78.5,29.0,91.8,7.9,,24.941933,-1.0083721,63,9,Canada,3857276,2022-12-01,Canada
+Jonathan Osorio,Tajon Buchanan,94.6,8.3,108.7,5.7,,14.337712,-0.18234882,63,12,Canada,3857276,2022-12-01,Canada
+Tajon Buchanan,Kamal Miller,107.0,8.1,97.4,11.3,,10.119288,2.819842,63,17,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Jonathan Osorio,97.4,11.3,102.9,22.0,Incomplete,12.030794,1.0959967,63,18,Canada,3857276,2022-12-01,Canada
+Hakim Ziyech,Achraf Hakimi Mouh,27.2,73.3,23.8,54.5,,19.104973,-1.7497135,63,22,Morocco,3857276,2022-12-01,Morocco
+Achraf Hakimi Mouh,Azzedine Ounahi,24.7,50.4,23.2,74.8,,24.446064,1.6321945,63,26,Morocco,3857276,2022-12-01,Morocco
+Azzedine Ounahi,Sofiane Boufal,23.2,74.8,62.3,54.9,Incomplete,43.872772,-0.47078305,63,28,Morocco,3857276,2022-12-01,Morocco
+Atiba Hutchinson,Alistair Johnston,49.0,32.9,56.9,47.4,,16.512419,1.0719329,63,34,Canada,3857276,2022-12-01,Canada
+Alistair Johnston,Ismael Koné,66.6,69.5,72.3,52.1,,18.309834,-1.254227,63,38,Canada,3857276,2022-12-01,Canada
+Ismael Koné,Tajon Buchanan,80.5,37.2,82.4,4.2,,33.054653,-1.5132841,63,45,Canada,3857276,2022-12-01,Canada
+Tajon Buchanan,Ismael Koné,81.8,13.0,77.7,28.4,,15.936437,1.8309945,63,50,Canada,3857276,2022-12-01,Canada
+Ismael Koné,David Junior Hoilett,79.4,32.0,97.8,78.0,,49.543518,1.19029,63,53,Canada,3857276,2022-12-01,Canada
+Alistair Johnston,Steven de Sousa Vitoria,88.4,80.0,65.7,58.1,,31.542036,-2.3741298,65,4,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Atiba Hutchinson,64.6,62.0,73.6,76.1,,16.727522,1.0026916,65,8,Canada,3857276,2022-12-01,Canada
+Atiba Hutchinson,Ismael Koné,85.0,75.7,86.7,64.3,,11.526057,-1.4227644,65,12,Canada,3857276,2022-12-01,Canada
+Ismael Koné,Tajon Buchanan,86.7,61.3,93.7,7.0,,54.749336,-1.44259,65,14,Canada,3857276,2022-12-01,Canada
+Kamal Miller,David Junior Hoilett,52.7,15.6,61.9,7.9,,11.997083,-0.6968728,65,26,Canada,3857276,2022-12-01,Canada
+David Junior Hoilett,Kamal Miller,61.9,7.9,51.2,18.1,,14.782761,2.3801134,65,27,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Ismael Koné,52.0,20.1,65.1,25.0,,13.986422,0.35793385,65,29,Canada,3857276,2022-12-01,Canada
+Ismael Koné,Kamal Miller,64.9,23.7,52.0,13.2,,16.633099,-2.4584012,65,30,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Ismael Koné,56.7,14.5,58.2,23.3,,8.926926,1.4019644,65,34,Canada,3857276,2022-12-01,Canada
+Ismael Koné,Atiba Hutchinson,57.2,27.5,52.0,60.1,,33.01212,1.728973,65,36,Canada,3857276,2022-12-01,Canada
+Atiba Hutchinson,Ismael Koné,56.9,59.0,68.3,45.9,,17.36577,-0.8546749,65,39,Canada,3857276,2022-12-01,Canada
+Ismael Koné,Steven de Sousa Vitoria,65.7,44.9,53.1,40.4,,13.379462,-2.7985687,65,43,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Kamal Miller,52.2,38.0,49.2,23.9,,14.415617,-1.7804362,65,46,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Ismael Koné,49.2,23.9,58.2,28.6,,10.153324,0.48126695,65,47,Canada,3857276,2022-12-01,Canada
+Ismael Koné,Tajon Buchanan,60.1,27.1,76.0,8.3,,24.622145,-0.8687779,65,49,Canada,3857276,2022-12-01,Canada
+Tajon Buchanan,David Junior Hoilett,76.0,8.3,81.1,19.2,,12.034118,1.1331651,65,50,Canada,3857276,2022-12-01,Canada
+David Junior Hoilett,Alphonso Davies,83.5,21.6,113.4,22.0,Pass Offside,29.902676,0.013377128,65,52,Canada,3857276,2022-12-01,Canada
+Yassine Bounou,Youssef En-Nesyri,20.6,51.5,81.6,74.2,Incomplete,65.08679,0.35625315,66,40,Morocco,3857276,2022-12-01,Morocco
+Steven de Sousa Vitoria,Jonathan David,38.5,5.9,53.9,26.9,,26.041506,0.93804747,66,43,Canada,3857276,2022-12-01,Canada
+Jonathan David,David Junior Hoilett,53.9,26.9,56.3,17.7,Incomplete,9.507892,-1.315614,66,46,Canada,3857276,2022-12-01,Canada
+Azzedine Ounahi,Romain Saïss,63.8,62.4,49.9,48.9,,19.376791,-2.370792,66,47,Morocco,3857276,2022-12-01,Morocco
+Milan Borjan,Steven de Sousa Vitoria,15.7,36.3,24.2,45.5,,12.525574,0.8249256,66,54,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Atiba Hutchinson,29.1,49.6,37.7,40.8,,12.304471,-0.7968919,66,57,Canada,3857276,2022-12-01,Canada
+Atiba Hutchinson,Kamal Miller,45.0,40.0,44.7,23.3,,16.702694,-1.5887585,67,2,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Atiba Hutchinson,47.5,19.6,58.4,24.6,,11.992081,0.43007815,67,7,Canada,3857276,2022-12-01,Canada
+Atiba Hutchinson,Kamal Miller,57.6,23.7,46.9,12.8,,15.274161,-2.3469355,67,8,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Atiba Hutchinson,56.7,12.4,63.6,19.0,,9.548298,0.7631796,67,12,Canada,3857276,2022-12-01,Canada
+Atiba Hutchinson,Steven de Sousa Vitoria,63.6,19.0,46.0,37.4,,25.46213,2.333976,67,12,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Ismael Koné,46.7,37.6,58.0,57.5,,22.884493,1.0543603,67,15,Canada,3857276,2022-12-01,Canada
+Ismael Koné,Kamal Miller,56.9,50.6,56.5,23.1,,27.502909,-1.5853407,67,18,Canada,3857276,2022-12-01,Canada
+Kamal Miller,David Junior Hoilett,62.5,13.9,93.3,6.6,Pass Offside,31.653278,-0.23271874,67,23,Canada,3857276,2022-12-01,Canada
+Noussair Mazraoui,Zakaria Aboukhlal,83.3,16.4,95.9,5.9,,16.401524,-0.69473827,68,7,Morocco,3857276,2022-12-01,Morocco
+Zakaria Aboukhlal,Romain Saïss,69.4,2.1,34.7,11.3,,35.898888,2.8824258,68,13,Morocco,3857276,2022-12-01,Morocco
+Romain Saïss,Yassine Bounou,26.8,18.1,10.3,37.2,,25.240047,2.2832901,68,20,Morocco,3857276,2022-12-01,Morocco
+Yassine Bounou,Nayef Aguerd,10.3,37.2,18.7,57.3,,21.784628,1.1749458,68,22,Morocco,3857276,2022-12-01,Morocco
+Nayef Aguerd,Sofyan Amrabat,20.4,56.8,31.3,54.1,,11.229425,-0.24281883,68,25,Morocco,3857276,2022-12-01,Morocco
+Sofyan Amrabat,Yassine Bounou,27.2,54.1,11.2,41.2,,20.552616,-2.4630523,68,28,Morocco,3857276,2022-12-01,Morocco
+Yassine Bounou,Romain Saïss,14.6,35.7,24.0,11.5,,25.96151,-1.2003039,68,31,Morocco,3857276,2022-12-01,Morocco
+Romain Saïss,Yassine Bounou,25.7,13.0,12.5,34.4,,25.143587,2.1234934,68,35,Morocco,3857276,2022-12-01,Morocco
+Yassine Bounou,Nayef Aguerd,14.4,34.4,14.4,59.2,,24.8,1.5707964,68,40,Morocco,3857276,2022-12-01,Morocco
+Nayef Aguerd,Azzedine Ounahi,14.6,63.7,36.9,51.5,,25.419086,-0.5006026,68,43,Morocco,3857276,2022-12-01,Morocco
+Azzedine Ounahi,Hakim Ziyech,26.4,57.0,46.9,69.7,,24.11514,0.5546433,68,46,Morocco,3857276,2022-12-01,Morocco
+Hakim Ziyech,Azzedine Ounahi,47.3,70.9,45.6,61.5,,9.552486,-1.7497135,68,47,Morocco,3857276,2022-12-01,Morocco
+Azzedine Ounahi,Hakim Ziyech,83.5,75.7,75.4,70.3,,9.734988,-2.55359,68,53,Morocco,3857276,2022-12-01,Morocco
+Richie Laryea,Milan Borjan,13.1,50.4,3.0,48.3,,10.316007,-2.9365926,69,1,Canada,3857276,2022-12-01,Canada
+Milan Borjan,Atiba Hutchinson,4.5,47.7,15.2,56.2,,13.665284,0.6713124,69,6,Canada,3857276,2022-12-01,Canada
+Atiba Hutchinson,Richie Laryea,13.9,59.2,22.1,78.2,,20.69396,1.1633664,69,8,Canada,3857276,2022-12-01,Canada
+Richie Laryea,Alistair Johnston,22.1,78.2,19.9,71.6,,6.9570107,-1.8925469,69,11,Canada,3857276,2022-12-01,Canada
+Alistair Johnston,Ismael Koné,20.4,71.4,31.3,57.9,,17.35108,-0.89155495,69,14,Canada,3857276,2022-12-01,Canada
+Ismael Koné,David Junior Hoilett,39.4,46.8,53.3,36.5,,17.30029,-0.6377208,69,16,Canada,3857276,2022-12-01,Canada
+David Junior Hoilett,Ismael Koné,54.8,39.3,45.8,29.9,,13.013839,-2.3344588,69,19,Canada,3857276,2022-12-01,Canada
+Ismael Koné,Tajon Buchanan,45.0,29.5,73.8,6.8,,36.67056,-0.66750085,69,20,Canada,3857276,2022-12-01,Canada
+David Junior Hoilett,Atiba Hutchinson,120.0,80.0,112.2,37.7,,43.013138,-1.7531451,70,53,Canada,3857276,2022-12-01,Canada
+Yassine Bounou,Youssef En-Nesyri,6.0,36.0,70.6,4.9,Incomplete,71.69637,-0.4486768,71,51,Morocco,3857276,2022-12-01,Morocco
+Noussair Mazraoui,Romain Saïss,47.8,0.1,23.4,9.6,,26.184156,2.7703059,72,4,Morocco,3857276,2022-12-01,Morocco
+Romain Saïss,Yassine Bounou,17.8,13.6,4.6,30.9,,21.760744,2.2225692,72,7,Morocco,3857276,2022-12-01,Morocco
+Yassine Bounou,Nayef Aguerd,5.6,33.3,12.5,66.2,,33.61577,1.3640661,72,10,Morocco,3857276,2022-12-01,Morocco
+Nayef Aguerd,Achraf Hakimi Mouh,14.2,69.9,24.9,75.9,,12.267437,0.5110573,72,13,Morocco,3857276,2022-12-01,Morocco
+Achraf Hakimi Mouh,Youssef En-Nesyri,28.3,80.0,41.6,74.4,,14.43087,-0.39852244,72,31,Morocco,3857276,2022-12-01,Morocco
+Atiba Hutchinson,Alphonso Davies,82.6,9.2,89.0,12.4,,7.1554174,0.4636476,72,34,Canada,3857276,2022-12-01,Canada
+Hakim Ziyech,Achraf Hakimi Mouh,38.3,60.3,37.9,71.4,,11.107204,1.6068168,72,40,Morocco,3857276,2022-12-01,Morocco
+Achraf Hakimi Mouh,Azzedine Ounahi,41.1,74.2,56.5,63.0,,19.042059,-0.6287963,72,42,Morocco,3857276,2022-12-01,Morocco
+Azzedine Ounahi,Hakim Ziyech,56.5,63.0,50.8,60.7,,6.146544,-2.7580652,72,43,Morocco,3857276,2022-12-01,Morocco
+Hakim Ziyech,Zakaria Aboukhlal,55.5,52.8,119.8,16.2,Out,73.986824,-0.51746964,72,45,Morocco,3857276,2022-12-01,Morocco
+Milan Borjan,Kamal Miller,7.0,44.1,27.4,28.2,,25.864454,-0.66206044,73,3,Canada,3857276,2022-12-01,Canada
+Kamal Miller,David Junior Hoilett,46.7,18.8,72.3,25.4,,26.437096,0.252318,73,5,Canada,3857276,2022-12-01,Canada
+David Junior Hoilett,Richie Laryea,69.6,30.5,117.7,74.8,,65.3919,0.7442958,73,9,Canada,3857276,2022-12-01,Canada
+Ismael Koné,Alphonso Davies,71.1,51.9,77.9,77.2,,26.1979,1.308227,73,50,Canada,3857276,2022-12-01,Canada
+Richie Laryea,David Junior Hoilett,91.4,71.2,113.4,66.5,Incomplete,22.496445,-0.2104724,74,0,Canada,3857276,2022-12-01,Canada
+Ismael Koné,Milan Borjan,71.5,34.8,31.3,43.8,,41.195145,2.921344,74,36,Canada,3857276,2022-12-01,Canada
+Milan Borjan,Atiba Hutchinson,31.3,47.4,56.7,48.1,,25.409643,0.027552081,74,41,Canada,3857276,2022-12-01,Canada
+Atiba Hutchinson,Alistair Johnston,59.3,48.3,88.2,11.3,,46.949017,-0.9076982,74,44,Canada,3857276,2022-12-01,Canada
+Alistair Johnston,Tajon Buchanan,86.9,14.7,88.2,25.2,,10.58017,1.4476137,74,49,Canada,3857276,2022-12-01,Canada
+Sofyan Amrabat,Selim Amallah,34.5,54.7,40.7,45.5,,11.094143,-0.97779375,74,53,Morocco,3857276,2022-12-01,Morocco
+Selim Amallah,Azzedine Ounahi,42.8,48.7,52.9,79.5,Out,32.41373,1.2539238,74,57,Morocco,3857276,2022-12-01,Morocco
+Kamal Miller,Ismael Koné,65.1,0.1,74.5,6.4,,11.315918,0.59045357,76,8,Canada,3857276,2022-12-01,Canada
+Ismael Koné,Atiba Hutchinson,70.0,8.7,50.9,20.1,,22.243425,2.603486,76,12,Canada,3857276,2022-12-01,Canada
+Atiba Hutchinson,Steven de Sousa Vitoria,51.6,22.2,52.4,44.2,,22.01454,1.5344487,76,14,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Atiba Hutchinson,52.7,42.7,49.7,26.7,,16.27882,-1.7561443,76,16,Canada,3857276,2022-12-01,Canada
+Atiba Hutchinson,Ismael Koné,51.8,27.5,65.3,30.1,,13.748091,0.19026302,76,18,Canada,3857276,2022-12-01,Canada
+Ismael Koné,Atiba Hutchinson,65.1,30.1,53.5,24.6,,12.837834,-2.698848,76,19,Canada,3857276,2022-12-01,Canada
+Atiba Hutchinson,Ismael Koné,71.1,15.8,64.4,27.8,,13.743726,2.080015,76,25,Canada,3857276,2022-12-01,Canada
+Ismael Koné,Alistair Johnston,63.4,35.2,77.7,51.9,,21.985905,0.8626634,76,27,Canada,3857276,2022-12-01,Canada
+Alistair Johnston,Ismael Koné,77.7,48.9,66.4,28.6,,23.233166,-2.078731,76,29,Canada,3857276,2022-12-01,Canada
+Ismael Koné,Atiba Hutchinson,81.1,26.3,77.0,14.9,,12.114867,-1.9160413,76,36,Canada,3857276,2022-12-01,Canada
+Atiba Hutchinson,Kamal Miller,77.0,13.2,87.7,1.0,Out,16.227446,-0.8508069,76,37,Canada,3857276,2022-12-01,Canada
+Achraf Hakimi Mouh,Youssef En-Nesyri,33.2,80.0,51.6,75.7,Incomplete,18.895767,-0.22957551,77,2,Morocco,3857276,2022-12-01,Morocco
+Atiba Hutchinson,David Wallace Wotherspoon,68.5,4.4,75.3,7.7,,7.558439,0.45181385,77,4,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Tajon Buchanan,63.1,10.9,76.4,5.1,,14.509652,-0.41122654,77,15,Canada,3857276,2022-12-01,Canada
+Tajon Buchanan,Atiba Hutchinson,75.8,4.7,69.1,9.4,,8.184131,2.5298657,77,16,Canada,3857276,2022-12-01,Canada
+Atiba Hutchinson,Tajon Buchanan,81.5,21.8,93.7,5.9,,20.041208,-0.91631764,77,22,Canada,3857276,2022-12-01,Canada
+Ismael Koné,Atiba Hutchinson,82.0,58.8,78.3,47.0,,12.366487,-1.874646,77,30,Canada,3857276,2022-12-01,Canada
+Atiba Hutchinson,Steven de Sousa Vitoria,78.3,46.2,61.9,45.3,,16.424677,-3.0867696,77,32,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Kamal Miller,63.1,37.4,64.9,20.7,,16.796726,-1.4634264,77,35,Canada,3857276,2022-12-01,Canada
+Kamal Miller,David Wallace Wotherspoon,74.9,25.2,83.9,12.1,,15.893709,-0.968833,77,39,Canada,3857276,2022-12-01,Canada
+David Wallace Wotherspoon,Tajon Buchanan,83.9,11.9,89.0,2.7,,10.519031,-1.0646212,77,41,Canada,3857276,2022-12-01,Canada
+Yassine Bounou,Abderrazak Hamdallah,6.0,36.0,74.3,66.5,,74.80067,0.41998896,78,27,Morocco,3857276,2022-12-01,Morocco
+Kamal Miller,Milan Borjan,24.0,26.3,2.6,61.1,,40.853397,2.1221306,78,33,Canada,3857276,2022-12-01,Canada
+Atiba Hutchinson,Alistair Johnston,39.8,63.3,45.2,70.1,,8.683317,0.8996525,78,47,Canada,3857276,2022-12-01,Canada
+Alistair Johnston,Steven de Sousa Vitoria,45.4,70.1,34.3,41.9,,30.30594,-1.945788,78,48,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Kamal Miller,45.0,37.8,50.9,10.6,,27.832535,-1.3571936,78,51,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Atiba Hutchinson,51.4,19.4,50.3,54.1,,34.71743,1.602486,78,58,Canada,3857276,2022-12-01,Canada
+Atiba Hutchinson,Jonathan David,50.3,54.1,64.6,50.6,,14.722093,-0.24003637,78,59,Canada,3857276,2022-12-01,Canada
+Jonathan David,Alistair Johnston,65.1,60.1,88.6,78.0,,29.54082,0.6509485,79,2,Canada,3857276,2022-12-01,Canada
+Alistair Johnston,Alphonso Davies,92.9,67.3,97.2,57.7,,10.519031,-1.1496762,79,7,Canada,3857276,2022-12-01,Canada
+Sofyan Amrabat,Abderrazak Hamdallah,65.7,28.2,79.0,21.3,,14.983324,-0.47857186,79,15,Morocco,3857276,2022-12-01,Morocco
+Atiba Hutchinson,Jonathan David,25.3,36.3,37.0,35.7,,11.715375,-0.051237166,79,23,Canada,3857276,2022-12-01,Canada
+Jonathan David,Atiba Hutchinson,37.0,35.7,32.1,28.8,,8.46286,-2.1882985,79,23,Canada,3857276,2022-12-01,Canada
+Atiba Hutchinson,Tajon Buchanan,36.6,26.7,58.7,10.0,,27.70018,-0.6471112,79,25,Canada,3857276,2022-12-01,Canada
+Tajon Buchanan,Alphonso Davies,70.4,5.1,100.8,14.5,,31.82012,0.29988524,79,29,Canada,3857276,2022-12-01,Canada
+Jawad El Yamiq,Achraf Hakimi Mouh,3.1,74.4,26.8,75.9,,23.747421,0.06320683,79,38,Morocco,3857276,2022-12-01,Morocco
+Atiba Hutchinson,David Wallace Wotherspoon,44.7,8.3,53.9,8.3,,9.2,0.0,80,18,Canada,3857276,2022-12-01,Canada
+Achraf Hakimi Mouh,Abderrazak Hamdallah,50.1,80.0,77.1,74.4,,27.574627,-0.20450781,80,30,Morocco,3857276,2022-12-01,Morocco
+Alistair Johnston,Jonathan David,39.8,51.7,70.0,75.7,,38.575123,0.6715021,80,37,Canada,3857276,2022-12-01,Canada
+Alistair Johnston,Richie Laryea,80.7,80.0,109.6,76.5,Incomplete,29.111166,-0.12052033,80,54,Canada,3857276,2022-12-01,Canada
+Alistair Johnston,Ismael Koné,104.9,80.0,82.4,76.7,,22.740713,-2.9959643,81,2,Canada,3857276,2022-12-01,Canada
+Ismael Koné,Steven de Sousa Vitoria,82.0,73.7,76.6,47.7,,26.55485,-1.7755773,81,6,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Alphonso Davies,78.5,46.8,85.6,51.7,,8.626702,0.6040784,81,9,Canada,3857276,2022-12-01,Canada
+Alphonso Davies,Jonathan David,84.5,51.1,89.2,37.6,,14.294754,-1.2357723,81,11,Canada,3857276,2022-12-01,Canada
+Jonathan David,Kamal Miller,89.9,36.7,78.3,26.9,,15.185519,-2.440109,81,12,Canada,3857276,2022-12-01,Canada
+Kamal Miller,David Wallace Wotherspoon,77.9,26.0,108.3,7.0,,35.84913,-0.5585993,81,14,Canada,3857276,2022-12-01,Canada
+Alphonso Davies,Alistair Johnston,120.0,80.0,114.2,48.5,,32.02952,-1.7528838,81,58,Canada,3857276,2022-12-01,Canada
+Yassine Bounou,Selim Amallah,6.0,44.0,69.2,54.7,Incomplete,64.09937,0.16771343,82,32,Morocco,3857276,2022-12-01,Morocco
+Alistair Johnston,Jonathan David,39.2,31.2,56.3,43.2,,20.890429,0.6119024,82,37,Canada,3857276,2022-12-01,Canada
+Jonathan David,Richie Laryea,56.3,42.7,42.4,77.4,,37.380478,1.9517995,82,39,Canada,3857276,2022-12-01,Canada
+Richie Laryea,Alistair Johnston,53.7,76.7,50.9,63.3,,13.689412,-1.7767876,82,48,Canada,3857276,2022-12-01,Canada
+Alistair Johnston,Atiba Hutchinson,50.7,60.9,54.8,38.0,,23.264135,-1.3936341,82,50,Canada,3857276,2022-12-01,Canada
+Atiba Hutchinson,Kamal Miller,64.0,35.7,70.6,7.2,,29.25423,-1.3432288,82,53,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Steven de Sousa Vitoria,69.1,19.8,56.5,45.5,,28.622543,2.0266316,82,57,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Ismael Koné,62.9,46.6,68.3,51.7,,7.427651,0.7568345,83,1,Canada,3857276,2022-12-01,Canada
+Ismael Koné,Kamal Miller,69.1,50.4,63.1,23.5,,27.561024,-1.7902523,83,3,Canada,3857276,2022-12-01,Canada
+Kamal Miller,David Wallace Wotherspoon,69.3,20.9,91.2,4.2,,27.540878,-0.6514893,83,6,Canada,3857276,2022-12-01,Canada
+Zakaria Aboukhlal,Abderrazak Hamdallah,83.3,3.4,98.7,8.7,,16.286497,0.331459,85,30,Morocco,3857276,2022-12-01,Morocco
+Abderrazak Hamdallah,Zakaria Aboukhlal,98.7,9.3,89.9,13.4,,9.708244,2.7055879,85,31,Morocco,3857276,2022-12-01,Morocco
+Milan Borjan,Atiba Hutchinson,7.0,36.1,20.4,31.4,,14.200352,-0.3373395,85,44,Canada,3857276,2022-12-01,Canada
+Atiba Hutchinson,Jonathan David,27.6,29.7,47.3,28.4,,19.742847,-0.065894306,85,47,Canada,3857276,2022-12-01,Canada
+Jonathan David,Atiba Hutchinson,47.1,28.2,33.6,19.2,,16.224981,-2.55359,85,48,Canada,3857276,2022-12-01,Canada
+Yassine Bounou,Abderrazak Hamdallah,14.8,35.9,86.0,24.3,Incomplete,72.138756,-0.16150239,86,15,Morocco,3857276,2022-12-01,Morocco
+Steven de Sousa Vitoria,Richie Laryea,34.1,55.8,42.0,74.0,,19.840614,1.1612719,86,19,Canada,3857276,2022-12-01,Canada
+Richie Laryea,Alistair Johnston,42.0,74.0,27.4,63.7,,17.867569,-2.5271986,86,22,Canada,3857276,2022-12-01,Canada
+Alistair Johnston,Milan Borjan,22.1,59.8,6.2,43.8,,22.556818,-2.3530598,86,25,Canada,3857276,2022-12-01,Canada
+Milan Borjan,Richie Laryea,6.2,48.1,36.0,77.0,,41.512047,0.77006716,86,29,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,David Wallace Wotherspoon,33.8,56.4,61.4,44.9,Incomplete,29.9,-0.39479113,87,10,Canada,3857276,2022-12-01,Canada
+Atiba Hutchinson,David Wallace Wotherspoon,60.1,31.2,76.0,7.9,,28.208155,-0.971978,87,24,Canada,3857276,2022-12-01,Canada
+David Wallace Wotherspoon,Tajon Buchanan,76.2,6.6,87.7,4.4,,11.708544,-0.18902054,87,27,Canada,3857276,2022-12-01,Canada
+Tajon Buchanan,Kamal Miller,87.3,7.9,69.6,13.2,,18.47647,2.8506544,87,30,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Alphonso Davies,76.8,14.7,94.6,25.0,,20.565262,0.5245743,87,35,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Kamal Miller,57.6,31.2,65.5,17.5,,15.81455,-1.0477287,87,43,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Steven de Sousa Vitoria,66.8,13.9,58.7,33.3,,21.023083,1.9663192,87,45,Canada,3857276,2022-12-01,Canada
+Yassine Bounou,Selim Amallah,40.5,58.1,92.7,40.8,,54.992092,-0.3200254,88,28,Morocco,3857276,2022-12-01,Morocco
+Steven de Sousa Vitoria,Alistair Johnston,45.2,49.4,56.1,61.6,,16.360012,0.8416159,88,55,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Jonathan David,55.9,58.1,63.6,74.4,,18.027203,1.1294775,89,0,Canada,3857276,2022-12-01,Canada
+Jonathan David,Richie Laryea,65.5,75.5,81.3,78.2,,16.029036,0.16925122,89,2,Canada,3857276,2022-12-01,Canada
+Jonathan David,Richie Laryea,81.3,63.9,76.0,73.5,,10.965857,2.0752375,89,7,Canada,3857276,2022-12-01,Canada
+Yahya Jabrane,Yassine Bounou,21.9,11.7,6.0,35.7,,28.78906,2.1559088,89,14,Morocco,3857276,2022-12-01,Morocco
+Yassine Bounou,Youssef En-Nesyri,6.5,35.4,63.2,68.8,,65.80615,0.53234047,89,17,Morocco,3857276,2022-12-01,Morocco
+Milan Borjan,Steven de Sousa Vitoria,7.0,36.1,13.7,44.4,,10.666771,0.891663,89,31,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Ismael Koné,15.4,45.3,26.4,44.9,,11.00727,-0.03634762,89,33,Canada,3857276,2022-12-01,Canada
+Atiba Hutchinson,David Wallace Wotherspoon,64.6,29.7,81.3,3.8,,30.817204,-0.9980941,89,48,Canada,3857276,2022-12-01,Canada
+David Wallace Wotherspoon,Ismael Koné,81.1,10.2,68.5,37.8,,30.340073,1.9990605,89,55,Canada,3857276,2022-12-01,Canada
+Ismael Koné,Alistair Johnston,67.2,42.7,74.3,58.8,,17.596022,1.1554571,89,58,Canada,3857276,2022-12-01,Canada
+Alistair Johnston,Steven de Sousa Vitoria,71.1,56.6,58.4,44.0,,17.889942,-2.360147,90,0,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Kamal Miller,62.1,40.6,69.8,17.3,,24.539356,-1.251623,90,3,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Tajon Buchanan,79.6,16.9,93.5,4.4,,18.69385,-0.73241746,90,7,Canada,3857276,2022-12-01,Canada
+Alphonso Davies,Atiba Hutchinson,93.1,45.1,96.3,35.9,,9.740637,-1.2360595,90,18,Canada,3857276,2022-12-01,Canada
+Atiba Hutchinson,Ismael Koné,95.7,35.0,80.9,32.7,,14.97765,-2.9874206,90,19,Canada,3857276,2022-12-01,Canada
+Ismael Koné,Kamal Miller,80.9,32.7,64.2,19.8,,21.102133,-2.4838746,90,21,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Ismael Koné,63.8,19.4,75.1,12.6,,13.188252,-0.5417199,90,23,Canada,3857276,2022-12-01,Canada
+Ismael Koné,Jonathan David,65.7,23.1,76.6,67.5,,45.718376,1.3300617,90,28,Canada,3857276,2022-12-01,Canada
+Jonathan David,Steven de Sousa Vitoria,74.1,64.6,60.6,42.3,,26.067987,-2.115163,90,33,Canada,3857276,2022-12-01,Canada
+Steven de Sousa Vitoria,Kamal Miller,60.8,38.9,68.5,22.0,,18.571484,-1.1432775,90,36,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Tajon Buchanan,75.1,18.8,95.4,4.2,,25.005,-0.6235038,90,39,Canada,3857276,2022-12-01,Canada
+Tajon Buchanan,Richie Laryea,98.0,4.9,113.4,11.3,,16.67693,0.39386863,90,41,Canada,3857276,2022-12-01,Canada
+Richie Laryea,Jonathan David,112.6,24.6,105.7,31.0,,9.411163,2.3937707,90,48,Canada,3857276,2022-12-01,Canada
+Yahya Jabrane,Youssef En-Nesyri,14.6,55.3,8.4,68.8,,14.8556385,2.0013235,90,51,Morocco,3857276,2022-12-01,Morocco
+Kamal Miller,Ismael Koné,70.4,0.1,76.4,9.4,,11.06752,0.9978302,90,57,Canada,3857276,2022-12-01,Canada
+Ismael Koné,Kamal Miller,75.8,9.4,48.8,10.4,,27.018513,3.1045725,90,58,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Ismael Koné,50.1,12.1,69.1,8.1,,19.416489,-0.20749623,91,4,Canada,3857276,2022-12-01,Canada
+Ismael Koné,Tajon Buchanan,71.7,8.1,93.5,4.4,,22.111761,-0.16812265,91,6,Canada,3857276,2022-12-01,Canada
+Tajon Buchanan,Alphonso Davies,98.6,8.3,111.5,7.4,,12.931357,-0.06965458,91,10,Canada,3857276,2022-12-01,Canada
+Alphonso Davies,Milan Borjan,108.1,0.1,95.0,13.2,,18.526197,2.3561945,91,51,Canada,3857276,2022-12-01,Canada
+Milan Borjan,Richie Laryea,94.4,14.3,109.3,43.2,Pass Offside,32.51492,1.0947697,91,54,Canada,3857276,2022-12-01,Canada
+Yassine Bounou,Selim Amallah,17.8,38.4,83.9,8.1,Incomplete,72.71382,-0.42981437,92,51,Morocco,3857276,2022-12-01,Morocco
+Zakaria Aboukhlal,Abderrazak Hamdallah,72.8,0.1,90.5,4.0,,18.124569,0.21687362,93,10,Morocco,3857276,2022-12-01,Morocco
+Abderrazak Hamdallah,Zakaria Aboukhlal,91.6,4.9,83.1,9.6,,9.712878,2.6364942,93,11,Morocco,3857276,2022-12-01,Morocco
+Alistair Johnston,Tajon Buchanan,33.2,68.6,24.2,39.1,,30.84234,-1.8669115,93,16,Canada,3857276,2022-12-01,Canada
+Tajon Buchanan,Jonathan David,42.2,34.6,61.6,7.9,,33.003788,-0.9424456,93,22,Canada,3857276,2022-12-01,Canada
+Jonathan David,Alphonso Davies,60.1,17.3,98.0,66.3,,61.94683,0.9124432,93,27,Canada,3857276,2022-12-01,Canada
+Alphonso Davies,Alistair Johnston,98.0,66.3,89.2,69.7,,9.433981,2.7728968,93,29,Canada,3857276,2022-12-01,Canada
+Alistair Johnston,Ismael Koné,89.2,68.0,90.5,58.3,,9.786726,-1.4375696,93,32,Canada,3857276,2022-12-01,Canada
+Kamal Miller,Tajon Buchanan,71.5,28.0,94.8,13.9,,27.234169,-0.5441978,93,38,Canada,3857276,2022-12-01,Canada
+Sofyan Amrabat,Abderrazak Hamdallah,30.4,56.2,42.0,59.2,,11.981652,0.25307566,93,42,Morocco,3857276,2022-12-01,Morocco
+Abderrazak Hamdallah,Sofyan Amrabat,42.0,59.2,41.1,66.7,,7.553807,1.6902252,93,43,Morocco,3857276,2022-12-01,Morocco
+Sofyan Amrabat,Youssef En-Nesyri,50.5,72.2,63.8,76.1,,13.860014,0.2852371,93,45,Morocco,3857276,2022-12-01,Morocco
+Youssef En-Nesyri,Abderrazak Hamdallah,74.7,73.3,86.7,42.9,,32.682716,-1.1948354,93,48,Morocco,3857276,2022-12-01,Morocco
