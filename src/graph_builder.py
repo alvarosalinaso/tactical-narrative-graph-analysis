@@ -8,10 +8,17 @@ import networkx as nx
 import pandas as pd
 from pyvis.network import Network
 
-DATA_DIR = Path(__file__).resolve().parent.parent / "data" / "raw"
-STATSBOMB_CSV = DATA_DIR / "statsbomb_passes.csv"
-MATCH_INFO_JSON = DATA_DIR / "match_info.json"
-PASSING_CSV = DATA_DIR / "passing.csv"
+def _get_data_dir() -> Path:
+    return Path(__file__).resolve().parent.parent / "data" / "raw"
+
+def _get_statsbomb_csv() -> Path:
+    return _get_data_dir() / "statsbomb_passes.csv"
+
+def _get_match_info_json() -> Path:
+    return _get_data_dir() / "match_info.json"
+
+def _get_passing_csv() -> Path:
+    return _get_data_dir() / "passing.csv"
 
 
 def load_passing_data() -> pd.DataFrame:
@@ -23,9 +30,10 @@ def load_passing_data() -> pd.DataFrame:
     Returns:
         DataFrame with columns: passer, receiver, weight, type, and metadata
     """
-    if STATSBOMB_CSV.exists():
-        print(f"[INFO] Loading real StatsBomb data from {STATSBOMB_CSV.name}")
-        df = pd.read_csv(STATSBOMB_CSV)
+    statsbomb_csv = _get_statsbomb_csv()
+    if statsbomb_csv.exists():
+        print(f"[INFO] Loading real StatsBomb data from {statsbomb_csv.name}")
+        df = pd.read_csv(statsbomb_csv)
 
         # Aggregate passes between same player pairs
         edges = (
@@ -60,9 +68,10 @@ def load_passing_data() -> pd.DataFrame:
         print(f"[INFO] Total passes analyzed: {len(df)}")
 
         # Print match info if available
-        if MATCH_INFO_JSON.exists():
+        match_info_json = _get_match_info_json()
+        if match_info_json.exists():
             try:
-                with open(MATCH_INFO_JSON) as f:
+                with open(match_info_json) as f:
                     info = json.load(f)
                 print(f"[INFO] Match: {info.get('home_team', '?')} vs {info.get('away_team', '?')}")
                 print(f"[INFO] Competition: {info.get('competition', '?')}")
@@ -71,8 +80,8 @@ def load_passing_data() -> pd.DataFrame:
 
         return edges
 
-    elif PASSING_CSV.exists():
-        print(f"[INFO] Falling back to aggregate stats from {PASSING_CSV.name}")
+    elif _get_passing_csv().exists():
+        print(f"[INFO] Falling back to aggregate stats from {_get_passing_csv().name}")
         return _load_aggregate_stats()
 
     else:
@@ -82,7 +91,7 @@ def load_passing_data() -> pd.DataFrame:
 
 def _load_aggregate_stats() -> pd.DataFrame:
     """Load aggregate passing stats when event-level data is unavailable."""
-    df = pd.read_csv(PASSING_CSV)
+    df = pd.read_csv(_get_passing_csv())
     df = df.dropna(subset=["Player"])
     df = df[df["Player"].str.strip().str.len() > 0]
     df = df[df["Player"].str.strip() != "Total"]
