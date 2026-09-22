@@ -16,6 +16,7 @@ def main():
     print("\n[1/2] Ejecutando export_visualizations...")
     try:
         from export_visualizations import main as export_main
+
         export_main()
     except Exception as e:  # noqa: BLE001
         print(f"[ERROR] export_visualizations: {e}")
@@ -25,6 +26,7 @@ def main():
     print("\n[2/2] Ejecutando graph_builder (render HTML)...")
     try:
         from graph_builder import analyze_and_visualize, build_graph, load_passing_data
+
         df = load_passing_data()
         G = build_graph(df)
         analyze_and_visualize(G)

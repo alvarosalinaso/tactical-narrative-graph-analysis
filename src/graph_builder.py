@@ -8,14 +8,18 @@ import networkx as nx
 import pandas as pd
 from pyvis.network import Network
 
+
 def _get_data_dir() -> Path:
     return Path(__file__).resolve().parent.parent / "data" / "raw"
+
 
 def _get_statsbomb_csv() -> Path:
     return _get_data_dir() / "statsbomb_passes.csv"
 
+
 def _get_match_info_json() -> Path:
     return _get_data_dir() / "match_info.json"
+
 
 def _get_passing_csv() -> Path:
     return _get_data_dir() / "passing.csv"
@@ -73,7 +77,9 @@ def load_passing_data() -> pd.DataFrame:
             try:
                 with open(match_info_json) as f:
                     info = json.load(f)
-                print(f"[INFO] Match: {info.get('home_team', '?')} vs {info.get('away_team', '?')}")
+                print(
+                    f"[INFO] Match: {info.get('home_team', '?')} vs {info.get('away_team', '?')}"
+                )
                 print(f"[INFO] Competition: {info.get('competition', '?')}")
             except (json.JSONDecodeError, KeyError):
                 pass
@@ -127,19 +133,40 @@ def _load_aggregate_stats() -> pd.DataFrame:
         for _, d in df_players.iterrows():
             weight = max(1, int(g["Cmp"] * 0.03))
             if weight > 0:
-                edges.append({"passer": g["Player"], "receiver": d["Player"], "weight": weight, "type": "distribution"})
+                edges.append(
+                    {
+                        "passer": g["Player"],
+                        "receiver": d["Player"],
+                        "weight": weight,
+                        "type": "distribution",
+                    }
+                )
 
     for _, d in df_players.iterrows():
         for _, m in mf_players.iterrows():
             weight = max(1, int(d["Cmp"] * 0.02))
             if weight > 0:
-                edges.append({"passer": d["Player"], "receiver": m["Player"], "weight": weight, "type": "buildup"})
+                edges.append(
+                    {
+                        "passer": d["Player"],
+                        "receiver": m["Player"],
+                        "weight": weight,
+                        "type": "buildup",
+                    }
+                )
 
     for _, m in mf_players.iterrows():
         for _, f in fw_players.iterrows():
             weight = max(1, int(m["Cmp"] * 0.03))
             if weight > 0:
-                edges.append({"passer": m["Player"], "receiver": f["Player"], "weight": weight, "type": "final_ball"})
+                edges.append(
+                    {
+                        "passer": m["Player"],
+                        "receiver": f["Player"],
+                        "weight": weight,
+                        "type": "final_ball",
+                    }
+                )
 
     return pd.DataFrame(edges)
 

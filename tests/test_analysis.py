@@ -1,7 +1,6 @@
 """Smoke tests for tactical-narrative-graph-analysis."""
 
 import pandas as pd
-import pytest
 
 
 def test_imports():
@@ -39,8 +38,8 @@ def test_build_graph():
 
 
 def test_graph_analysis():
+
     from src.graph_analysis import run_graph_analysis
-    from pathlib import Path
 
     results = run_graph_analysis()
     assert isinstance(results, dict)

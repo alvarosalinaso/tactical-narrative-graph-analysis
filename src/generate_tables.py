@@ -40,6 +40,7 @@ def generate():
     # Try great_tables first, fallback to pandas styling
     try:
         from great_tables import GT
+
         tbl = (
             GT(df)
             .tab_header(title="Métricas de Red — Grafo de Pases Tácticos")
@@ -50,14 +51,28 @@ def generate():
         print("[TABLE] assets/executive_table.html generado (great_tables)")
     except ImportError:
         # Fallback: pandas styling
-        styled = df.style.set_caption("Métricas de Red — Grafo de Pases Tácticos") \
-            .set_table_styles([
-                {"selector": "caption", "props": [("font-size", "16px"), ("font-weight", "bold")]},
-                {"selector": "th", "props": [("background-color", "#533483"), ("color", "white"), ("font-weight", "bold")]},
-                {"selector": "td", "props": [("border", "1px solid #ddd")]},
-            ]) \
-            .format(precision=4) \
+        styled = (
+            df.style.set_caption("Métricas de Red — Grafo de Pases Tácticos")
+            .set_table_styles(
+                [
+                    {
+                        "selector": "caption",
+                        "props": [("font-size", "16px"), ("font-weight", "bold")],
+                    },
+                    {
+                        "selector": "th",
+                        "props": [
+                            ("background-color", "#533483"),
+                            ("color", "white"),
+                            ("font-weight", "bold"),
+                        ],
+                    },
+                    {"selector": "td", "props": [("border", "1px solid #ddd")]},
+                ]
+            )
+            .format(precision=4)
             .hide(axis="index")
+        )
         Path("assets").mkdir(exist_ok=True)
         styled.to_html("assets/executive_table.html")
         print("[TABLE] assets/executive_table.html generado (pandas styling fallback)")

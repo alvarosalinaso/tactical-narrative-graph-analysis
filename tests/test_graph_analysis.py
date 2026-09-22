@@ -2,9 +2,8 @@
 
 import csv
 import json
+
 import pandas as pd
-from pathlib import Path
-import pytest
 
 from src.graph_analysis import build_graph_from_csv, run_graph_analysis
 
@@ -20,6 +19,7 @@ def test_build_graph_from_csv(tmp_path):
         writer.writerow({"source": "A", "target": "C", "weight": "2"})
 
     import networkx as nx
+
     G = build_graph_from_csv(csv_file)
     assert isinstance(G, nx.DiGraph)
     assert len(G.nodes()) == 3
@@ -30,6 +30,7 @@ def test_build_graph_from_csv(tmp_path):
 def test_run_graph_analysis_returns_dict(tmp_path, monkeypatch):
     """Test run_graph_analysis returns expected structure."""
     import src.graph_analysis as ga_module
+
     monkeypatch.setattr(ga_module, "NX_AVAILABLE", True)
 
     data_dir = tmp_path / "export"
@@ -62,6 +63,7 @@ def test_run_graph_analysis_returns_dict(tmp_path, monkeypatch):
 def test_run_graph_analysis_no_nx(tmp_path, monkeypatch):
     """Test run_graph_analysis when NetworkX not available."""
     import src.graph_analysis as ga_module
+
     monkeypatch.setattr(ga_module, "NX_AVAILABLE", False)
 
     data_dir = tmp_path / "export"
@@ -76,6 +78,7 @@ def test_run_graph_analysis_no_nx(tmp_path, monkeypatch):
 def test_run_graph_analysis_no_csv(tmp_path, monkeypatch):
     """Test run_graph_analysis with no CSV files."""
     import src.graph_analysis as ga_module
+
     monkeypatch.setattr(ga_module, "NX_AVAILABLE", True)
 
     data_dir = tmp_path / "export"
@@ -90,6 +93,7 @@ def test_run_graph_analysis_no_csv(tmp_path, monkeypatch):
 def test_run_graph_analysis_creates_output_files(tmp_path, monkeypatch):
     """Test run_graph_analysis creates output files."""
     import src.graph_analysis as ga_module
+
     monkeypatch.setattr(ga_module, "NX_AVAILABLE", True)
 
     data_dir = tmp_path / "export"
@@ -104,7 +108,7 @@ def test_run_graph_analysis_creates_output_files(tmp_path, monkeypatch):
         writer.writerow({"source": "A", "target": "B", "weight": "5"})
         writer.writerow({"source": "B", "target": "C", "weight": "3"})
 
-    result = run_graph_analysis(data_dir=data_dir, output_dir=output_dir)
+    run_graph_analysis(data_dir=data_dir, output_dir=output_dir)
 
     # Check JSON output
     json_file = output_dir / "test_network_network_metrics.json"
