@@ -30,8 +30,12 @@ def _ensure_export_dir() -> None:
 
 
 def export_flourish_arc(G: nx.DiGraph) -> None:
-    """Write flourish_arc_diagram.csv with edge-level centrality data."""
-    betweenness = nx.betweenness_centrality(G, weight="weight")
+    """Write flourish_arc_diagram.csv with edge-level centrality data.
+
+    Betweenness is unweighted (same semantics as graph_analysis.py);
+    NetworkX ``weight`` is distance, so pass frequency would invert paths.
+    """
+    betweenness = nx.betweenness_centrality(G)
 
     rows: list[dict[str, object]] = []
     for source, target, edge_data in G.edges(data=True):
@@ -52,8 +56,11 @@ def export_flourish_arc(G: nx.DiGraph) -> None:
 
 
 def export_observable_grafo(G: nx.DiGraph) -> None:
-    """Write observable_grafo.csv with node-level metrics."""
-    betweenness = nx.betweenness_centrality(G, weight="weight")
+    """Write observable_grafo.csv with node-level metrics.
+
+    Betweenness is unweighted (same semantics as graph_analysis.py).
+    """
+    betweenness = nx.betweenness_centrality(G)
     degree = dict(G.degree())
     in_degree = dict(G.in_degree())
     out_degree = dict(G.out_degree())
@@ -88,8 +95,11 @@ def _assign_tactical_role(node: str, bc: float, deg: int, max_deg: int) -> str:
 
 
 def export_dw_centralidad(G: nx.DiGraph) -> None:
-    """Write dw_centralidad_benchmark.csv with per-player centrality + role."""
-    betweenness = nx.betweenness_centrality(G, weight="weight")
+    """Write dw_centralidad_benchmark.csv with per-player centrality + role.
+
+    Betweenness is unweighted (same semantics as graph_analysis.py).
+    """
+    betweenness = nx.betweenness_centrality(G)
     degree_cent = nx.degree_centrality(G)
     degree = dict(G.degree())
     max_deg = max(degree.values()) if degree else 1

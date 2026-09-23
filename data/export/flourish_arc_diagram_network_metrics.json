@@ -1,88 +1,111 @@
 {
-  "nodes": 7,
-  "edges": 9,
-  "density": 0.21428571428571427,
-  "is_connected": true,
+  "nodes": 32,
+  "edges": 252,
+  "density": 0.2540322580645161,
+  "is_connected": false,
   "top_betweenness": [
     {
-      "player": "Bruno Fernandes",
-      "score": 0.2667
+      "player": "Sofyan Amrabat",
+      "score": 0.0245
     },
     {
-      "player": "Martinez",
-      "score": 0.0833
+      "player": "Achraf Hakimi Mouh",
+      "score": 0.019
     },
     {
-      "player": "Dalot",
-      "score": 0.05
+      "player": "Tajon Buchanan",
+      "score": 0.0161
     },
     {
-      "player": "Onana",
-      "score": 0.0
+      "player": "Azzedine Ounahi",
+      "score": 0.0158
     },
     {
-      "player": "Mainoo",
-      "score": 0.0
+      "player": "Yassine Bounou",
+      "score": 0.0144
     }
   ],
   "top_pagerank": [
     {
-      "player": "Hojlund",
-      "score": 0.2796
+      "player": "Kamal Miller",
+      "score": 0.0638
     },
     {
-      "player": "Bruno Fernandes",
-      "score": 0.2316
+      "player": "Achraf Hakimi Mouh",
+      "score": 0.0566
     },
     {
-      "player": "Garnacho",
-      "score": 0.1866
+      "player": "Sofyan Amrabat",
+      "score": 0.0544
     },
     {
-      "player": "Mainoo",
-      "score": 0.0889
+      "player": "Mark Anthony Kaye",
+      "score": 0.0487
     },
     {
-      "player": "Martinez",
-      "score": 0.0789
+      "player": "Steven de Sousa Vitoria",
+      "score": 0.0469
     }
   ],
   "top_degree": [
     {
-      "player": "Bruno Fernandes",
-      "score": 0.8333
+      "player": "Alistair Johnston",
+      "score": 0.8065
     },
     {
-      "player": "Martinez",
-      "score": 0.5
+      "player": "Steven de Sousa Vitoria",
+      "score": 0.8065
     },
     {
-      "player": "Onana",
-      "score": 0.3333
+      "player": "Alphonso Davies",
+      "score": 0.7742
     },
     {
-      "player": "Dalot",
-      "score": 0.3333
+      "player": "Kamal Miller",
+      "score": 0.7742
     },
     {
-      "player": "Mainoo",
-      "score": 0.3333
+      "player": "Tajon Buchanan",
+      "score": 0.7742
     }
   ],
-  "num_communities": 3,
+  "num_communities": 2,
   "communities": [
     [
-      "Garnacho",
-      "Bruno Fernandes",
-      "Hojlund"
+      "Youssef En-Nesyri",
+      "Jawad El Yamiq",
+      "Zakaria Aboukhlal",
+      "Nayef Aguerd",
+      "Abdelhamid Sabiri",
+      "Azzedine Ounahi",
+      "Abderrazak Hamdallah",
+      "Sofyan Amrabat",
+      "Selim Amallah",
+      "Yahya Jabrane",
+      "Achraf Hakimi Mouh",
+      "Yassine Bounou",
+      "Hakim Ziyech",
+      "Noussair Mazraoui",
+      "Sofiane Boufal",
+      "Romain Saïss"
     ],
     [
-      "Dalot",
-      "Onana"
-    ],
-    [
-      "Mainoo",
-      "Martinez"
+      "Alistair Johnston",
+      "Kamal Miller",
+      "Steven de Sousa Vitoria",
+      "Cyle Larin",
+      "Ismael Koné",
+      "David Wallace Wotherspoon",
+      "Tajon Buchanan",
+      "Richie Laryea",
+      "Mark Anthony Kaye",
+      "Jonathan David",
+      "Atiba Hutchinson",
+      "Jonathan Osorio",
+      "Sam Adekugbe",
+      "Milan Borjan",
+      "Alphonso Davies",
+      "David Junior Hoilett"
     ]
   ]
 }

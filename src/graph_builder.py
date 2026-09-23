@@ -96,7 +96,13 @@ def load_passing_data() -> pd.DataFrame:
 
 
 def _load_aggregate_stats() -> pd.DataFrame:
-    """Load aggregate passing stats when event-level data is unavailable."""
+    """Load aggregate passing stats when event-level data is unavailable.
+
+    ILLUSTRATIVE FALLBACK: builds synthetic positional edges from season
+    aggregate stats (Cmp/PrgP), not observed pass events. Edge weights and
+    any centrality derived from this graph are illustrative only and must
+    not be compared against StatsBomb event-level results.
+    """
     df = pd.read_csv(_get_passing_csv())
     df = df.dropna(subset=["Player"])
     df = df[df["Player"].str.strip().str.len() > 0]
@@ -201,12 +207,16 @@ def analyze_and_visualize(G: nx.DiGraph, output_filename="grafo_tactico.html"):
 
     Node size = betweenness centrality (higher = more important connector)
     Edge thickness = pass frequency (more passes = thicker line)
+
+    Betweenness is unweighted: NetworkX treats ``weight`` as distance, so a
+    pass-frequency weight would invert meaning (frequent passes = long paths).
+    PageRank and degree stay weighted (frequency = importance there).
     """
     if len(G.nodes) == 0:
         print("[ERROR] Empty graph, nothing to visualize")
         return
 
-    centrality = nx.betweenness_centrality(G, weight="weight")
+    centrality = nx.betweenness_centrality(G)
     pagerank = nx.pagerank(G, weight="weight")
     in_degree = dict(G.in_degree(weight="weight"))
     out_degree = dict(G.out_degree(weight="weight"))

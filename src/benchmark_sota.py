@@ -127,11 +127,13 @@ def run_benchmark(
         "metrics_in_sota_range": in_sota,
         "total_metrics": total,
         "sota_compliance_pct": round(in_sota / total * 100, 1) if total else 0,
-        "verdict": "RED COMPARABLE A EQUIPOS DE ELITE"
-        if in_sota / total > 0.6
-        else "RED POR DEBAJO DEL ESTANDAR SOTA"
-        if total
-        else "Sin datos suficientes",
+        "verdict": (
+            "RED COMPARABLE A EQUIPOS DE ELITE"
+            if total and in_sota / total > 0.6
+            else "RED POR DEBAJO DEL ESTANDAR SOTA"
+            if total
+            else "Sin datos suficientes"
+        ),
     }
 
     output_dir.mkdir(parents=True, exist_ok=True)

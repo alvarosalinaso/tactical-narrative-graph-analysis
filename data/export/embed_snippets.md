@@ -3,6 +3,12 @@
 Copy the HTML snippets below into your portfolio or report.
 Each snippet is responsive and mobile-friendly.
 
+## Key Insights (resumen ejecutivo)
+
+- **Problema:** el relato táctico ("quién conecta el juego") suele ser opinión sin red de pases medida.
+- **Metodología:** grafo dirigido StatsBomb + betweenness/PageRank + comunidades y tests.
+- **Decisión:** el top-betweenness marca el conector a anular/potenciar según fase.
+
 ---
 
 ## 1. Flourish Arc / Chord Diagram

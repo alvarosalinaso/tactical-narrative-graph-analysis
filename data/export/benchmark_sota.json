@@ -1,0 +1,51 @@
+{
+  "benchmarks": {
+    "density_elite": {
+      "ref": "Pappalardo et al. 2019",
+      "mean": 0.45,
+      "range": [
+        0.35,
+        0.55
+      ]
+    },
+    "betweenness_captain": {
+      "ref": "Pedro & Coelho 2021",
+      "mean": 0.38,
+      "range": [
+        0.25,
+        0.5
+      ]
+    },
+    "pagerank_top3_share": {
+      "ref": "Fernandez et al. 2019",
+      "mean": 0.42,
+      "range": [
+        0.35,
+        0.55
+      ]
+    },
+    "clustering_coefficient": {
+      "ref": "Beal et al. 2019",
+      "mean": 0.32,
+      "range": [
+        0.2,
+        0.45
+      ]
+    },
+    "n_communities": {
+      "ref": "Gudmundsson & Horton 2017",
+      "mean": 4,
+      "range": [
+        3,
+        6
+      ]
+    }
+  },
+  "comparisons": [],
+  "summary": {
+    "metrics_in_sota_range": 0,
+    "total_metrics": 0,
+    "sota_compliance_pct": 0,
+    "verdict": "Sin datos suficientes"
+  }
+}

@@ -1,10 +1,253 @@
 source,target,weight,betweenness_source,betweenness_target
-Onana,Martinez,1,0.0,0.0833
-Onana,Dalot,1,0.0,0.05
-Martinez,Bruno Fernandes,1,0.0833,0.2667
-Martinez,Mainoo,1,0.0833,0.0
-Dalot,Bruno Fernandes,1,0.05,0.2667
-Bruno Fernandes,Garnacho,2,0.2667,0.0
-Bruno Fernandes,Hojlund,1,0.2667,0.0
-Mainoo,Bruno Fernandes,1,0.0,0.2667
-Garnacho,Hojlund,1,0.0,0.0
+Abdelhamid Sabiri,Achraf Hakimi Mouh,1,0.0036,0.019
+Abdelhamid Sabiri,Azzedine Ounahi,3,0.0036,0.0158
+Abdelhamid Sabiri,Hakim Ziyech,2,0.0036,0.0089
+Abdelhamid Sabiri,Noussair Mazraoui,2,0.0036,0.0056
+Abdelhamid Sabiri,Romain Saïss,1,0.0036,0.0133
+Abdelhamid Sabiri,Sofiane Boufal,5,0.0036,0.0029
+Abdelhamid Sabiri,Sofyan Amrabat,7,0.0036,0.0245
+Abdelhamid Sabiri,Yassine Bounou,1,0.0036,0.0144
+Achraf Hakimi Mouh,Abdelhamid Sabiri,1,0.019,0.0036
+Achraf Hakimi Mouh,Abderrazak Hamdallah,1,0.019,0.0038
+Achraf Hakimi Mouh,Azzedine Ounahi,11,0.019,0.0158
+Achraf Hakimi Mouh,Hakim Ziyech,13,0.019,0.0089
+Achraf Hakimi Mouh,Nayef Aguerd,9,0.019,0.0024
+Achraf Hakimi Mouh,Sofiane Boufal,2,0.019,0.0029
+Achraf Hakimi Mouh,Sofyan Amrabat,8,0.019,0.0245
+Achraf Hakimi Mouh,Youssef En-Nesyri,8,0.019,0.0105
+Azzedine Ounahi,Abdelhamid Sabiri,1,0.0158,0.0036
+Azzedine Ounahi,Achraf Hakimi Mouh,5,0.0158,0.019
+Azzedine Ounahi,Hakim Ziyech,9,0.0158,0.0089
+Azzedine Ounahi,Nayef Aguerd,1,0.0158,0.0024
+Azzedine Ounahi,Romain Saïss,3,0.0158,0.0133
+Azzedine Ounahi,Sofiane Boufal,4,0.0158,0.0029
+Azzedine Ounahi,Sofyan Amrabat,5,0.0158,0.0245
+Azzedine Ounahi,Yassine Bounou,1,0.0158,0.0144
+Azzedine Ounahi,Youssef En-Nesyri,3,0.0158,0.0105
+Hakim Ziyech,Abdelhamid Sabiri,2,0.0089,0.0036
+Hakim Ziyech,Achraf Hakimi Mouh,13,0.0089,0.019
+Hakim Ziyech,Azzedine Ounahi,4,0.0089,0.0158
+Hakim Ziyech,Nayef Aguerd,4,0.0089,0.0024
+Hakim Ziyech,Noussair Mazraoui,2,0.0089,0.0056
+Hakim Ziyech,Romain Saïss,1,0.0089,0.0133
+Hakim Ziyech,Sofiane Boufal,2,0.0089,0.0029
+Hakim Ziyech,Yassine Bounou,1,0.0089,0.0144
+Hakim Ziyech,Youssef En-Nesyri,3,0.0089,0.0105
+Hakim Ziyech,Zakaria Aboukhlal,1,0.0089,0.0011
+Noussair Mazraoui,Abdelhamid Sabiri,3,0.0056,0.0036
+Noussair Mazraoui,Achraf Hakimi Mouh,2,0.0056,0.019
+Noussair Mazraoui,Romain Saïss,5,0.0056,0.0133
+Noussair Mazraoui,Sofiane Boufal,6,0.0056,0.0029
+Noussair Mazraoui,Yassine Bounou,2,0.0056,0.0144
+Noussair Mazraoui,Youssef En-Nesyri,2,0.0056,0.0105
+Noussair Mazraoui,Zakaria Aboukhlal,1,0.0056,0.0011
+Romain Saïss,Abdelhamid Sabiri,3,0.0133,0.0036
+Romain Saïss,Achraf Hakimi Mouh,3,0.0133,0.019
+Romain Saïss,Azzedine Ounahi,1,0.0133,0.0158
+Romain Saïss,Nayef Aguerd,5,0.0133,0.0024
+Romain Saïss,Noussair Mazraoui,4,0.0133,0.0056
+Romain Saïss,Sofiane Boufal,3,0.0133,0.0029
+Romain Saïss,Sofyan Amrabat,4,0.0133,0.0245
+Romain Saïss,Yassine Bounou,3,0.0133,0.0144
+Romain Saïss,Youssef En-Nesyri,6,0.0133,0.0105
+Sofiane Boufal,Abdelhamid Sabiri,6,0.0029,0.0036
+Sofiane Boufal,Achraf Hakimi Mouh,1,0.0029,0.019
+Sofiane Boufal,Azzedine Ounahi,1,0.0029,0.0158
+Sofiane Boufal,Hakim Ziyech,2,0.0029,0.0089
+Sofiane Boufal,Noussair Mazraoui,1,0.0029,0.0056
+Sofiane Boufal,Romain Saïss,2,0.0029,0.0133
+Sofiane Boufal,Sofyan Amrabat,2,0.0029,0.0245
+Sofyan Amrabat,Abdelhamid Sabiri,5,0.0245,0.0036
+Sofyan Amrabat,Abderrazak Hamdallah,2,0.0245,0.0038
+Sofyan Amrabat,Achraf Hakimi Mouh,6,0.0245,0.019
+Sofyan Amrabat,Azzedine Ounahi,4,0.0245,0.0158
+Sofyan Amrabat,Hakim Ziyech,2,0.0245,0.0089
+Sofyan Amrabat,Nayef Aguerd,7,0.0245,0.0024
+Sofyan Amrabat,Noussair Mazraoui,4,0.0245,0.0056
+Sofyan Amrabat,Romain Saïss,8,0.0245,0.0133
+Sofyan Amrabat,Selim Amallah,1,0.0245,0.0002
+Sofyan Amrabat,Sofiane Boufal,2,0.0245,0.0029
+Sofyan Amrabat,Yassine Bounou,3,0.0245,0.0144
+Sofyan Amrabat,Youssef En-Nesyri,2,0.0245,0.0105
+Yassine Bounou,Abdelhamid Sabiri,3,0.0144,0.0036
+Yassine Bounou,Abderrazak Hamdallah,2,0.0144,0.0038
+Yassine Bounou,Nayef Aguerd,9,0.0144,0.0024
+Yassine Bounou,Noussair Mazraoui,1,0.0144,0.0056
+Yassine Bounou,Romain Saïss,5,0.0144,0.0133
+Yassine Bounou,Selim Amallah,3,0.0144,0.0002
+Yassine Bounou,Sofiane Boufal,1,0.0144,0.0029
+Yassine Bounou,Sofyan Amrabat,4,0.0144,0.0245
+Yassine Bounou,Youssef En-Nesyri,4,0.0144,0.0105
+Abderrazak Hamdallah,Sofyan Amrabat,1,0.0038,0.0245
+Abderrazak Hamdallah,Zakaria Aboukhlal,2,0.0038,0.0011
+Zakaria Aboukhlal,Abderrazak Hamdallah,2,0.0011,0.0038
+Zakaria Aboukhlal,Romain Saïss,1,0.0011,0.0133
+Nayef Aguerd,Achraf Hakimi Mouh,11,0.0024,0.019
+Nayef Aguerd,Azzedine Ounahi,4,0.0024,0.0158
+Nayef Aguerd,Hakim Ziyech,3,0.0024,0.0089
+Nayef Aguerd,Noussair Mazraoui,1,0.0024,0.0056
+Nayef Aguerd,Romain Saïss,2,0.0024,0.0133
+Nayef Aguerd,Sofiane Boufal,1,0.0024,0.0029
+Nayef Aguerd,Sofyan Amrabat,5,0.0024,0.0245
+Nayef Aguerd,Yassine Bounou,9,0.0024,0.0144
+Nayef Aguerd,Youssef En-Nesyri,1,0.0024,0.0105
+Youssef En-Nesyri,Abdelhamid Sabiri,1,0.0105,0.0036
+Youssef En-Nesyri,Abderrazak Hamdallah,1,0.0105,0.0038
+Youssef En-Nesyri,Achraf Hakimi Mouh,1,0.0105,0.019
+Youssef En-Nesyri,Azzedine Ounahi,2,0.0105,0.0158
+Youssef En-Nesyri,Hakim Ziyech,3,0.0105,0.0089
+Youssef En-Nesyri,Noussair Mazraoui,2,0.0105,0.0056
+Youssef En-Nesyri,Sofiane Boufal,1,0.0105,0.0029
+Youssef En-Nesyri,Sofyan Amrabat,2,0.0105,0.0245
+Alistair Johnston,Alphonso Davies,3,0.0142,0.0087
+Alistair Johnston,Atiba Hutchinson,1,0.0142,0.0068
+Alistair Johnston,Cyle Larin,4,0.0142,0.0004
+Alistair Johnston,David Junior Hoilett,6,0.0142,0.01
+Alistair Johnston,Ismael Koné,5,0.0142,0.0082
+Alistair Johnston,Jonathan David,2,0.0142,0.0024
+Alistair Johnston,Jonathan Osorio,9,0.0142,0.0043
+Alistair Johnston,Kamal Miller,1,0.0142,0.012
+Alistair Johnston,Mark Anthony Kaye,7,0.0142,0.0021
+Alistair Johnston,Milan Borjan,3,0.0142,0.0038
+Alistair Johnston,Richie Laryea,1,0.0142,0.0012
+Alistair Johnston,Steven de Sousa Vitoria,18,0.0142,0.0109
+Alistair Johnston,Tajon Buchanan,3,0.0142,0.0161
+Alphonso Davies,Alistair Johnston,4,0.0087,0.0142
+Alphonso Davies,Atiba Hutchinson,1,0.0087,0.0068
+Alphonso Davies,Cyle Larin,2,0.0087,0.0004
+Alphonso Davies,David Junior Hoilett,2,0.0087,0.01
+Alphonso Davies,Jonathan David,1,0.0087,0.0024
+Alphonso Davies,Jonathan Osorio,1,0.0087,0.0043
+Alphonso Davies,Kamal Miller,3,0.0087,0.012
+Alphonso Davies,Mark Anthony Kaye,5,0.0087,0.0021
+Alphonso Davies,Milan Borjan,1,0.0087,0.0038
+Alphonso Davies,Sam Adekugbe,3,0.0087,0.001
+Alphonso Davies,Steven de Sousa Vitoria,1,0.0087,0.0109
+Alphonso Davies,Tajon Buchanan,1,0.0087,0.0161
+Atiba Hutchinson,Alistair Johnston,3,0.0068,0.0142
+Atiba Hutchinson,Alphonso Davies,1,0.0068,0.0087
+Atiba Hutchinson,David Junior Hoilett,1,0.0068,0.01
+Atiba Hutchinson,David Wallace Wotherspoon,4,0.0068,0.0
+Atiba Hutchinson,Ismael Koné,5,0.0068,0.0082
+Atiba Hutchinson,Jonathan David,3,0.0068,0.0024
+Atiba Hutchinson,Jonathan Osorio,1,0.0068,0.0043
+Atiba Hutchinson,Kamal Miller,4,0.0068,0.012
+Atiba Hutchinson,Richie Laryea,1,0.0068,0.0012
+Atiba Hutchinson,Steven de Sousa Vitoria,3,0.0068,0.0109
+Atiba Hutchinson,Tajon Buchanan,3,0.0068,0.0161
+Cyle Larin,Alistair Johnston,1,0.0004,0.0142
+Cyle Larin,Alphonso Davies,1,0.0004,0.0087
+Cyle Larin,David Junior Hoilett,1,0.0004,0.01
+Cyle Larin,Jonathan Osorio,2,0.0004,0.0043
+Cyle Larin,Tajon Buchanan,4,0.0004,0.0161
+David Junior Hoilett,Alphonso Davies,3,0.01,0.0087
+David Junior Hoilett,Atiba Hutchinson,1,0.01,0.0068
+David Junior Hoilett,Cyle Larin,3,0.01,0.0004
+David Junior Hoilett,Ismael Koné,1,0.01,0.0082
+David Junior Hoilett,Jonathan Osorio,5,0.01,0.0043
+David Junior Hoilett,Kamal Miller,1,0.01,0.012
+David Junior Hoilett,Mark Anthony Kaye,5,0.01,0.0021
+David Junior Hoilett,Richie Laryea,1,0.01,0.0012
+David Junior Hoilett,Steven de Sousa Vitoria,2,0.01,0.0109
+David Junior Hoilett,Tajon Buchanan,1,0.01,0.0161
+Ismael Koné,Alistair Johnston,2,0.0082,0.0142
+Ismael Koné,Alphonso Davies,1,0.0082,0.0087
+Ismael Koné,Atiba Hutchinson,5,0.0082,0.0068
+Ismael Koné,David Junior Hoilett,3,0.0082,0.01
+Ismael Koné,Jonathan David,2,0.0082,0.0024
+Ismael Koné,Jonathan Osorio,1,0.0082,0.0043
+Ismael Koné,Kamal Miller,5,0.0082,0.012
+Ismael Koné,Milan Borjan,1,0.0082,0.0038
+Ismael Koné,Steven de Sousa Vitoria,2,0.0082,0.0109
+Ismael Koné,Tajon Buchanan,5,0.0082,0.0161
+Jonathan David,Alistair Johnston,1,0.0024,0.0142
+Jonathan David,Alphonso Davies,1,0.0024,0.0087
+Jonathan David,Atiba Hutchinson,3,0.0024,0.0068
+Jonathan David,David Junior Hoilett,1,0.0024,0.01
+Jonathan David,Ismael Koné,1,0.0024,0.0082
+Jonathan David,Kamal Miller,1,0.0024,0.012
+Jonathan David,Richie Laryea,3,0.0024,0.0012
+Jonathan David,Steven de Sousa Vitoria,1,0.0024,0.0109
+Jonathan Osorio,Alistair Johnston,3,0.0043,0.0142
+Jonathan Osorio,Alphonso Davies,2,0.0043,0.0087
+Jonathan Osorio,Atiba Hutchinson,1,0.0043,0.0068
+Jonathan Osorio,Cyle Larin,1,0.0043,0.0004
+Jonathan Osorio,David Junior Hoilett,5,0.0043,0.01
+Jonathan Osorio,Kamal Miller,7,0.0043,0.012
+Jonathan Osorio,Mark Anthony Kaye,2,0.0043,0.0021
+Jonathan Osorio,Sam Adekugbe,3,0.0043,0.001
+Jonathan Osorio,Steven de Sousa Vitoria,2,0.0043,0.0109
+Jonathan Osorio,Tajon Buchanan,2,0.0043,0.0161
+Kamal Miller,Alphonso Davies,6,0.012,0.0087
+Kamal Miller,Atiba Hutchinson,3,0.012,0.0068
+Kamal Miller,Cyle Larin,3,0.012,0.0004
+Kamal Miller,David Junior Hoilett,4,0.012,0.01
+Kamal Miller,David Wallace Wotherspoon,3,0.012,0.0
+Kamal Miller,Ismael Koné,8,0.012,0.0082
+Kamal Miller,Jonathan Osorio,3,0.012,0.0043
+Kamal Miller,Mark Anthony Kaye,15,0.012,0.0021
+Kamal Miller,Milan Borjan,1,0.012,0.0038
+Kamal Miller,Sam Adekugbe,13,0.012,0.001
+Kamal Miller,Steven de Sousa Vitoria,18,0.012,0.0109
+Kamal Miller,Tajon Buchanan,12,0.012,0.0161
+Mark Anthony Kaye,Alistair Johnston,9,0.0021,0.0142
+Mark Anthony Kaye,Alphonso Davies,5,0.0021,0.0087
+Mark Anthony Kaye,Cyle Larin,1,0.0021,0.0004
+Mark Anthony Kaye,David Junior Hoilett,2,0.0021,0.01
+Mark Anthony Kaye,Jonathan Osorio,3,0.0021,0.0043
+Mark Anthony Kaye,Kamal Miller,17,0.0021,0.012
+Mark Anthony Kaye,Milan Borjan,2,0.0021,0.0038
+Mark Anthony Kaye,Sam Adekugbe,6,0.0021,0.001
+Mark Anthony Kaye,Steven de Sousa Vitoria,10,0.0021,0.0109
+Mark Anthony Kaye,Tajon Buchanan,2,0.0021,0.0161
+Milan Borjan,Alistair Johnston,1,0.0038,0.0142
+Milan Borjan,Atiba Hutchinson,3,0.0038,0.0068
+Milan Borjan,David Junior Hoilett,1,0.0038,0.01
+Milan Borjan,Kamal Miller,6,0.0038,0.012
+Milan Borjan,Richie Laryea,2,0.0038,0.0012
+Milan Borjan,Sam Adekugbe,2,0.0038,0.001
+Milan Borjan,Steven de Sousa Vitoria,6,0.0038,0.0109
+Milan Borjan,Tajon Buchanan,1,0.0038,0.0161
+Richie Laryea,Alistair Johnston,3,0.0012,0.0142
+Richie Laryea,David Junior Hoilett,1,0.0012,0.01
+Richie Laryea,Jonathan David,1,0.0012,0.0024
+Richie Laryea,Milan Borjan,1,0.0012,0.0038
+Steven de Sousa Vitoria,Alistair Johnston,16,0.0109,0.0142
+Steven de Sousa Vitoria,Alphonso Davies,4,0.0109,0.0087
+Steven de Sousa Vitoria,Atiba Hutchinson,3,0.0109,0.0068
+Steven de Sousa Vitoria,Cyle Larin,1,0.0109,0.0004
+Steven de Sousa Vitoria,David Junior Hoilett,1,0.0109,0.01
+Steven de Sousa Vitoria,David Wallace Wotherspoon,1,0.0109,0.0
+Steven de Sousa Vitoria,Ismael Koné,4,0.0109,0.0082
+Steven de Sousa Vitoria,Jonathan David,2,0.0109,0.0024
+Steven de Sousa Vitoria,Jonathan Osorio,2,0.0109,0.0043
+Steven de Sousa Vitoria,Kamal Miller,20,0.0109,0.012
+Steven de Sousa Vitoria,Mark Anthony Kaye,12,0.0109,0.0021
+Steven de Sousa Vitoria,Milan Borjan,3,0.0109,0.0038
+Steven de Sousa Vitoria,Richie Laryea,1,0.0109,0.0012
+Steven de Sousa Vitoria,Sam Adekugbe,3,0.0109,0.001
+Steven de Sousa Vitoria,Tajon Buchanan,1,0.0109,0.0161
+Tajon Buchanan,Alistair Johnston,1,0.0161,0.0142
+Tajon Buchanan,Alphonso Davies,5,0.0161,0.0087
+Tajon Buchanan,Atiba Hutchinson,1,0.0161,0.0068
+Tajon Buchanan,David Junior Hoilett,2,0.0161,0.01
+Tajon Buchanan,Ismael Koné,1,0.0161,0.0082
+Tajon Buchanan,Jonathan David,2,0.0161,0.0024
+Tajon Buchanan,Jonathan Osorio,1,0.0161,0.0043
+Tajon Buchanan,Kamal Miller,3,0.0161,0.012
+Tajon Buchanan,Mark Anthony Kaye,1,0.0161,0.0021
+Tajon Buchanan,Richie Laryea,1,0.0161,0.0012
+Tajon Buchanan,Sam Adekugbe,5,0.0161,0.001
+Sam Adekugbe,Alistair Johnston,1,0.001,0.0142
+Sam Adekugbe,Alphonso Davies,3,0.001,0.0087
+Sam Adekugbe,Cyle Larin,1,0.001,0.0004
+Sam Adekugbe,Jonathan Osorio,4,0.001,0.0043
+Sam Adekugbe,Kamal Miller,9,0.001,0.012
+Sam Adekugbe,Mark Anthony Kaye,10,0.001,0.0021
+Sam Adekugbe,Tajon Buchanan,5,0.001,0.0161
+David Wallace Wotherspoon,Ismael Koné,1,0.0,0.0082
+David Wallace Wotherspoon,Tajon Buchanan,2,0.0,0.0161
+Jawad El Yamiq,Achraf Hakimi Mouh,1,0.0,0.019
+Selim Amallah,Azzedine Ounahi,1,0.0002,0.0158
+Yahya Jabrane,Yassine Bounou,1,0.0,0.0144
+Yahya Jabrane,Youssef En-Nesyri,1,0.0,0.0105

@@ -48,6 +48,8 @@ ES: Análisis de grafos de red sobre datos reales de pases de fútbol para revel
 | **PageRank** | Who is most connected in the passing network |
 | **In/Out Degree** | Ball reception vs distribution volume |
 
+**Centrality variants:** betweenness is computed **unweighted** everywhere (NetworkX treats `weight` as distance, so pass frequency would invert shortest paths); PageRank and degree use pass frequency as weight. If `statsbomb_passes.csv` is missing, the `passing.csv` fallback builds **synthetic positional edges** — centrality from that fallback is illustrative only and not comparable to event-level results.
+
 ### 3. Interactive visualization
 
 PyVis renders the graph as an interactive HTML file (`output/grafo_tactico.html`) with force-directed layout. Node size reflects betweenness centrality.
@@ -56,7 +58,7 @@ PyVis renders the graph as an interactive HTML file (`output/grafo_tactico.html`
 
 ## Key findings (Morocco vs Canada)
 
-- Azzedine Ounahi has highest betweenness (0.047) — key connector in Morocco's buildup
+- Sofyan Amrabat has highest betweenness (0.0245, unweighted, StatsBomb event graph) — key connector in Morocco's buildup (Azzedine Ounahi 0.0158, 4th)
 - 252 unique passing edges from 869 total passes
 - Short passes (<10m) dominate possession phases
 - Long balls (>25m) used primarily in transitions

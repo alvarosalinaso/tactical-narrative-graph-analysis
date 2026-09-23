@@ -16,12 +16,12 @@ Análisis de redes de pases (StatsBomb Open Data). Grafo dirigido de pases entre
 ### Procesamiento (src/)
 - `graph_builder.py`:
   - `load_passing_data()`: StatsBomb → edges agregados (weight, avg_length, completion_rate, type)
-  - `_load_aggregate_stats()`: Fallback passing.csv → edges sintéticos por posición
+  - `_load_aggregate_stats()`: Fallback passing.csv → edges sintéticos por posición (ILUSTRATIVO, no comparable con eventos StatsBomb)
   - `build_graph()`: DataFrame → nx.DiGraph
-  - `analyze_and_visualize()`: centrality + pyvis → HTML interactivo
+  - `analyze_and_visualize()`: centrality + pyvis → HTML interactivo (betweenness sin peso; PageRank/degree con peso de frecuencia)
 - `graph_analysis.py`:
   - `build_graph_from_csv()`: CSV (source, target, weight) → nx.DiGraph
-  - `run_graph_analysis()`: density, centrality (betweenness, PageRank, degree), comunidades (greedy_modularity), exporta JSON + CSV
+  - `run_graph_analysis()`: density, centrality (betweenness sin peso; PageRank/degree con peso), comunidades (greedy_modularity), exporta JSON + CSV
 - `benchmark_sota.py` — run_benchmark: comparación con literatura
 - `statistical_tests.py` — run_statistical_tests
 - `generate_tables.py` — generate

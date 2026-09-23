@@ -1,8 +1,33 @@
 node,betweenness,degree,in_degree,out_degree
-Bruno Fernandes,0.2667,5,3,2
-Martinez,0.0833,3,1,2
-Dalot,0.05,2,1,1
-Onana,0.0,2,0,2
-Mainoo,0.0,2,1,1
-Garnacho,0.0,2,1,1
-Hojlund,0.0,2,2,0
+Sofyan Amrabat,0.0245,21,9,12
+Achraf Hakimi Mouh,0.019,18,10,8
+Tajon Buchanan,0.0161,24,13,11
+Azzedine Ounahi,0.0158,18,9,9
+Yassine Bounou,0.0144,17,8,9
+Alistair Johnston,0.0142,25,12,13
+Romain Saïss,0.0133,18,9,9
+Kamal Miller,0.012,24,12,12
+Steven de Sousa Vitoria,0.0109,25,10,15
+Youssef En-Nesyri,0.0105,17,9,8
+David Junior Hoilett,0.01,23,13,10
+Hakim Ziyech,0.0089,17,7,10
+Alphonso Davies,0.0087,24,12,12
+Ismael Koné,0.0082,18,8,10
+Atiba Hutchinson,0.0068,21,10,11
+Noussair Mazraoui,0.0056,15,8,7
+Jonathan Osorio,0.0043,21,11,10
+Abderrazak Hamdallah,0.0038,7,5,2
+Milan Borjan,0.0038,15,7,8
+Abdelhamid Sabiri,0.0036,17,9,8
+Sofiane Boufal,0.0029,17,10,7
+Nayef Aguerd,0.0024,15,6,9
+Jonathan David,0.0024,15,7,8
+Mark Anthony Kaye,0.0021,18,8,10
+Richie Laryea,0.0012,11,7,4
+Zakaria Aboukhlal,0.0011,5,3,2
+Sam Adekugbe,0.001,14,7,7
+Cyle Larin,0.0004,13,8,5
+Selim Amallah,0.0002,3,2,1
+David Wallace Wotherspoon,0.0,5,3,2
+Jawad El Yamiq,0.0,1,0,1
+Yahya Jabrane,0.0,2,0,2
