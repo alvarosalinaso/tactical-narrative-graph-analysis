@@ -2,6 +2,10 @@
 
 [![CI](https://github.com/alvarosalinaso/tactical-narrative-graph-analysis/actions/workflows/ci.yml/badge.svg)](https://github.com/alvarosalinaso/tactical-narrative-graph-analysis/actions/workflows/ci.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?logo=python&logoColor=white)](https://python.org)
 
+![Interactive tactical passing graph (Morocco)](assets/grafo_tactico_morocco.png)
+
+> Screenshot of the interactive per-team graph (Morocco). The live version is published on GitHub Pages from `output/grafo_tactico.html`.
+
 ---
 
 ## What is this?
