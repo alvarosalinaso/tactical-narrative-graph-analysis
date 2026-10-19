@@ -26,10 +26,6 @@ def _get_match_info_json() -> Path:
     return _get_data_dir() / "match_info.json"
 
 
-def _get_passing_csv() -> Path:
-    return _get_data_dir() / "passing.csv"
-
-
 def _is_completed_pass(outcomes: pd.Series) -> pd.Series:
     """Mask of completed passes: no outcome (NaN) or explicit 'Complete'."""
     return outcomes.isna() | outcomes.astype(str).str.lower().eq("complete")
@@ -105,95 +101,9 @@ def load_passing_data() -> pd.DataFrame:
 
         return edges
 
-    elif _get_passing_csv().exists():
-        print(f"[INFO] Falling back to aggregate stats from {_get_passing_csv().name}")
-        return _load_aggregate_stats()
-
     else:
-        print("[WARN] No data files found")
+        print(f"[WARN] No StatsBomb event data found at {statsbomb_csv}")
         return pd.DataFrame()
-
-
-def _load_aggregate_stats() -> pd.DataFrame:
-    """Load aggregate passing stats when event-level data is unavailable.
-
-    ILLUSTRATIVE FALLBACK: builds synthetic positional edges from season
-    aggregate stats (Cmp/PrgP), not observed pass events. Edge weights and
-    any centrality derived from this graph are illustrative only and must
-    not be compared against StatsBomb event-level results.
-    """
-    df = pd.read_csv(_get_passing_csv())
-    df = df.dropna(subset=["Player"])
-    df = df[df["Player"].str.strip().str.len() > 0]
-    df = df[df["Player"].str.strip() != "Total"]
-
-    if "Cmp" not in df.columns or "PrgP" not in df.columns:
-        return pd.DataFrame()
-
-    players = df[["Player", "Pos", "Cmp", "PrgP"]].copy()
-    players["Cmp"] = pd.to_numeric(players["Cmp"], errors="coerce").fillna(0)
-    players["PrgP"] = pd.to_numeric(players["PrgP"], errors="coerce").fillna(0)
-
-    def classify_position(pos: str) -> str:
-        pos_upper = pos.upper()
-        if "GK" in pos_upper:
-            return "GK"
-        if "DF" in pos_upper:
-            return "DF"
-        if "MF" in pos_upper and "FW" not in pos_upper:
-            return "MF"
-        if "FW" in pos_upper:
-            return "FW"
-        return "MF"
-
-    players["position"] = players["Pos"].apply(classify_position)
-
-    edges = []
-    gk = players[players["position"] == "GK"]
-    df_players = players[players["position"] == "DF"]
-    mf_players = players[players["position"] == "MF"]
-    fw_players = players[players["position"] == "FW"]
-
-    for _, g in gk.iterrows():
-        for _, d in df_players.iterrows():
-            weight = max(1, int(g["Cmp"] * 0.03))
-            if weight > 0:
-                edges.append(
-                    {
-                        "passer": g["Player"],
-                        "receiver": d["Player"],
-                        "weight": weight,
-                        "type": "distribution",
-                    }
-                )
-
-    for _, d in df_players.iterrows():
-        for _, m in mf_players.iterrows():
-            weight = max(1, int(d["Cmp"] * 0.02))
-            if weight > 0:
-                edges.append(
-                    {
-                        "passer": d["Player"],
-                        "receiver": m["Player"],
-                        "weight": weight,
-                        "type": "buildup",
-                    }
-                )
-
-    for _, m in mf_players.iterrows():
-        for _, f in fw_players.iterrows():
-            weight = max(1, int(m["Cmp"] * 0.03))
-            if weight > 0:
-                edges.append(
-                    {
-                        "passer": m["Player"],
-                        "receiver": f["Player"],
-                        "weight": weight,
-                        "type": "final_ball",
-                    }
-                )
-
-    return pd.DataFrame(edges)
 
 
 def build_graph(data: pd.DataFrame) -> nx.DiGraph:

@@ -54,7 +54,7 @@ ES: Análisis de grafos de red sobre datos reales de pases de fútbol para revel
 - **Betweenness weighted** (`top_betweenness_weighted`, distance = 1/weight): frequent pass lanes become *short* edges, so shortest paths prefer high-frequency connections. Answers "who bridges the frequent-pass cores". NetworkX treats `weight` as distance, hence the inversion.
 - **PageRank / degree**: use pass frequency as weight (frequency = importance).
 
-If `statsbomb_passes.csv` is missing, the `passing.csv` fallback builds **synthetic positional edges** — centrality from that fallback is illustrative only and not comparable to event-level results.
+The pipeline has no synthetic fallback: without `data/raw/statsbomb_passes.csv` it stops with a warning and builds nothing, so no centrality can come from fabricated edges. The old `passing.csv` FBref/United fallback was removed.
 
 ### 3. Interactive visualization
 

@@ -213,10 +213,6 @@ def main() -> None:
 
         run_graph_analysis()
 
-        from benchmark_sota import run_benchmark
-
-        run_benchmark()
-
         from statistical_tests import run_statistical_tests
 
         run_statistical_tests()

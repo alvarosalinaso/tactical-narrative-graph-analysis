@@ -91,8 +91,8 @@ def test_load_passing_data_no_files(tmp_path, monkeypatch):
     assert result.empty
 
 
-def test_load_passing_data_with_passing_csv(tmp_path, monkeypatch):
-    """Test load_passing_data with passing.csv fallback."""
+def test_load_passing_data_returns_empty_when_no_statsbomb_csv(tmp_path, monkeypatch):
+    """No StatsBomb event data → empty DataFrame (no FBref fallback)."""
     import src.graph_builder as gb_module
 
     monkeypatch.setattr(gb_module, "_get_data_dir", lambda: tmp_path)
@@ -100,22 +100,9 @@ def test_load_passing_data_with_passing_csv(tmp_path, monkeypatch):
         gb_module, "_get_statsbomb_csv", lambda: tmp_path / "nonexistent.csv"
     )
 
-    passing_csv = tmp_path / "passing.csv"
-    pd.DataFrame(
-        {
-            "Player": ["Player A", "Player B", "Player C"],
-            "Pos": ["GK", "DF", "MF"],
-            "Cmp": [50, 40, 60],
-            "PrgP": [5, 8, 12],
-        }
-    ).to_csv(passing_csv, index=False)
-
     result = load_passing_data()
     assert isinstance(result, pd.DataFrame)
-    assert len(result) > 0
-    assert "passer" in result.columns
-    assert "receiver" in result.columns
-    assert "weight" in result.columns
+    assert result.empty
 
 
 def _two_team_df() -> pd.DataFrame:
