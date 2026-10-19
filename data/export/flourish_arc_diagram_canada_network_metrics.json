@@ -1,63 +1,55 @@
 {
   "nodes": 16,
-  "edges": 148,
-  "density": 0.6166666666666667,
+  "edges": 140,
+  "density": 0.5833333333333334,
   "is_connected": true,
   "top_betweenness": [
     {
       "player": "Tajon Buchanan",
-      "score": 0.0712
+      "score": 0.074
     },
     {
       "player": "Alistair Johnston",
-      "score": 0.063
+      "score": 0.0733
     },
     {
       "player": "Kamal Miller",
-      "score": 0.0533
+      "score": 0.0702
     },
     {
-      "player": "Steven de Sousa Vitoria",
-      "score": 0.0481
+      "player": "Atiba Hutchinson",
+      "score": 0.0447
     },
     {
-      "player": "David Junior Hoilett",
-      "score": 0.0442
+      "player": "Alphonso Davies",
+      "score": 0.0404
     }
   ],
   "top_pagerank": [
     {
       "player": "Kamal Miller",
-      "score": 0.1277
-    },
-    {
-      "player": "Mark Anthony Kaye",
-      "score": 0.0975
+      "score": 0.138
     },
     {
       "player": "Steven de Sousa Vitoria",
-      "score": 0.0939
+      "score": 0.1059
     },
     {
-      "player": "Tajon Buchanan",
-      "score": 0.0864
+      "player": "Mark Anthony Kaye",
+      "score": 0.1017
     },
     {
       "player": "Alistair Johnston",
-      "score": 0.0862
+      "score": 0.0929
+    },
+    {
+      "player": "Tajon Buchanan",
+      "score": 0.0759
     }
   ],
   "top_degree": [
     {
       "player": "Alistair Johnston",
-      "score": 1.6667
-    },
-    {
-      "player": "Steven de Sousa Vitoria",
-      "score": 1.6667
-    },
-    {
-      "player": "Alphonso Davies",
       "score": 1.6
     },
     {
@@ -65,31 +57,41 @@
       "score": 1.6
     },
     {
-      "player": "Tajon Buchanan",
-      "score": 1.6
+      "player": "Alphonso Davies",
+      "score": 1.5333
+    },
+    {
+      "player": "Steven de Sousa Vitoria",
+      "score": 1.5333
+    },
+    {
+      "player": "Atiba Hutchinson",
+      "score": 1.4
     }
   ],
-  "num_communities": 2,
+  "num_communities": 3,
   "communities": [
     [
-      "Alistair Johnston",
       "Atiba Hutchinson",
-      "David Junior Hoilett",
       "David Wallace Wotherspoon",
       "Ismael Koné",
       "Jonathan David",
       "Kamal Miller",
-      "Milan Borjan",
-      "Richie Laryea",
-      "Steven de Sousa Vitoria"
+      "Tajon Buchanan"
     ],
     [
+      "Alistair Johnston",
       "Alphonso Davies",
       "Cyle Larin",
       "Jonathan Osorio",
       "Mark Anthony Kaye",
-      "Sam Adekugbe",
-      "Tajon Buchanan"
+      "Sam Adekugbe"
+    ],
+    [
+      "David Junior Hoilett",
+      "Milan Borjan",
+      "Richie Laryea",
+      "Steven de Sousa Vitoria"
     ]
   ]
 }

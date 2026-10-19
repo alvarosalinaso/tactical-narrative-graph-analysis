@@ -130,6 +130,49 @@ def _two_team_df() -> pd.DataFrame:
     )
 
 
+def test_load_passing_data_uses_completed_passes_only(tmp_path, monkeypatch):
+    """Failed passes (Incomplete/Out/...) must not become edges."""
+    import src.graph_builder as gb_module
+
+    monkeypatch.setattr(gb_module, "_get_data_dir", lambda: tmp_path)
+
+    pd.DataFrame(
+        {
+            "passer": ["A", "A", "A", "B"],
+            "receiver": ["B", "B", "C", "C"],
+            "team": ["Alpha", "Alpha", "Alpha", "Alpha"],
+            "opponent": ["Beta", "Beta", "Beta", "Beta"],
+            "pass_length": [5.0, 8.0, 12.0, 20.0],
+            "pass_outcome": [None, "Incomplete", None, "Out"],
+            "minute": [1, 2, 3, 4],
+        }
+    ).to_csv(tmp_path / "statsbomb_passes.csv", index=False)
+
+    result = load_passing_data()
+
+    assert set(result.columns) >= {
+        "passer",
+        "receiver",
+        "weight",
+        "attempted",
+        "failed",
+        "completion_rate",
+    }
+
+    edge_ab = result[(result["passer"] == "A") & (result["receiver"] == "B")].iloc[0]
+    assert edge_ab["weight"] == 1  # completed only
+    assert edge_ab["attempted"] == 2
+    assert edge_ab["failed"] == 1
+    assert edge_ab["completion_rate"] == 50.0
+
+    # Pair with zero completed passes has no edge at all
+    assert not ((result["passer"] == "B") & (result["receiver"] == "C")).any()
+
+    edge_ac = result[(result["passer"] == "A") & (result["receiver"] == "C")].iloc[0]
+    assert edge_ac["weight"] == 1
+    assert edge_ac["failed"] == 0
+
+
 def test_build_team_graphs_splits_by_team():
     """One DiGraph per team, no cross-team edges."""
     graphs = build_team_graphs(_two_team_df())

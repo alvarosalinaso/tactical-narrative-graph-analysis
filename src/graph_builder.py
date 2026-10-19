@@ -30,33 +30,44 @@ def _get_passing_csv() -> Path:
     return _get_data_dir() / "passing.csv"
 
 
+def _is_completed_pass(outcomes: pd.Series) -> pd.Series:
+    """Mask of completed passes: no outcome (NaN) or explicit 'Complete'."""
+    return outcomes.isna() | outcomes.astype(str).str.lower().eq("complete")
+
+
 def load_passing_data() -> pd.DataFrame:
     """Load real passing event data from StatsBomb Open Data.
 
     Uses event-level pass data with actual player names, pass locations,
-    and pass outcomes. Each edge represents a real pass between two players.
+    and pass outcomes. Each edge represents COMPLETED passes between two
+    players; failed passes (Incomplete/Out/Pass Offside/Unknown) are
+    excluded from the graph but kept as ``failed``/``attempted`` stats.
 
     Returns:
-        DataFrame with columns: passer, receiver, weight, type, and metadata
+        DataFrame with columns: passer, receiver, weight (completed passes),
+        attempted, failed, completion_rate, type, and metadata
     """
     statsbomb_csv = _get_statsbomb_csv()
     if statsbomb_csv.exists():
         print(f"[INFO] Loading real StatsBomb data from {statsbomb_csv.name}")
         df = pd.read_csv(statsbomb_csv)
 
-        # Aggregate passes between same player pairs
+        group_keys = ["passer", "receiver", "team", "opponent"]
+        attempted = df.groupby(group_keys).size().rename("attempted")
+
+        # Only completed passes become graph edges
+        completed = df[_is_completed_pass(df["pass_outcome"])]
         edges = (
-            df.groupby(["passer", "receiver", "team", "opponent"])
+            completed.groupby(group_keys)
             .agg(
-                weight=("pass_length", "count"),
+                weight=("passer", "size"),
                 avg_length=("pass_length", "mean"),
                 total_length=("pass_length", "sum"),
-                complete=("pass_outcome", lambda x: x.isna().sum()),
-                incomplete=("pass_outcome", lambda x: x.notna().sum()),
                 first_minute=("minute", "min"),
                 last_minute=("minute", "max"),
             )
             .reset_index()
+            .merge(attempted, on=group_keys)
         )
 
         # Classify pass types based on length
@@ -70,11 +81,14 @@ def load_passing_data() -> pd.DataFrame:
 
         edges["type"] = edges.apply(classify_pass, axis=1)
 
-        # Calculate completion rate
-        edges["completion_rate"] = edges["complete"] / edges["weight"] * 100
+        edges["failed"] = edges["attempted"] - edges["weight"]
+        edges["completion_rate"] = edges["weight"] / edges["attempted"] * 100
 
-        print(f"[INFO] Built {len(edges)} real passing edges")
-        print(f"[INFO] Total passes analyzed: {len(df)}")
+        print(f"[INFO] Built {len(edges)} passing edges (completed passes only)")
+        print(
+            f"[INFO] Completed passes: {int(edges['weight'].sum())} of {len(df)} "
+            f"({len(df) - int(edges['weight'].sum())} failed excluded)"
+        )
 
         # Print match info if available
         match_info_json = _get_match_info_json()

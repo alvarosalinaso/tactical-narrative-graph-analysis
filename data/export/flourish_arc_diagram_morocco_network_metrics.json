@@ -1,50 +1,50 @@
 {
   "nodes": 16,
-  "edges": 104,
-  "density": 0.43333333333333335,
+  "edges": 100,
+  "density": 0.4166666666666667,
   "is_connected": true,
   "top_betweenness": [
     {
       "player": "Sofyan Amrabat",
-      "score": 0.1084
+      "score": 0.11
     },
     {
       "player": "Achraf Hakimi Mouh",
-      "score": 0.0843
-    },
-    {
-      "player": "Azzedine Ounahi",
-      "score": 0.07
+      "score": 0.0851
     },
     {
       "player": "Yassine Bounou",
-      "score": 0.0636
+      "score": 0.0623
     },
     {
       "player": "Romain Saïss",
-      "score": 0.0588
+      "score": 0.0606
+    },
+    {
+      "player": "Youssef En-Nesyri",
+      "score": 0.0476
     }
   ],
   "top_pagerank": [
     {
       "player": "Achraf Hakimi Mouh",
-      "score": 0.1132
+      "score": 0.1244
     },
     {
       "player": "Sofyan Amrabat",
-      "score": 0.1089
+      "score": 0.116
     },
     {
       "player": "Hakim Ziyech",
-      "score": 0.0917
-    },
-    {
-      "player": "Azzedine Ounahi",
-      "score": 0.091
+      "score": 0.0924
     },
     {
       "player": "Romain Saïss",
-      "score": 0.0785
+      "score": 0.0857
+    },
+    {
+      "player": "Nayef Aguerd",
+      "score": 0.0847
     }
   ],
   "top_degree": [
@@ -57,15 +57,15 @@
       "score": 1.2
     },
     {
-      "player": "Azzedine Ounahi",
-      "score": 1.2
-    },
-    {
       "player": "Romain Saïss",
       "score": 1.2
     },
     {
       "player": "Abdelhamid Sabiri",
+      "score": 1.1333
+    },
+    {
+      "player": "Azzedine Ounahi",
       "score": 1.1333
     }
   ],
@@ -73,22 +73,22 @@
   "communities": [
     [
       "Abdelhamid Sabiri",
-      "Azzedine Ounahi",
-      "Selim Amallah",
-      "Sofiane Boufal",
-      "Sofyan Amrabat",
-      "Yahya Jabrane",
-      "Yassine Bounou",
-      "Youssef En-Nesyri"
-    ],
-    [
-      "Abderrazak Hamdallah",
       "Achraf Hakimi Mouh",
+      "Azzedine Ounahi",
       "Hakim Ziyech",
       "Jawad El Yamiq",
       "Nayef Aguerd",
       "Noussair Mazraoui",
       "Romain Saïss",
+      "Sofiane Boufal"
+    ],
+    [
+      "Abderrazak Hamdallah",
+      "Selim Amallah",
+      "Sofyan Amrabat",
+      "Yahya Jabrane",
+      "Yassine Bounou",
+      "Youssef En-Nesyri",
       "Zakaria Aboukhlal"
     ]
   ]
