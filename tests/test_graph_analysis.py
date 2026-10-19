@@ -3,6 +3,7 @@
 import csv
 import json
 
+import networkx as nx
 import pandas as pd
 
 from src.graph_analysis import (
@@ -15,8 +16,6 @@ from src.graph_analysis import (
 
 
 def _tiny_graph():
-    import networkx as nx
-
     G = nx.DiGraph()
     G.add_edge("A", "B", weight=5)
     G.add_edge("B", "C", weight=3)
@@ -35,8 +34,6 @@ def test_compute_metrics_returns_full_dicts():
 
 
 def test_summarize_metrics_is_serializable():
-    import json
-
     summary = summarize_metrics(compute_metrics(_tiny_graph()))
     assert summary["nodes"] == 3
     assert summary["edges"] == 2
@@ -52,8 +49,6 @@ def test_betweenness_weighted_prefers_frequent_lane():
     Weighted (dist = 1/pases): the frequent A->B->C lane (0.1+0.1) beats the
     rare direct pass A->C (1.0), so B gains betweenness.
     """
-    import networkx as nx
-
     G = nx.DiGraph()
     G.add_edge("A", "B", weight=10)
     G.add_edge("B", "C", weight=10)
@@ -77,6 +72,24 @@ def test_community_detection_is_deterministic():
     first = compute_metrics(_tiny_graph())["communities"]
     second = compute_metrics(_tiny_graph())["communities"]
     assert first == second
+    assert len(first) >= 1
+
+
+def test_community_detection_yields_real_communities():
+    """Seedable Louvain must return communities, not silently fall back."""
+    G = nx.DiGraph()
+    G.add_weighted_edges_from(
+        [
+            ("A", "B", 5),
+            ("B", "C", 5),
+            ("C", "A", 5),
+            ("D", "E", 5),
+            ("E", "F", 5),
+            ("F", "D", 5),
+        ]
+    )
+    metrics = compute_metrics(G)
+    assert len(metrics["communities"]) == 2
 
 
 def test_build_graph_from_csv(tmp_path):

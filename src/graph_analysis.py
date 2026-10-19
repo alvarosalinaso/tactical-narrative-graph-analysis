@@ -62,12 +62,13 @@ def compute_metrics(G: "nx.DiGraph") -> dict:
     degree_cent = nx.degree_centrality(G)
 
     try:
-        from networkx.algorithms.community import greedy_modularity_communities
+        from networkx.algorithms.community import louvain_communities
 
+        # louvain_communities acepta seed (greedy_modularity_communities, no).
         communities = [
             sorted(c)
-            for c in greedy_modularity_communities(
-                G.to_undirected(), seed=COMMUNITY_SEED
+            for c in louvain_communities(
+                G.to_undirected(), weight="weight", seed=COMMUNITY_SEED
             )
         ]
     except Exception:  # noqa: BLE001
