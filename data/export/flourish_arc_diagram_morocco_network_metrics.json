@@ -1,0 +1,95 @@
+{
+  "nodes": 16,
+  "edges": 104,
+  "density": 0.43333333333333335,
+  "is_connected": true,
+  "top_betweenness": [
+    {
+      "player": "Sofyan Amrabat",
+      "score": 0.1084
+    },
+    {
+      "player": "Achraf Hakimi Mouh",
+      "score": 0.0843
+    },
+    {
+      "player": "Azzedine Ounahi",
+      "score": 0.07
+    },
+    {
+      "player": "Yassine Bounou",
+      "score": 0.0636
+    },
+    {
+      "player": "Romain Saïss",
+      "score": 0.0588
+    }
+  ],
+  "top_pagerank": [
+    {
+      "player": "Achraf Hakimi Mouh",
+      "score": 0.1132
+    },
+    {
+      "player": "Sofyan Amrabat",
+      "score": 0.1089
+    },
+    {
+      "player": "Hakim Ziyech",
+      "score": 0.0917
+    },
+    {
+      "player": "Azzedine Ounahi",
+      "score": 0.091
+    },
+    {
+      "player": "Romain Saïss",
+      "score": 0.0785
+    }
+  ],
+  "top_degree": [
+    {
+      "player": "Sofyan Amrabat",
+      "score": 1.4
+    },
+    {
+      "player": "Achraf Hakimi Mouh",
+      "score": 1.2
+    },
+    {
+      "player": "Azzedine Ounahi",
+      "score": 1.2
+    },
+    {
+      "player": "Romain Saïss",
+      "score": 1.2
+    },
+    {
+      "player": "Abdelhamid Sabiri",
+      "score": 1.1333
+    }
+  ],
+  "num_communities": 2,
+  "communities": [
+    [
+      "Abdelhamid Sabiri",
+      "Azzedine Ounahi",
+      "Selim Amallah",
+      "Sofiane Boufal",
+      "Sofyan Amrabat",
+      "Yahya Jabrane",
+      "Yassine Bounou",
+      "Youssef En-Nesyri"
+    ],
+    [
+      "Abderrazak Hamdallah",
+      "Achraf Hakimi Mouh",
+      "Hakim Ziyech",
+      "Jawad El Yamiq",
+      "Nayef Aguerd",
+      "Noussair Mazraoui",
+      "Romain Saïss",
+      "Zakaria Aboukhlal"
+    ]
+  ]
+}

@@ -5,7 +5,43 @@ import json
 
 import pandas as pd
 
-from src.graph_analysis import build_graph_from_csv, run_graph_analysis
+from src.graph_analysis import (
+    build_graph_from_csv,
+    compute_metrics,
+    run_graph_analysis,
+    summarize_metrics,
+)
+
+
+def _tiny_graph():
+    import networkx as nx
+
+    G = nx.DiGraph()
+    G.add_edge("A", "B", weight=5)
+    G.add_edge("B", "C", weight=3)
+    return G
+
+
+def test_compute_metrics_returns_full_dicts():
+    metrics = compute_metrics(_tiny_graph())
+    assert metrics["nodes"] == 3
+    assert metrics["edges"] == 2
+    assert set(metrics["betweenness"]) == {"A", "B", "C"}
+    assert set(metrics["pagerank"]) == {"A", "B", "C"}
+    assert metrics["in_degree"]["C"] == 3
+    assert metrics["out_degree"]["A"] == 5
+    assert isinstance(metrics["communities"], list)
+
+
+def test_summarize_metrics_is_serializable():
+    import json
+
+    summary = summarize_metrics(compute_metrics(_tiny_graph()))
+    assert summary["nodes"] == 3
+    assert summary["edges"] == 2
+    assert summary["top_betweenness"][0]["player"] == "B"
+    assert "num_communities" in summary
+    json.dumps(summary)
 
 
 def test_build_graph_from_csv(tmp_path):

@@ -1,0 +1,349 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script>function neighbourhoodHighlight(params) {
+  // console.log("in nieghbourhoodhighlight");
+  allNodes = nodes.get({ returnType: "Object" });
+  // originalNodes = JSON.parse(JSON.stringify(allNodes));
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    highlightActive = true;
+    var i, j;
+    var selectedNode = params.nodes[0];
+    var degrees = 2;
+
+    // mark all nodes as hard to read.
+    for (let nodeId in allNodes) {
+      // nodeColors[nodeId] = allNodes[nodeId].color;
+      allNodes[nodeId].color = "rgba(200,200,200,0.5)";
+      if (allNodes[nodeId].hiddenLabel === undefined) {
+        allNodes[nodeId].hiddenLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+    var connectedNodes = network.getConnectedNodes(selectedNode);
+    var allConnectedNodes = [];
+
+    // get the second degree nodes
+    for (i = 1; i < degrees; i++) {
+      for (j = 0; j < connectedNodes.length; j++) {
+        allConnectedNodes = allConnectedNodes.concat(
+          network.getConnectedNodes(connectedNodes[j])
+        );
+      }
+    }
+
+    // all second degree nodes get a different color and their label back
+    for (i = 0; i < allConnectedNodes.length; i++) {
+      // allNodes[allConnectedNodes[i]].color = "pink";
+      allNodes[allConnectedNodes[i]].color = "rgba(150,150,150,0.75)";
+      if (allNodes[allConnectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[allConnectedNodes[i]].label =
+          allNodes[allConnectedNodes[i]].hiddenLabel;
+        allNodes[allConnectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // all first degree nodes get their own color and their label back
+    for (i = 0; i < connectedNodes.length; i++) {
+      // allNodes[connectedNodes[i]].color = undefined;
+      allNodes[connectedNodes[i]].color = nodeColors[connectedNodes[i]];
+      if (allNodes[connectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[connectedNodes[i]].label =
+          allNodes[connectedNodes[i]].hiddenLabel;
+        allNodes[connectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // the main node gets its own color and its label back.
+    // allNodes[selectedNode].color = undefined;
+    allNodes[selectedNode].color = nodeColors[selectedNode];
+    if (allNodes[selectedNode].hiddenLabel !== undefined) {
+      allNodes[selectedNode].label = allNodes[selectedNode].hiddenLabel;
+      allNodes[selectedNode].hiddenLabel = undefined;
+    }
+  } else if (highlightActive === true) {
+    // console.log("highlightActive was true");
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      // allNodes[nodeId].color = "purple";
+      allNodes[nodeId].color = nodeColors[nodeId];
+      // delete allNodes[nodeId].color;
+      if (allNodes[nodeId].hiddenLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].hiddenLabel;
+        allNodes[nodeId].hiddenLabel = undefined;
+      }
+    }
+    highlightActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    // console.log("Nothing was selected");
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        // allNodes[nodeId].color = {};
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function filterHighlight(params) {
+  allNodes = nodes.get({ returnType: "Object" });
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    filterActive = true;
+    let selectedNodes = params.nodes;
+
+    // hiding all nodes and saving the label
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = true;
+      if (allNodes[nodeId].savedLabel === undefined) {
+        allNodes[nodeId].savedLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+
+    for (let i=0; i < selectedNodes.length; i++) {
+      allNodes[selectedNodes[i]].hidden = false;
+      if (allNodes[selectedNodes[i]].savedLabel !== undefined) {
+        allNodes[selectedNodes[i]].label = allNodes[selectedNodes[i]].savedLabel;
+        allNodes[selectedNodes[i]].savedLabel = undefined;
+      }
+    }
+
+  } else if (filterActive === true) {
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = false;
+      if (allNodes[nodeId].savedLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].savedLabel;
+        allNodes[nodeId].savedLabel = undefined;
+      }
+    }
+    filterActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function selectNode(nodes) {
+  network.selectNodes(nodes);
+  neighbourhoodHighlight({ nodes: nodes });
+  return nodes;
+}
+
+function selectNodes(nodes) {
+  network.selectNodes(nodes);
+  filterHighlight({nodes: nodes});
+  return nodes;
+}
+
+function highlightFilter(filter) {
+  let selectedNodes = []
+  let selectedProp = filter['property']
+  if (filter['item'] === 'node') {
+    let allNodes = nodes.get({ returnType: "Object" });
+    for (let nodeId in allNodes) {
+      if (allNodes[nodeId][selectedProp] && filter['value'].includes((allNodes[nodeId][selectedProp]).toString())) {
+        selectedNodes.push(nodeId)
+      }
+    }
+  }
+  else if (filter['item'] === 'edge'){
+    let allEdges = edges.get({returnType: 'object'});
+    // check if the selected property exists for selected edge and select the nodes connected to the edge
+    for (let edge in allEdges) {
+      if (allEdges[edge][selectedProp] && filter['value'].includes((allEdges[edge][selectedProp]).toString())) {
+        selectedNodes.push(allEdges[edge]['from'])
+        selectedNodes.push(allEdges[edge]['to'])
+      }
+    }
+  }
+  selectNodes(selectedNodes)
+}</script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+            
+            
+            
+            
+            
+
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 700px;
+                 background-color: #1a1a2e;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": {"background": "#e94560", "border": "#0f3460"}, "font": {"color": "white"}, "id": "Abdelhamid Sabiri", "label": "Abdelhamid Sabiri", "shape": "dot", "size": 13.1859410430839, "title": "\u003cb\u003eAbdelhamid Sabiri\u003c/b\u003e\u003cbr\u003eBetweenness: 0.016\u003cbr\u003ePageRank: 0.075\u003cbr\u003eIn: 25 passes\u003cbr\u003eOut: 22 passes"}, {"color": {"background": "#e94560", "border": "#0f3460"}, "font": {"color": "white"}, "id": "Achraf Hakimi Mouh", "label": "Achraf Hakimi Mouh", "shape": "dot", "size": 26.869992441421015, "title": "\u003cb\u003eAchraf Hakimi Mouh\u003c/b\u003e\u003cbr\u003eBetweenness: 0.084\u003cbr\u003ePageRank: 0.113\u003cbr\u003eIn: 44 passes\u003cbr\u003eOut: 53 passes"}, {"color": {"background": "#e94560", "border": "#0f3460"}, "font": {"color": "white"}, "id": "Azzedine Ounahi", "label": "Azzedine Ounahi", "shape": "dot", "size": 23.996976568405138, "title": "\u003cb\u003eAzzedine Ounahi\u003c/b\u003e\u003cbr\u003eBetweenness: 0.070\u003cbr\u003ePageRank: 0.091\u003cbr\u003eIn: 31 passes\u003cbr\u003eOut: 32 passes"}, {"color": {"background": "#e94560", "border": "#0f3460"}, "font": {"color": "white"}, "id": "Hakim Ziyech", "label": "Hakim Ziyech", "shape": "dot", "size": 17.860922146636433, "title": "\u003cb\u003eHakim Ziyech\u003c/b\u003e\u003cbr\u003eBetweenness: 0.039\u003cbr\u003ePageRank: 0.092\u003cbr\u003eIn: 34 passes\u003cbr\u003eOut: 33 passes"}, {"color": {"background": "#e94560", "border": "#0f3460"}, "font": {"color": "white"}, "id": "Noussair Mazraoui", "label": "Noussair Mazraoui", "shape": "dot", "size": 14.917611489040063, "title": "\u003cb\u003eNoussair Mazraoui\u003c/b\u003e\u003cbr\u003eBetweenness: 0.025\u003cbr\u003ePageRank: 0.053\u003cbr\u003eIn: 17 passes\u003cbr\u003eOut: 21 passes"}, {"color": {"background": "#e94560", "border": "#0f3460"}, "font": {"color": "white"}, "id": "Romain Sa\u00efss", "label": "Romain Sa\u00efss", "shape": "dot", "size": 21.767951625094483, "title": "\u003cb\u003eRomain Sa\u00efss\u003c/b\u003e\u003cbr\u003eBetweenness: 0.059\u003cbr\u003ePageRank: 0.078\u003cbr\u003eIn: 28 passes\u003cbr\u003eOut: 32 passes"}, {"color": {"background": "#e94560", "border": "#0f3460"}, "font": {"color": "white"}, "id": "Sofiane Boufal", "label": "Sofiane Boufal", "shape": "dot", "size": 12.561602418745276, "title": "\u003cb\u003eSofiane Boufal\u003c/b\u003e\u003cbr\u003eBetweenness: 0.013\u003cbr\u003ePageRank: 0.073\u003cbr\u003eIn: 27 passes\u003cbr\u003eOut: 15 passes"}, {"color": {"background": "#e94560", "border": "#0f3460"}, "font": {"color": "white"}, "id": "Sofyan Amrabat", "label": "Sofyan Amrabat", "shape": "dot", "size": 31.681783824640974, "title": "\u003cb\u003eSofyan Amrabat\u003c/b\u003e\u003cbr\u003eBetweenness: 0.108\u003cbr\u003ePageRank: 0.109\u003cbr\u003eIn: 38 passes\u003cbr\u003eOut: 46 passes"}, {"color": {"background": "#e94560", "border": "#0f3460"}, "font": {"color": "white"}, "id": "Yassine Bounou", "label": "Yassine Bounou", "shape": "dot", "size": 22.7260015117158, "title": "\u003cb\u003eYassine Bounou\u003c/b\u003e\u003cbr\u003eBetweenness: 0.064\u003cbr\u003ePageRank: 0.053\u003cbr\u003eIn: 21 passes\u003cbr\u003eOut: 32 passes"}, {"color": {"background": "#e94560", "border": "#0f3460"}, "font": {"color": "white"}, "id": "Abderrazak Hamdallah", "label": "Abderrazak Hamdallah", "shape": "dot", "size": 13.357142857142858, "title": "\u003cb\u003eAbderrazak Hamdallah\u003c/b\u003e\u003cbr\u003eBetweenness: 0.017\u003cbr\u003ePageRank: 0.045\u003cbr\u003eIn: 8 passes\u003cbr\u003eOut: 3 passes"}, {"color": {"background": "#e94560", "border": "#0f3460"}, "font": {"color": "white"}, "id": "Zakaria Aboukhlal", "label": "Zakaria Aboukhlal", "shape": "dot", "size": 10.952380952380953, "title": "\u003cb\u003eZakaria Aboukhlal\u003c/b\u003e\u003cbr\u003eBetweenness: 0.005\u003cbr\u003ePageRank: 0.039\u003cbr\u003eIn: 4 passes\u003cbr\u003eOut: 3 passes"}, {"color": {"background": "#e94560", "border": "#0f3460"}, "font": {"color": "white"}, "id": "Nayef Aguerd", "label": "Nayef Aguerd", "shape": "dot", "size": 12.090702947845806, "title": "\u003cb\u003eNayef Aguerd\u003c/b\u003e\u003cbr\u003eBetweenness: 0.010\u003cbr\u003ePageRank: 0.075\u003cbr\u003eIn: 35 passes\u003cbr\u003eOut: 37 passes"}, {"color": {"background": "#e94560", "border": "#0f3460"}, "font": {"color": "white"}, "id": "Youssef En-Nesyri", "label": "Youssef En-Nesyri", "shape": "dot", "size": 19.32350718065004, "title": "\u003cb\u003eYoussef En-Nesyri\u003c/b\u003e\u003cbr\u003eBetweenness: 0.047\u003cbr\u003ePageRank: 0.070\u003cbr\u003eIn: 30 passes\u003cbr\u003eOut: 13 passes"}, {"color": {"background": "#e94560", "border": "#0f3460"}, "font": {"color": "white"}, "id": "Jawad El Yamiq", "label": "Jawad El Yamiq", "shape": "dot", "size": 10.0, "title": "\u003cb\u003eJawad El Yamiq\u003c/b\u003e\u003cbr\u003eBetweenness: 0.000\u003cbr\u003ePageRank: 0.009\u003cbr\u003eIn: 0 passes\u003cbr\u003eOut: 1 passes"}, {"color": {"background": "#e94560", "border": "#0f3460"}, "font": {"color": "white"}, "id": "Selim Amallah", "label": "Selim Amallah", "shape": "dot", "size": 10.136054421768707, "title": "\u003cb\u003eSelim Amallah\u003c/b\u003e\u003cbr\u003eBetweenness: 0.001\u003cbr\u003ePageRank: 0.016\u003cbr\u003eIn: 4 passes\u003cbr\u003eOut: 1 passes"}, {"color": {"background": "#e94560", "border": "#0f3460"}, "font": {"color": "white"}, "id": "Yahya Jabrane", "label": "Yahya Jabrane", "shape": "dot", "size": 10.0, "title": "\u003cb\u003eYahya Jabrane\u003c/b\u003e\u003cbr\u003eBetweenness: 0.000\u003cbr\u003ePageRank: 0.009\u003cbr\u003eIn: 0 passes\u003cbr\u003eOut: 2 passes"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Abdelhamid Sabiri", "title": "1 passes", "to": "Achraf Hakimi Mouh", "value": 1}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Abdelhamid Sabiri", "title": "3 passes", "to": "Azzedine Ounahi", "value": 1.8461538461538463}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Abdelhamid Sabiri", "title": "2 passes", "to": "Hakim Ziyech", "value": 1.2307692307692308}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Abdelhamid Sabiri", "title": "2 passes", "to": "Noussair Mazraoui", "value": 1.2307692307692308}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Abdelhamid Sabiri", "title": "1 passes", "to": "Romain Sa\u00efss", "value": 1}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Abdelhamid Sabiri", "title": "5 passes", "to": "Sofiane Boufal", "value": 3.076923076923077}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Abdelhamid Sabiri", "title": "7 passes", "to": "Sofyan Amrabat", "value": 4.3076923076923075}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Abdelhamid Sabiri", "title": "1 passes", "to": "Yassine Bounou", "value": 1}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Achraf Hakimi Mouh", "title": "1 passes", "to": "Abdelhamid Sabiri", "value": 1}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Achraf Hakimi Mouh", "title": "1 passes", "to": "Abderrazak Hamdallah", "value": 1}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Achraf Hakimi Mouh", "title": "11 passes", "to": "Azzedine Ounahi", "value": 6.769230769230769}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Achraf Hakimi Mouh", "title": "13 passes", "to": "Hakim Ziyech", "value": 8.0}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Achraf Hakimi Mouh", "title": "9 passes", "to": "Nayef Aguerd", "value": 5.538461538461538}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Achraf Hakimi Mouh", "title": "2 passes", "to": "Sofiane Boufal", "value": 1.2307692307692308}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Achraf Hakimi Mouh", "title": "8 passes", "to": "Sofyan Amrabat", "value": 4.923076923076923}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Achraf Hakimi Mouh", "title": "8 passes", "to": "Youssef En-Nesyri", "value": 4.923076923076923}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Azzedine Ounahi", "title": "1 passes", "to": "Abdelhamid Sabiri", "value": 1}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Azzedine Ounahi", "title": "5 passes", "to": "Achraf Hakimi Mouh", "value": 3.076923076923077}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Azzedine Ounahi", "title": "9 passes", "to": "Hakim Ziyech", "value": 5.538461538461538}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Azzedine Ounahi", "title": "1 passes", "to": "Nayef Aguerd", "value": 1}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Azzedine Ounahi", "title": "3 passes", "to": "Romain Sa\u00efss", "value": 1.8461538461538463}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Azzedine Ounahi", "title": "4 passes", "to": "Sofiane Boufal", "value": 2.4615384615384617}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Azzedine Ounahi", "title": "5 passes", "to": "Sofyan Amrabat", "value": 3.076923076923077}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Azzedine Ounahi", "title": "1 passes", "to": "Yassine Bounou", "value": 1}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Azzedine Ounahi", "title": "3 passes", "to": "Youssef En-Nesyri", "value": 1.8461538461538463}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Hakim Ziyech", "title": "2 passes", "to": "Abdelhamid Sabiri", "value": 1.2307692307692308}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Hakim Ziyech", "title": "13 passes", "to": "Achraf Hakimi Mouh", "value": 8.0}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Hakim Ziyech", "title": "4 passes", "to": "Azzedine Ounahi", "value": 2.4615384615384617}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Hakim Ziyech", "title": "4 passes", "to": "Nayef Aguerd", "value": 2.4615384615384617}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Hakim Ziyech", "title": "2 passes", "to": "Noussair Mazraoui", "value": 1.2307692307692308}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Hakim Ziyech", "title": "1 passes", "to": "Romain Sa\u00efss", "value": 1}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Hakim Ziyech", "title": "2 passes", "to": "Sofiane Boufal", "value": 1.2307692307692308}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Hakim Ziyech", "title": "1 passes", "to": "Yassine Bounou", "value": 1}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Hakim Ziyech", "title": "3 passes", "to": "Youssef En-Nesyri", "value": 1.8461538461538463}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Hakim Ziyech", "title": "1 passes", "to": "Zakaria Aboukhlal", "value": 1}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Noussair Mazraoui", "title": "3 passes", "to": "Abdelhamid Sabiri", "value": 1.8461538461538463}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Noussair Mazraoui", "title": "2 passes", "to": "Achraf Hakimi Mouh", "value": 1.2307692307692308}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Noussair Mazraoui", "title": "5 passes", "to": "Romain Sa\u00efss", "value": 3.076923076923077}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Noussair Mazraoui", "title": "6 passes", "to": "Sofiane Boufal", "value": 3.6923076923076925}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Noussair Mazraoui", "title": "2 passes", "to": "Yassine Bounou", "value": 1.2307692307692308}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Noussair Mazraoui", "title": "2 passes", "to": "Youssef En-Nesyri", "value": 1.2307692307692308}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Noussair Mazraoui", "title": "1 passes", "to": "Zakaria Aboukhlal", "value": 1}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Romain Sa\u00efss", "title": "3 passes", "to": "Abdelhamid Sabiri", "value": 1.8461538461538463}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Romain Sa\u00efss", "title": "3 passes", "to": "Achraf Hakimi Mouh", "value": 1.8461538461538463}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Romain Sa\u00efss", "title": "1 passes", "to": "Azzedine Ounahi", "value": 1}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Romain Sa\u00efss", "title": "5 passes", "to": "Nayef Aguerd", "value": 3.076923076923077}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Romain Sa\u00efss", "title": "4 passes", "to": "Noussair Mazraoui", "value": 2.4615384615384617}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Romain Sa\u00efss", "title": "3 passes", "to": "Sofiane Boufal", "value": 1.8461538461538463}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Romain Sa\u00efss", "title": "4 passes", "to": "Sofyan Amrabat", "value": 2.4615384615384617}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Romain Sa\u00efss", "title": "3 passes", "to": "Yassine Bounou", "value": 1.8461538461538463}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Romain Sa\u00efss", "title": "6 passes", "to": "Youssef En-Nesyri", "value": 3.6923076923076925}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Sofiane Boufal", "title": "6 passes", "to": "Abdelhamid Sabiri", "value": 3.6923076923076925}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Sofiane Boufal", "title": "1 passes", "to": "Achraf Hakimi Mouh", "value": 1}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Sofiane Boufal", "title": "1 passes", "to": "Azzedine Ounahi", "value": 1}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Sofiane Boufal", "title": "2 passes", "to": "Hakim Ziyech", "value": 1.2307692307692308}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Sofiane Boufal", "title": "1 passes", "to": "Noussair Mazraoui", "value": 1}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Sofiane Boufal", "title": "2 passes", "to": "Romain Sa\u00efss", "value": 1.2307692307692308}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Sofiane Boufal", "title": "2 passes", "to": "Sofyan Amrabat", "value": 1.2307692307692308}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Sofyan Amrabat", "title": "5 passes", "to": "Abdelhamid Sabiri", "value": 3.076923076923077}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Sofyan Amrabat", "title": "2 passes", "to": "Abderrazak Hamdallah", "value": 1.2307692307692308}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Sofyan Amrabat", "title": "6 passes", "to": "Achraf Hakimi Mouh", "value": 3.6923076923076925}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Sofyan Amrabat", "title": "4 passes", "to": "Azzedine Ounahi", "value": 2.4615384615384617}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Sofyan Amrabat", "title": "2 passes", "to": "Hakim Ziyech", "value": 1.2307692307692308}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Sofyan Amrabat", "title": "7 passes", "to": "Nayef Aguerd", "value": 4.3076923076923075}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Sofyan Amrabat", "title": "4 passes", "to": "Noussair Mazraoui", "value": 2.4615384615384617}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Sofyan Amrabat", "title": "8 passes", "to": "Romain Sa\u00efss", "value": 4.923076923076923}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Sofyan Amrabat", "title": "1 passes", "to": "Selim Amallah", "value": 1}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Sofyan Amrabat", "title": "2 passes", "to": "Sofiane Boufal", "value": 1.2307692307692308}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Sofyan Amrabat", "title": "3 passes", "to": "Yassine Bounou", "value": 1.8461538461538463}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Sofyan Amrabat", "title": "2 passes", "to": "Youssef En-Nesyri", "value": 1.2307692307692308}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Yassine Bounou", "title": "3 passes", "to": "Abdelhamid Sabiri", "value": 1.8461538461538463}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Yassine Bounou", "title": "2 passes", "to": "Abderrazak Hamdallah", "value": 1.2307692307692308}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Yassine Bounou", "title": "9 passes", "to": "Nayef Aguerd", "value": 5.538461538461538}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Yassine Bounou", "title": "1 passes", "to": "Noussair Mazraoui", "value": 1}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Yassine Bounou", "title": "5 passes", "to": "Romain Sa\u00efss", "value": 3.076923076923077}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Yassine Bounou", "title": "3 passes", "to": "Selim Amallah", "value": 1.8461538461538463}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Yassine Bounou", "title": "1 passes", "to": "Sofiane Boufal", "value": 1}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Yassine Bounou", "title": "4 passes", "to": "Sofyan Amrabat", "value": 2.4615384615384617}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Yassine Bounou", "title": "4 passes", "to": "Youssef En-Nesyri", "value": 2.4615384615384617}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Abderrazak Hamdallah", "title": "1 passes", "to": "Sofyan Amrabat", "value": 1}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Abderrazak Hamdallah", "title": "2 passes", "to": "Zakaria Aboukhlal", "value": 1.2307692307692308}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Zakaria Aboukhlal", "title": "2 passes", "to": "Abderrazak Hamdallah", "value": 1.2307692307692308}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Zakaria Aboukhlal", "title": "1 passes", "to": "Romain Sa\u00efss", "value": 1}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Nayef Aguerd", "title": "11 passes", "to": "Achraf Hakimi Mouh", "value": 6.769230769230769}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Nayef Aguerd", "title": "4 passes", "to": "Azzedine Ounahi", "value": 2.4615384615384617}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Nayef Aguerd", "title": "3 passes", "to": "Hakim Ziyech", "value": 1.8461538461538463}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Nayef Aguerd", "title": "1 passes", "to": "Noussair Mazraoui", "value": 1}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Nayef Aguerd", "title": "2 passes", "to": "Romain Sa\u00efss", "value": 1.2307692307692308}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Nayef Aguerd", "title": "1 passes", "to": "Sofiane Boufal", "value": 1}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Nayef Aguerd", "title": "5 passes", "to": "Sofyan Amrabat", "value": 3.076923076923077}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Nayef Aguerd", "title": "9 passes", "to": "Yassine Bounou", "value": 5.538461538461538}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Nayef Aguerd", "title": "1 passes", "to": "Youssef En-Nesyri", "value": 1}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Youssef En-Nesyri", "title": "1 passes", "to": "Abdelhamid Sabiri", "value": 1}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Youssef En-Nesyri", "title": "1 passes", "to": "Abderrazak Hamdallah", "value": 1}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Youssef En-Nesyri", "title": "1 passes", "to": "Achraf Hakimi Mouh", "value": 1}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Youssef En-Nesyri", "title": "2 passes", "to": "Azzedine Ounahi", "value": 1.2307692307692308}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Youssef En-Nesyri", "title": "3 passes", "to": "Hakim Ziyech", "value": 1.8461538461538463}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Youssef En-Nesyri", "title": "2 passes", "to": "Noussair Mazraoui", "value": 1.2307692307692308}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Youssef En-Nesyri", "title": "1 passes", "to": "Sofiane Boufal", "value": 1}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Youssef En-Nesyri", "title": "2 passes", "to": "Sofyan Amrabat", "value": 1.2307692307692308}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Jawad El Yamiq", "title": "1 passes", "to": "Achraf Hakimi Mouh", "value": 1}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Selim Amallah", "title": "1 passes", "to": "Azzedine Ounahi", "value": 1}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Yahya Jabrane", "title": "1 passes", "to": "Yassine Bounou", "value": 1}, {"arrows": "to", "color": {"color": "#533483", "highlight": "#e94560"}, "from": "Yahya Jabrane", "title": "1 passes", "to": "Youssef En-Nesyri", "value": 1}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

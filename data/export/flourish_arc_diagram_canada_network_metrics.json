@@ -1,0 +1,95 @@
+{
+  "nodes": 16,
+  "edges": 148,
+  "density": 0.6166666666666667,
+  "is_connected": true,
+  "top_betweenness": [
+    {
+      "player": "Tajon Buchanan",
+      "score": 0.0712
+    },
+    {
+      "player": "Alistair Johnston",
+      "score": 0.063
+    },
+    {
+      "player": "Kamal Miller",
+      "score": 0.0533
+    },
+    {
+      "player": "Steven de Sousa Vitoria",
+      "score": 0.0481
+    },
+    {
+      "player": "David Junior Hoilett",
+      "score": 0.0442
+    }
+  ],
+  "top_pagerank": [
+    {
+      "player": "Kamal Miller",
+      "score": 0.1277
+    },
+    {
+      "player": "Mark Anthony Kaye",
+      "score": 0.0975
+    },
+    {
+      "player": "Steven de Sousa Vitoria",
+      "score": 0.0939
+    },
+    {
+      "player": "Tajon Buchanan",
+      "score": 0.0864
+    },
+    {
+      "player": "Alistair Johnston",
+      "score": 0.0862
+    }
+  ],
+  "top_degree": [
+    {
+      "player": "Alistair Johnston",
+      "score": 1.6667
+    },
+    {
+      "player": "Steven de Sousa Vitoria",
+      "score": 1.6667
+    },
+    {
+      "player": "Alphonso Davies",
+      "score": 1.6
+    },
+    {
+      "player": "Kamal Miller",
+      "score": 1.6
+    },
+    {
+      "player": "Tajon Buchanan",
+      "score": 1.6
+    }
+  ],
+  "num_communities": 2,
+  "communities": [
+    [
+      "Alistair Johnston",
+      "Atiba Hutchinson",
+      "David Junior Hoilett",
+      "David Wallace Wotherspoon",
+      "Ismael Koné",
+      "Jonathan David",
+      "Kamal Miller",
+      "Milan Borjan",
+      "Richie Laryea",
+      "Steven de Sousa Vitoria"
+    ],
+    [
+      "Alphonso Davies",
+      "Cyle Larin",
+      "Jonathan Osorio",
+      "Mark Anthony Kaye",
+      "Sam Adekugbe",
+      "Tajon Buchanan"
+    ]
+  ]
+}

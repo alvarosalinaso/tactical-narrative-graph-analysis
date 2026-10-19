@@ -1,0 +1,105 @@
+source,target,weight,betweenness_source,betweenness_target
+Abdelhamid Sabiri,Achraf Hakimi Mouh,1,0.0159,0.0843
+Abdelhamid Sabiri,Azzedine Ounahi,3,0.0159,0.07
+Abdelhamid Sabiri,Hakim Ziyech,2,0.0159,0.0393
+Abdelhamid Sabiri,Noussair Mazraoui,2,0.0159,0.0246
+Abdelhamid Sabiri,Romain Saïss,1,0.0159,0.0588
+Abdelhamid Sabiri,Sofiane Boufal,5,0.0159,0.0128
+Abdelhamid Sabiri,Sofyan Amrabat,7,0.0159,0.1084
+Abdelhamid Sabiri,Yassine Bounou,1,0.0159,0.0636
+Achraf Hakimi Mouh,Abdelhamid Sabiri,1,0.0843,0.0159
+Achraf Hakimi Mouh,Abderrazak Hamdallah,1,0.0843,0.0168
+Achraf Hakimi Mouh,Azzedine Ounahi,11,0.0843,0.07
+Achraf Hakimi Mouh,Hakim Ziyech,13,0.0843,0.0393
+Achraf Hakimi Mouh,Nayef Aguerd,9,0.0843,0.0105
+Achraf Hakimi Mouh,Sofiane Boufal,2,0.0843,0.0128
+Achraf Hakimi Mouh,Sofyan Amrabat,8,0.0843,0.1084
+Achraf Hakimi Mouh,Youssef En-Nesyri,8,0.0843,0.0466
+Azzedine Ounahi,Abdelhamid Sabiri,1,0.07,0.0159
+Azzedine Ounahi,Achraf Hakimi Mouh,5,0.07,0.0843
+Azzedine Ounahi,Hakim Ziyech,9,0.07,0.0393
+Azzedine Ounahi,Nayef Aguerd,1,0.07,0.0105
+Azzedine Ounahi,Romain Saïss,3,0.07,0.0588
+Azzedine Ounahi,Sofiane Boufal,4,0.07,0.0128
+Azzedine Ounahi,Sofyan Amrabat,5,0.07,0.1084
+Azzedine Ounahi,Yassine Bounou,1,0.07,0.0636
+Azzedine Ounahi,Youssef En-Nesyri,3,0.07,0.0466
+Hakim Ziyech,Abdelhamid Sabiri,2,0.0393,0.0159
+Hakim Ziyech,Achraf Hakimi Mouh,13,0.0393,0.0843
+Hakim Ziyech,Azzedine Ounahi,4,0.0393,0.07
+Hakim Ziyech,Nayef Aguerd,4,0.0393,0.0105
+Hakim Ziyech,Noussair Mazraoui,2,0.0393,0.0246
+Hakim Ziyech,Romain Saïss,1,0.0393,0.0588
+Hakim Ziyech,Sofiane Boufal,2,0.0393,0.0128
+Hakim Ziyech,Yassine Bounou,1,0.0393,0.0636
+Hakim Ziyech,Youssef En-Nesyri,3,0.0393,0.0466
+Hakim Ziyech,Zakaria Aboukhlal,1,0.0393,0.0048
+Noussair Mazraoui,Abdelhamid Sabiri,3,0.0246,0.0159
+Noussair Mazraoui,Achraf Hakimi Mouh,2,0.0246,0.0843
+Noussair Mazraoui,Romain Saïss,5,0.0246,0.0588
+Noussair Mazraoui,Sofiane Boufal,6,0.0246,0.0128
+Noussair Mazraoui,Yassine Bounou,2,0.0246,0.0636
+Noussair Mazraoui,Youssef En-Nesyri,2,0.0246,0.0466
+Noussair Mazraoui,Zakaria Aboukhlal,1,0.0246,0.0048
+Romain Saïss,Abdelhamid Sabiri,3,0.0588,0.0159
+Romain Saïss,Achraf Hakimi Mouh,3,0.0588,0.0843
+Romain Saïss,Azzedine Ounahi,1,0.0588,0.07
+Romain Saïss,Nayef Aguerd,5,0.0588,0.0105
+Romain Saïss,Noussair Mazraoui,4,0.0588,0.0246
+Romain Saïss,Sofiane Boufal,3,0.0588,0.0128
+Romain Saïss,Sofyan Amrabat,4,0.0588,0.1084
+Romain Saïss,Yassine Bounou,3,0.0588,0.0636
+Romain Saïss,Youssef En-Nesyri,6,0.0588,0.0466
+Sofiane Boufal,Abdelhamid Sabiri,6,0.0128,0.0159
+Sofiane Boufal,Achraf Hakimi Mouh,1,0.0128,0.0843
+Sofiane Boufal,Azzedine Ounahi,1,0.0128,0.07
+Sofiane Boufal,Hakim Ziyech,2,0.0128,0.0393
+Sofiane Boufal,Noussair Mazraoui,1,0.0128,0.0246
+Sofiane Boufal,Romain Saïss,2,0.0128,0.0588
+Sofiane Boufal,Sofyan Amrabat,2,0.0128,0.1084
+Sofyan Amrabat,Abdelhamid Sabiri,5,0.1084,0.0159
+Sofyan Amrabat,Abderrazak Hamdallah,2,0.1084,0.0168
+Sofyan Amrabat,Achraf Hakimi Mouh,6,0.1084,0.0843
+Sofyan Amrabat,Azzedine Ounahi,4,0.1084,0.07
+Sofyan Amrabat,Hakim Ziyech,2,0.1084,0.0393
+Sofyan Amrabat,Nayef Aguerd,7,0.1084,0.0105
+Sofyan Amrabat,Noussair Mazraoui,4,0.1084,0.0246
+Sofyan Amrabat,Romain Saïss,8,0.1084,0.0588
+Sofyan Amrabat,Selim Amallah,1,0.1084,0.0007
+Sofyan Amrabat,Sofiane Boufal,2,0.1084,0.0128
+Sofyan Amrabat,Yassine Bounou,3,0.1084,0.0636
+Sofyan Amrabat,Youssef En-Nesyri,2,0.1084,0.0466
+Yassine Bounou,Abdelhamid Sabiri,3,0.0636,0.0159
+Yassine Bounou,Abderrazak Hamdallah,2,0.0636,0.0168
+Yassine Bounou,Nayef Aguerd,9,0.0636,0.0105
+Yassine Bounou,Noussair Mazraoui,1,0.0636,0.0246
+Yassine Bounou,Romain Saïss,5,0.0636,0.0588
+Yassine Bounou,Selim Amallah,3,0.0636,0.0007
+Yassine Bounou,Sofiane Boufal,1,0.0636,0.0128
+Yassine Bounou,Sofyan Amrabat,4,0.0636,0.1084
+Yassine Bounou,Youssef En-Nesyri,4,0.0636,0.0466
+Abderrazak Hamdallah,Sofyan Amrabat,1,0.0168,0.1084
+Abderrazak Hamdallah,Zakaria Aboukhlal,2,0.0168,0.0048
+Zakaria Aboukhlal,Abderrazak Hamdallah,2,0.0048,0.0168
+Zakaria Aboukhlal,Romain Saïss,1,0.0048,0.0588
+Nayef Aguerd,Achraf Hakimi Mouh,11,0.0105,0.0843
+Nayef Aguerd,Azzedine Ounahi,4,0.0105,0.07
+Nayef Aguerd,Hakim Ziyech,3,0.0105,0.0393
+Nayef Aguerd,Noussair Mazraoui,1,0.0105,0.0246
+Nayef Aguerd,Romain Saïss,2,0.0105,0.0588
+Nayef Aguerd,Sofiane Boufal,1,0.0105,0.0128
+Nayef Aguerd,Sofyan Amrabat,5,0.0105,0.1084
+Nayef Aguerd,Yassine Bounou,9,0.0105,0.0636
+Nayef Aguerd,Youssef En-Nesyri,1,0.0105,0.0466
+Youssef En-Nesyri,Abdelhamid Sabiri,1,0.0466,0.0159
+Youssef En-Nesyri,Abderrazak Hamdallah,1,0.0466,0.0168
+Youssef En-Nesyri,Achraf Hakimi Mouh,1,0.0466,0.0843
+Youssef En-Nesyri,Azzedine Ounahi,2,0.0466,0.07
+Youssef En-Nesyri,Hakim Ziyech,3,0.0466,0.0393
+Youssef En-Nesyri,Noussair Mazraoui,2,0.0466,0.0246
+Youssef En-Nesyri,Sofiane Boufal,1,0.0466,0.0128
+Youssef En-Nesyri,Sofyan Amrabat,2,0.0466,0.1084
+Jawad El Yamiq,Achraf Hakimi Mouh,1,0.0,0.0843
+Selim Amallah,Azzedine Ounahi,1,0.0007,0.07
+Yahya Jabrane,Yassine Bounou,1,0.0,0.0636
+Yahya Jabrane,Youssef En-Nesyri,1,0.0,0.0466

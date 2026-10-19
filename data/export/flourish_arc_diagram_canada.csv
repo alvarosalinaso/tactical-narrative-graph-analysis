@@ -1,0 +1,149 @@
+source,target,weight,betweenness_source,betweenness_target
+Alistair Johnston,Alphonso Davies,3,0.063,0.0386
+Alistair Johnston,Atiba Hutchinson,1,0.063,0.0302
+Alistair Johnston,Cyle Larin,4,0.063,0.0017
+Alistair Johnston,David Junior Hoilett,6,0.063,0.0442
+Alistair Johnston,Ismael Koné,5,0.063,0.0362
+Alistair Johnston,Jonathan David,2,0.063,0.0105
+Alistair Johnston,Jonathan Osorio,9,0.063,0.019
+Alistair Johnston,Kamal Miller,1,0.063,0.0533
+Alistair Johnston,Mark Anthony Kaye,7,0.063,0.0094
+Alistair Johnston,Milan Borjan,3,0.063,0.0169
+Alistair Johnston,Richie Laryea,1,0.063,0.0054
+Alistair Johnston,Steven de Sousa Vitoria,18,0.063,0.0481
+Alistair Johnston,Tajon Buchanan,3,0.063,0.0712
+Alphonso Davies,Alistair Johnston,4,0.0386,0.063
+Alphonso Davies,Atiba Hutchinson,1,0.0386,0.0302
+Alphonso Davies,Cyle Larin,2,0.0386,0.0017
+Alphonso Davies,David Junior Hoilett,2,0.0386,0.0442
+Alphonso Davies,Jonathan David,1,0.0386,0.0105
+Alphonso Davies,Jonathan Osorio,1,0.0386,0.019
+Alphonso Davies,Kamal Miller,3,0.0386,0.0533
+Alphonso Davies,Mark Anthony Kaye,5,0.0386,0.0094
+Alphonso Davies,Milan Borjan,1,0.0386,0.0169
+Alphonso Davies,Sam Adekugbe,3,0.0386,0.0046
+Alphonso Davies,Steven de Sousa Vitoria,1,0.0386,0.0481
+Alphonso Davies,Tajon Buchanan,1,0.0386,0.0712
+Atiba Hutchinson,Alistair Johnston,3,0.0302,0.063
+Atiba Hutchinson,Alphonso Davies,1,0.0302,0.0386
+Atiba Hutchinson,David Junior Hoilett,1,0.0302,0.0442
+Atiba Hutchinson,David Wallace Wotherspoon,4,0.0302,0.0
+Atiba Hutchinson,Ismael Koné,5,0.0302,0.0362
+Atiba Hutchinson,Jonathan David,3,0.0302,0.0105
+Atiba Hutchinson,Jonathan Osorio,1,0.0302,0.019
+Atiba Hutchinson,Kamal Miller,4,0.0302,0.0533
+Atiba Hutchinson,Richie Laryea,1,0.0302,0.0054
+Atiba Hutchinson,Steven de Sousa Vitoria,3,0.0302,0.0481
+Atiba Hutchinson,Tajon Buchanan,3,0.0302,0.0712
+Cyle Larin,Alistair Johnston,1,0.0017,0.063
+Cyle Larin,Alphonso Davies,1,0.0017,0.0386
+Cyle Larin,David Junior Hoilett,1,0.0017,0.0442
+Cyle Larin,Jonathan Osorio,2,0.0017,0.019
+Cyle Larin,Tajon Buchanan,4,0.0017,0.0712
+David Junior Hoilett,Alphonso Davies,3,0.0442,0.0386
+David Junior Hoilett,Atiba Hutchinson,1,0.0442,0.0302
+David Junior Hoilett,Cyle Larin,3,0.0442,0.0017
+David Junior Hoilett,Ismael Koné,1,0.0442,0.0362
+David Junior Hoilett,Jonathan Osorio,5,0.0442,0.019
+David Junior Hoilett,Kamal Miller,1,0.0442,0.0533
+David Junior Hoilett,Mark Anthony Kaye,5,0.0442,0.0094
+David Junior Hoilett,Richie Laryea,1,0.0442,0.0054
+David Junior Hoilett,Steven de Sousa Vitoria,2,0.0442,0.0481
+David Junior Hoilett,Tajon Buchanan,1,0.0442,0.0712
+Ismael Koné,Alistair Johnston,2,0.0362,0.063
+Ismael Koné,Alphonso Davies,1,0.0362,0.0386
+Ismael Koné,Atiba Hutchinson,5,0.0362,0.0302
+Ismael Koné,David Junior Hoilett,3,0.0362,0.0442
+Ismael Koné,Jonathan David,2,0.0362,0.0105
+Ismael Koné,Jonathan Osorio,1,0.0362,0.019
+Ismael Koné,Kamal Miller,5,0.0362,0.0533
+Ismael Koné,Milan Borjan,1,0.0362,0.0169
+Ismael Koné,Steven de Sousa Vitoria,2,0.0362,0.0481
+Ismael Koné,Tajon Buchanan,5,0.0362,0.0712
+Jonathan David,Alistair Johnston,1,0.0105,0.063
+Jonathan David,Alphonso Davies,1,0.0105,0.0386
+Jonathan David,Atiba Hutchinson,3,0.0105,0.0302
+Jonathan David,David Junior Hoilett,1,0.0105,0.0442
+Jonathan David,Ismael Koné,1,0.0105,0.0362
+Jonathan David,Kamal Miller,1,0.0105,0.0533
+Jonathan David,Richie Laryea,3,0.0105,0.0054
+Jonathan David,Steven de Sousa Vitoria,1,0.0105,0.0481
+Jonathan Osorio,Alistair Johnston,3,0.019,0.063
+Jonathan Osorio,Alphonso Davies,2,0.019,0.0386
+Jonathan Osorio,Atiba Hutchinson,1,0.019,0.0302
+Jonathan Osorio,Cyle Larin,1,0.019,0.0017
+Jonathan Osorio,David Junior Hoilett,5,0.019,0.0442
+Jonathan Osorio,Kamal Miller,7,0.019,0.0533
+Jonathan Osorio,Mark Anthony Kaye,2,0.019,0.0094
+Jonathan Osorio,Sam Adekugbe,3,0.019,0.0046
+Jonathan Osorio,Steven de Sousa Vitoria,2,0.019,0.0481
+Jonathan Osorio,Tajon Buchanan,2,0.019,0.0712
+Kamal Miller,Alphonso Davies,6,0.0533,0.0386
+Kamal Miller,Atiba Hutchinson,3,0.0533,0.0302
+Kamal Miller,Cyle Larin,3,0.0533,0.0017
+Kamal Miller,David Junior Hoilett,4,0.0533,0.0442
+Kamal Miller,David Wallace Wotherspoon,3,0.0533,0.0
+Kamal Miller,Ismael Koné,8,0.0533,0.0362
+Kamal Miller,Jonathan Osorio,3,0.0533,0.019
+Kamal Miller,Mark Anthony Kaye,15,0.0533,0.0094
+Kamal Miller,Milan Borjan,1,0.0533,0.0169
+Kamal Miller,Sam Adekugbe,13,0.0533,0.0046
+Kamal Miller,Steven de Sousa Vitoria,18,0.0533,0.0481
+Kamal Miller,Tajon Buchanan,12,0.0533,0.0712
+Mark Anthony Kaye,Alistair Johnston,9,0.0094,0.063
+Mark Anthony Kaye,Alphonso Davies,5,0.0094,0.0386
+Mark Anthony Kaye,Cyle Larin,1,0.0094,0.0017
+Mark Anthony Kaye,David Junior Hoilett,2,0.0094,0.0442
+Mark Anthony Kaye,Jonathan Osorio,3,0.0094,0.019
+Mark Anthony Kaye,Kamal Miller,17,0.0094,0.0533
+Mark Anthony Kaye,Milan Borjan,2,0.0094,0.0169
+Mark Anthony Kaye,Sam Adekugbe,6,0.0094,0.0046
+Mark Anthony Kaye,Steven de Sousa Vitoria,10,0.0094,0.0481
+Mark Anthony Kaye,Tajon Buchanan,2,0.0094,0.0712
+Milan Borjan,Alistair Johnston,1,0.0169,0.063
+Milan Borjan,Atiba Hutchinson,3,0.0169,0.0302
+Milan Borjan,David Junior Hoilett,1,0.0169,0.0442
+Milan Borjan,Kamal Miller,6,0.0169,0.0533
+Milan Borjan,Richie Laryea,2,0.0169,0.0054
+Milan Borjan,Sam Adekugbe,2,0.0169,0.0046
+Milan Borjan,Steven de Sousa Vitoria,6,0.0169,0.0481
+Milan Borjan,Tajon Buchanan,1,0.0169,0.0712
+Richie Laryea,Alistair Johnston,3,0.0054,0.063
+Richie Laryea,David Junior Hoilett,1,0.0054,0.0442
+Richie Laryea,Jonathan David,1,0.0054,0.0105
+Richie Laryea,Milan Borjan,1,0.0054,0.0169
+Steven de Sousa Vitoria,Alistair Johnston,16,0.0481,0.063
+Steven de Sousa Vitoria,Alphonso Davies,4,0.0481,0.0386
+Steven de Sousa Vitoria,Atiba Hutchinson,3,0.0481,0.0302
+Steven de Sousa Vitoria,Cyle Larin,1,0.0481,0.0017
+Steven de Sousa Vitoria,David Junior Hoilett,1,0.0481,0.0442
+Steven de Sousa Vitoria,David Wallace Wotherspoon,1,0.0481,0.0
+Steven de Sousa Vitoria,Ismael Koné,4,0.0481,0.0362
+Steven de Sousa Vitoria,Jonathan David,2,0.0481,0.0105
+Steven de Sousa Vitoria,Jonathan Osorio,2,0.0481,0.019
+Steven de Sousa Vitoria,Kamal Miller,20,0.0481,0.0533
+Steven de Sousa Vitoria,Mark Anthony Kaye,12,0.0481,0.0094
+Steven de Sousa Vitoria,Milan Borjan,3,0.0481,0.0169
+Steven de Sousa Vitoria,Richie Laryea,1,0.0481,0.0054
+Steven de Sousa Vitoria,Sam Adekugbe,3,0.0481,0.0046
+Steven de Sousa Vitoria,Tajon Buchanan,1,0.0481,0.0712
+Tajon Buchanan,Alistair Johnston,1,0.0712,0.063
+Tajon Buchanan,Alphonso Davies,5,0.0712,0.0386
+Tajon Buchanan,Atiba Hutchinson,1,0.0712,0.0302
+Tajon Buchanan,David Junior Hoilett,2,0.0712,0.0442
+Tajon Buchanan,Ismael Koné,1,0.0712,0.0362
+Tajon Buchanan,Jonathan David,2,0.0712,0.0105
+Tajon Buchanan,Jonathan Osorio,1,0.0712,0.019
+Tajon Buchanan,Kamal Miller,3,0.0712,0.0533
+Tajon Buchanan,Mark Anthony Kaye,1,0.0712,0.0094
+Tajon Buchanan,Richie Laryea,1,0.0712,0.0054
+Tajon Buchanan,Sam Adekugbe,5,0.0712,0.0046
+Sam Adekugbe,Alistair Johnston,1,0.0046,0.063
+Sam Adekugbe,Alphonso Davies,3,0.0046,0.0386
+Sam Adekugbe,Cyle Larin,1,0.0046,0.0017
+Sam Adekugbe,Jonathan Osorio,4,0.0046,0.019
+Sam Adekugbe,Kamal Miller,9,0.0046,0.0533
+Sam Adekugbe,Mark Anthony Kaye,10,0.0046,0.0094
+Sam Adekugbe,Tajon Buchanan,5,0.0046,0.0712
+David Wallace Wotherspoon,Ismael Koné,1,0.0,0.0362
+David Wallace Wotherspoon,Tajon Buchanan,2,0.0,0.0712

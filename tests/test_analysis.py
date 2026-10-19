@@ -7,7 +7,12 @@ def test_imports():
     from src.benchmark_sota import run_benchmark
     from src.generate_tables import generate
     from src.graph_analysis import run_graph_analysis
-    from src.graph_builder import build_graph, load_passing_data
+    from src.graph_builder import (
+        analyze_teams,
+        build_graph,
+        build_team_graphs,
+        load_passing_data,
+    )
     from src.statistical_tests import run_statistical_tests
 
     assert callable(run_graph_analysis)
@@ -16,6 +21,8 @@ def test_imports():
     assert callable(generate)
     assert callable(load_passing_data)
     assert callable(build_graph)
+    assert callable(build_team_graphs)
+    assert callable(analyze_teams)
 
 
 def test_load_passing_data():

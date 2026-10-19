@@ -30,11 +30,66 @@ def build_graph_from_csv(csv_path: Path) -> "nx.DiGraph":
     return G
 
 
+def compute_metrics(G: "nx.DiGraph") -> dict:
+    """Calcula métricas completas de una red de pases (un solo equipo).
+
+    Betweenness y degree se calculan sin pesos de frecuencia; PageRank usa
+    el peso de frecuencia de pases. Las comunidades se detectan sobre la
+    versión no dirigida del grafo.
+    """
+    betweenness = nx.betweenness_centrality(G)
+    pagerank = nx.pagerank(G, weight="weight")
+    degree_cent = nx.degree_centrality(G)
+
+    try:
+        from networkx.algorithms.community import greedy_modularity_communities
+
+        communities = [
+            sorted(c) for c in greedy_modularity_communities(G.to_undirected())
+        ]
+    except Exception:  # noqa: BLE001
+        communities = []
+
+    return {
+        "nodes": len(G.nodes),
+        "edges": len(G.edges),
+        "density": nx.density(G),
+        "is_connected": nx.is_weakly_connected(G),
+        "betweenness": betweenness,
+        "pagerank": pagerank,
+        "degree_centrality": degree_cent,
+        "in_degree": dict(G.in_degree(weight="weight")),
+        "out_degree": dict(G.out_degree(weight="weight")),
+        "communities": communities,
+    }
+
+
+def summarize_metrics(metrics: dict, top_n: int = 5) -> dict:
+    """Resumen serializable de ``compute_metrics`` (top-N por métrica)."""
+
+    def top_n_list(scores: dict) -> list[dict]:
+        ranked = sorted(scores.items(), key=lambda x: x[1], reverse=True)[:top_n]
+        return [{"player": p, "score": round(s, 4)} for p, s in ranked]
+
+    communities = metrics.get("communities", [])
+    return {
+        "nodes": metrics["nodes"],
+        "edges": metrics["edges"],
+        "density": metrics["density"],
+        "is_connected": metrics["is_connected"],
+        "top_betweenness": top_n_list(metrics["betweenness"]),
+        "top_pagerank": top_n_list(metrics["pagerank"]),
+        "top_degree": top_n_list(metrics["degree_centrality"]),
+        "num_communities": len(communities),
+        "communities": [list(c) for c in communities[:5]],
+    }
+
+
 def run_graph_analysis(
     data_dir: Path = Path("data/export"), output_dir: Path = Path("data/export")
 ) -> dict:
     """
-    Análisis completo de red de pases.
+    Análisis completo de red de pases (un grafo por CSV, es decir, por equipo).
 
     Returns:
         dict con métricas de red y comunidades
@@ -56,49 +111,9 @@ def run_graph_analysis(
             continue
 
         name = csv_file.stem
-
-        # Basic metrics
-        metrics = {
-            "nodes": len(G.nodes),
-            "edges": len(G.edges),
-            "density": nx.density(G),
-            "is_connected": nx.is_weakly_connected(G)
-            if nx.is_weakly_connected
-            else nx.is_connected(G),
-        }
-
-        # Centrality metrics
-        betweenness = nx.betweenness_centrality(G)
-        pagerank = nx.pagerank(G)
-        degree_cent = nx.degree_centrality(G)
-
-        # Top 5 players by each metric
-        top_betweenness = sorted(betweenness.items(), key=lambda x: x[1], reverse=True)[
-            :5
-        ]
-        top_pagerank = sorted(pagerank.items(), key=lambda x: x[1], reverse=True)[:5]
-        top_degree = sorted(degree_cent.items(), key=lambda x: x[1], reverse=True)[:5]
-
-        metrics["top_betweenness"] = [
-            {"player": p, "score": round(s, 4)} for p, s in top_betweenness
-        ]
-        metrics["top_pagerank"] = [
-            {"player": p, "score": round(s, 4)} for p, s in top_pagerank
-        ]
-        metrics["top_degree"] = [
-            {"player": p, "score": round(s, 4)} for p, s in top_degree
-        ]
-
-        # Community detection (on undirected version)
-        try:
-            from networkx.algorithms.community import greedy_modularity_communities
-
-            G_undir = G.to_undirected()
-            communities = list(greedy_modularity_communities(G_undir))
-            metrics["num_communities"] = len(communities)
-            metrics["communities"] = [list(c) for c in communities[:5]]
-        except Exception:  # noqa: BLE001
-            metrics["num_communities"] = 0
+        full_metrics = compute_metrics(G)
+        metrics = summarize_metrics(full_metrics)
+        pagerank = full_metrics["pagerank"]
 
         # PageRank as exportable data
         pagerank_data = [
@@ -120,13 +135,19 @@ def run_graph_analysis(
             writer.writerows(pagerank_data)
 
         results[name] = metrics
+        top_betweenness = metrics["top_betweenness"]
+        top_pagerank = metrics["top_pagerank"]
         print(
             f"[GRAPH] {name}: {metrics['nodes']} nodos, {metrics['edges']} aristas, {metrics.get('num_communities', '?')} comunidades"
         )
-        print(
-            f"  Top betweenness: {top_betweenness[0][0]} ({top_betweenness[0][1]:.3f})"
-        )
-        print(f"  Top pagerank: {top_pagerank[0][0]} ({top_pagerank[0][1]:.3f})")
+        if top_betweenness:
+            print(
+                f"  Top betweenness: {top_betweenness[0]['player']} ({top_betweenness[0]['score']:.3f})"
+            )
+        if top_pagerank:
+            print(
+                f"  Top pagerank: {top_pagerank[0]['player']} ({top_pagerank[0]['score']:.3f})"
+            )
 
     return results
 

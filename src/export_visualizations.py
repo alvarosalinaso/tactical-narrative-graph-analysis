@@ -1,9 +1,9 @@
 """Export visualization CSVs and HTML embed snippets for external tools.
 
-Generates:
-  - data/export/flourish_arc_diagram.csv
-  - data/export/observable_grafo.csv
-  - data/export/dw_centralidad_benchmark.csv
+Generates one set of files per team (slug = team name in lowercase):
+  - data/export/flourish_arc_diagram_<team>.csv
+  - data/export/observable_grafo_<team>.csv
+  - data/export/dw_centralidad_<team>.csv
   - data/export/embed_snippets.md
 """
 
@@ -18,7 +18,7 @@ import pandas as pd
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from graph_analysis import run_graph_analysis
-from graph_builder import build_graph, load_passing_data
+from graph_builder import build_team_graphs, load_passing_data
 
 EXPORT_DIR = Path(__file__).resolve().parent.parent / "data" / "export"
 SNIPPET_PATH = EXPORT_DIR / "embed_snippets.md"
@@ -29,8 +29,13 @@ def _ensure_export_dir() -> None:
     EXPORT_DIR.mkdir(parents=True, exist_ok=True)
 
 
-def export_flourish_arc(G: nx.DiGraph) -> None:
-    """Write flourish_arc_diagram.csv with edge-level centrality data.
+def _team_slug(team: str) -> str:
+    """Filesystem-safe slug for a team name."""
+    return team.lower().replace(" ", "_")
+
+
+def export_flourish_arc(G: nx.DiGraph, out_path: Path) -> None:
+    """Write a flourish arc diagram CSV with edge-level centrality data.
 
     Betweenness is unweighted (same semantics as graph_analysis.py);
     NetworkX ``weight`` is distance, so pass frequency would invert paths.
@@ -50,13 +55,12 @@ def export_flourish_arc(G: nx.DiGraph) -> None:
         )
 
     df = pd.DataFrame(rows)
-    out_path = EXPORT_DIR / "flourish_arc_diagram.csv"
     df.to_csv(out_path, index=False)
-    print(f"[OK] flourish_arc_diagram.csv  -> {out_path}  ({len(df)} rows)")
+    print(f"[OK] {out_path.name}  -> {out_path}  ({len(df)} rows)")
 
 
-def export_observable_grafo(G: nx.DiGraph) -> None:
-    """Write observable_grafo.csv with node-level metrics.
+def export_observable_grafo(G: nx.DiGraph, out_path: Path) -> None:
+    """Write an observable CSV with node-level metrics.
 
     Betweenness is unweighted (same semantics as graph_analysis.py).
     """
@@ -78,9 +82,8 @@ def export_observable_grafo(G: nx.DiGraph) -> None:
         )
 
     df = pd.DataFrame(rows).sort_values("betweenness", ascending=False)
-    out_path = EXPORT_DIR / "observable_grafo.csv"
     df.to_csv(out_path, index=False)
-    print(f"[OK] observable_grafo.csv      -> {out_path}  ({len(df)} rows)")
+    print(f"[OK] {out_path.name}      -> {out_path}  ({len(df)} rows)")
 
 
 def _assign_tactical_role(node: str, bc: float, deg: int, max_deg: int) -> str:
@@ -94,8 +97,8 @@ def _assign_tactical_role(node: str, bc: float, deg: int, max_deg: int) -> str:
     return "Jugador de Apoyo"
 
 
-def export_dw_centralidad(G: nx.DiGraph) -> None:
-    """Write dw_centralidad_benchmark.csv with per-player centrality + role.
+def export_dw_centralidad(G: nx.DiGraph, out_path: Path) -> None:
+    """Write a per-player centrality + role CSV.
 
     Betweenness is unweighted (same semantics as graph_analysis.py).
     """
@@ -119,9 +122,8 @@ def export_dw_centralidad(G: nx.DiGraph) -> None:
         )
 
     df = pd.DataFrame(rows).sort_values("betweenness", ascending=False)
-    out_path = EXPORT_DIR / "dw_centralidad_benchmark.csv"
     df.to_csv(out_path, index=False)
-    print(f"[OK] dw_centralidad_benchmark.csv -> {out_path}  ({len(df)} rows)")
+    print(f"[OK] {out_path.name} -> {out_path}  ({len(df)} rows)")
 
 
 def generate_embed_snippets() -> None:
@@ -191,20 +193,22 @@ Each snippet is responsive and mobile-friendly.
 
 
 def main() -> None:
-    """Orchestrate graph build, analysis, CSV export and snippet generation."""
+    """Orchestrate per-team graph build, analysis, CSV export and snippets."""
     try:
         _ensure_export_dir()
 
         df = load_passing_data()
-        G = build_graph(df)
+        team_graphs = build_team_graphs(df)
 
-        print(
-            f"\nGraph loaded: {G.number_of_nodes()} nodes, {G.number_of_edges()} edges\n"
-        )
+        for team, G in team_graphs.items():
+            slug = _team_slug(team)
+            print(
+                f"\nExporting {team}: {G.number_of_nodes()} nodes, {G.number_of_edges()} edges"
+            )
+            export_flourish_arc(G, EXPORT_DIR / f"flourish_arc_diagram_{slug}.csv")
+            export_observable_grafo(G, EXPORT_DIR / f"observable_grafo_{slug}.csv")
+            export_dw_centralidad(G, EXPORT_DIR / f"dw_centralidad_{slug}.csv")
 
-        export_flourish_arc(G)
-        export_observable_grafo(G)
-        export_dw_centralidad(G)
         generate_embed_snippets()
 
         run_graph_analysis()

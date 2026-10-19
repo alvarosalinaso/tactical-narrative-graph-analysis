@@ -8,6 +8,11 @@ import networkx as nx
 import pandas as pd
 from pyvis.network import Network
 
+try:
+    from .graph_analysis import compute_metrics
+except ImportError:
+    from graph_analysis import compute_metrics
+
 
 def _get_data_dir() -> Path:
     return Path(__file__).resolve().parent.parent / "data" / "raw"
@@ -202,7 +207,35 @@ def build_graph(data: pd.DataFrame) -> nx.DiGraph:
     return G
 
 
-def analyze_and_visualize(G: nx.DiGraph, output_filename="grafo_tactico.html"):
+def build_team_graphs(data: pd.DataFrame) -> dict[str, nx.DiGraph]:
+    """Build one directed graph per team from the passing edge data.
+
+    Each team gets its own DiGraph so that centrality, PageRank and
+    communities are never computed on a mixture of both teams' passes.
+    If the data has no ``team`` column it is treated as a single
+    unnamed team.
+    """
+    if data.empty:
+        return {}
+
+    if "team" not in data.columns:
+        return {"unknown": build_graph(data)}
+
+    graphs = {
+        str(team): build_graph(team_df)
+        for team, team_df in data.groupby("team", sort=True)
+    }
+    return {team: G for team, G in graphs.items() if len(G.nodes) > 0}
+
+
+def _team_slug(team: str) -> str:
+    """Filesystem-safe slug for a team name."""
+    return team.lower().replace(" ", "_")
+
+
+def analyze_and_visualize(
+    G: nx.DiGraph, output_filename="grafo_tactico.html", output_dir="output"
+):
     """Calculate centrality metrics and render interactive visualization.
 
     Node size = betweenness centrality (higher = more important connector)
@@ -214,12 +247,13 @@ def analyze_and_visualize(G: nx.DiGraph, output_filename="grafo_tactico.html"):
     """
     if len(G.nodes) == 0:
         print("[ERROR] Empty graph, nothing to visualize")
-        return
+        return None
 
-    centrality = nx.betweenness_centrality(G)
-    pagerank = nx.pagerank(G, weight="weight")
-    in_degree = dict(G.in_degree(weight="weight"))
-    out_degree = dict(G.out_degree(weight="weight"))
+    metrics = compute_metrics(G)
+    centrality = metrics["betweenness"]
+    pagerank = metrics["pagerank"]
+    in_degree = metrics["in_degree"]
+    out_degree = metrics["out_degree"]
 
     net = Network(
         height="700px",
@@ -263,8 +297,8 @@ def analyze_and_visualize(G: nx.DiGraph, output_filename="grafo_tactico.html"):
             color={"color": "#533483", "highlight": "#e94560"},
         )
 
-    os.makedirs("output", exist_ok=True)
-    out_path = os.path.join("output", output_filename)
+    os.makedirs(output_dir, exist_ok=True)
+    out_path = os.path.join(output_dir, output_filename)
     net.write_html(out_path)
     print(f"[INFO] Interactive graph saved to: {out_path}")
     return {
@@ -272,10 +306,94 @@ def analyze_and_visualize(G: nx.DiGraph, output_filename="grafo_tactico.html"):
         "edges": len(G.edges),
         "centrality": centrality,
         "pagerank": pagerank,
+        "metrics": metrics,
     }
 
 
+def _write_landing_page(
+    output_dir: str, team_files: list[tuple[str, str]], match_label: str = ""
+) -> str:
+    """Write a landing page that embeds every per-team interactive graph."""
+    sections = "\n".join(
+        f"""    <section style="margin:24px 0;">
+      <h2 style="font-family:sans-serif;color:#e94560;">{team}</h2>
+      <iframe src="{fname}" title="Grafo táctico {team}"
+        style="width:100%;height:720px;border:1px solid #533483;border-radius:8px;"></iframe>
+    </section>"""
+        for team, fname in team_files
+    )
+    match_line = (
+        f'<p style="font-family:sans-serif;color:#bbb;">{match_label}</p>'
+        if match_label
+        else ""
+    )
+    html = f"""<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Grafo táctico de pases — por equipo</title>
+</head>
+<body style="background:#1a1a2e;color:#eee;margin:0;padding:16px;">
+  <h1 style="font-family:sans-serif;color:#fff;">Grafo táctico de pases (por equipo)</h1>
+{match_line}
+  <p style="font-family:sans-serif;color:#bbb;">Un grafo dirigido por equipo: nodos = jugadores, aristas = pases completados, grosor = frecuencia, tamaño del nodo = betweenness.</p>
+{sections}
+</body>
+</html>
+"""
+    os.makedirs(output_dir, exist_ok=True)
+    out_path = os.path.join(output_dir, "grafo_tactico.html")
+    with open(out_path, "w", encoding="utf-8") as f:
+        f.write(html)
+    print(f"[INFO] Landing page saved to: {out_path}")
+    return out_path
+
+
+def analyze_teams(
+    data: pd.DataFrame | None = None, output_dir: str = "output"
+) -> dict[str, dict]:
+    """Build, analyze and render one interactive graph per team.
+
+    Also writes ``grafo_tactico.html`` as a landing page embedding all
+    per-team graphs.
+    """
+    if data is None:
+        data = load_passing_data()
+
+    teams = build_team_graphs(data)
+    if not teams:
+        print("[ERROR] No team graphs to visualize")
+        return {}
+
+    results: dict[str, dict] = {}
+    team_files: list[tuple[str, str]] = []
+
+    for team, G in teams.items():
+        fname = f"grafo_tactico_{_team_slug(team)}.html"
+        team_files.append((team, fname))
+        metrics = analyze_and_visualize(G, output_filename=fname, output_dir=output_dir)
+        if metrics is not None:
+            results[team] = metrics
+            print(
+                f"[INFO] {team}: {metrics['nodes']} jugadores, {metrics['edges']} aristas de pase"
+            )
+
+    match_label = ""
+    match_info_json = _get_match_info_json()
+    if match_info_json.exists():
+        try:
+            with open(match_info_json, encoding="utf-8") as f:
+                info = json.load(f)
+            match_label = (
+                f"{info.get('home_team', '?')} vs {info.get('away_team', '?')} — "
+                f"{info.get('competition', '?')} ({info.get('match_date', '?')})"
+            )
+        except (json.JSONDecodeError, OSError, KeyError):
+            pass
+
+    _write_landing_page(output_dir, team_files, match_label=match_label)
+    return results
+
+
 if __name__ == "__main__":
-    df = load_passing_data()
-    grafo = build_graph(df)
-    analyze_and_visualize(grafo)
+    analyze_teams()
