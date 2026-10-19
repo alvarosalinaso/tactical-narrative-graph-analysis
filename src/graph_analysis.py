@@ -14,6 +14,9 @@ try:
 except ImportError:
     NX_AVAILABLE = False
 
+# Semilla fija para que la deteccion de comunidades sea reproducible
+COMMUNITY_SEED = 42
+
 
 def build_graph_from_csv(csv_path: Path) -> "nx.DiGraph":
     """Construye un grafo dirigido desde CSV de pases (source, target, weight)."""
@@ -62,7 +65,10 @@ def compute_metrics(G: "nx.DiGraph") -> dict:
         from networkx.algorithms.community import greedy_modularity_communities
 
         communities = [
-            sorted(c) for c in greedy_modularity_communities(G.to_undirected())
+            sorted(c)
+            for c in greedy_modularity_communities(
+                G.to_undirected(), seed=COMMUNITY_SEED
+            )
         ]
     except Exception:  # noqa: BLE001
         communities = []

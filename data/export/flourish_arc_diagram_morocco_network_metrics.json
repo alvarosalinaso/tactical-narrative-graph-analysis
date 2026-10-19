@@ -91,27 +91,6 @@
       "score": 1.1333
     }
   ],
-  "num_communities": 2,
-  "communities": [
-    [
-      "Abdelhamid Sabiri",
-      "Achraf Hakimi Mouh",
-      "Azzedine Ounahi",
-      "Hakim Ziyech",
-      "Jawad El Yamiq",
-      "Nayef Aguerd",
-      "Noussair Mazraoui",
-      "Romain Saïss",
-      "Sofiane Boufal"
-    ],
-    [
-      "Abderrazak Hamdallah",
-      "Selim Amallah",
-      "Sofyan Amrabat",
-      "Yahya Jabrane",
-      "Yassine Bounou",
-      "Youssef En-Nesyri",
-      "Zakaria Aboukhlal"
-    ]
-  ]
+  "num_communities": 0,
+  "communities": []
 }

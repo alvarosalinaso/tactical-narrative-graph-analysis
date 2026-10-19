@@ -91,29 +91,6 @@
       "score": 1.4
     }
   ],
-  "num_communities": 3,
-  "communities": [
-    [
-      "Atiba Hutchinson",
-      "David Wallace Wotherspoon",
-      "Ismael Koné",
-      "Jonathan David",
-      "Kamal Miller",
-      "Tajon Buchanan"
-    ],
-    [
-      "Alistair Johnston",
-      "Alphonso Davies",
-      "Cyle Larin",
-      "Jonathan Osorio",
-      "Mark Anthony Kaye",
-      "Sam Adekugbe"
-    ],
-    [
-      "David Junior Hoilett",
-      "Milan Borjan",
-      "Richie Laryea",
-      "Steven de Sousa Vitoria"
-    ]
-  ]
+  "num_communities": 0,
+  "communities": []
 }

@@ -72,6 +72,13 @@ def test_summarize_metrics_includes_weighted_betweenness():
     assert summary["top_betweenness_weighted"][0]["player"] == "B"
 
 
+def test_community_detection_is_deterministic():
+    """Same graph must always yield the same communities (fixed seed)."""
+    first = compute_metrics(_tiny_graph())["communities"]
+    second = compute_metrics(_tiny_graph())["communities"]
+    assert first == second
+
+
 def test_build_graph_from_csv(tmp_path):
     """Test building graph from CSV."""
     csv_file = tmp_path / "test_passes.csv"
