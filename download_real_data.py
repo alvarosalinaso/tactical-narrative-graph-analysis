@@ -9,6 +9,16 @@ DATA_DIR = Path(__file__).parent / "data" / "raw"
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 
 
+def compute_opponent(team: str, home_team: str, away_team: str) -> str:
+    """Return the opponent of ``team`` in the match home vs away.
+
+    Pure helper (no network) so the logic is unit-testable: the opponent is
+    the *other* team in the fixture, derived from the real match metadata
+    instead of any hardcoded club name.
+    """
+    return away_team if team == home_team else home_team
+
+
 def download_statsbomb_data():
     """Download real match event data from StatsBomb open data."""
     try:
@@ -114,9 +124,9 @@ def download_statsbomb_data():
                                 "team": event.get("team", ""),
                                 "match_id": match_id,
                                 "match_date": str(match_date),
-                                "opponent": away_team
-                                if home_team == "Manchester United"
-                                else home_team,
+                                "opponent": compute_opponent(
+                                    event.get("team", ""), home_team, away_team
+                                ),
                             }
                         )
 
@@ -209,9 +219,9 @@ def download_statsbomb_data():
                                 "match_date": str(
                                     matches.iloc[0].get("match_date", "")
                                 ),
-                                "opponent": away
-                                if home != event.get("team", "")
-                                else home,
+                                "opponent": compute_opponent(
+                                    event.get("team", ""), home, away
+                                ),
                             }
                         )
 
