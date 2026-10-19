@@ -69,12 +69,21 @@ PyVis renders the graph as an interactive HTML file (`output/grafo_tactico.html`
 
 ---
 
-## Key findings (Morocco vs Canada)
+## Key findings (per team — Canada vs Morocco, match 3857276)
 
-- Sofyan Amrabat has highest betweenness (0.0245, unweighted, StatsBomb event graph) — key connector in Morocco's buildup (Azzedine Ounahi 0.0158, 4th)
-- 252 unique passing edges from 869 total passes
-- Short passes (<10m) dominate possession phases
-- Long balls (>25m) used primarily in transitions
+Each figure below is recomputed from the regenerated per-team outputs (sources in parentheses).
+
+**Morocco** (`flourish_arc_diagram_morocco_network_metrics.json`, `flourish_arc_diagram_morocco.csv`)
+- 16 players, 100 aggregated passing edges from 310 completed passes, 3 communities
+- Sofyan Amrabat has the highest betweenness (0.1100, unweighted) — key connector; Achraf Hakimi Mouh leads PageRank (0.1244)
+
+**Canada** (`flourish_arc_diagram_canada_network_metrics.json`, `flourish_arc_diagram_canada.csv`)
+- 16 players, 140 aggregated passing edges from 480 completed passes, 3 communities
+- Tajon Buchanan has the highest betweenness (0.0740, unweighted); Kamal Miller leads PageRank (0.1380)
+
+**Match totals** (`data/raw/statsbomb_passes.csv`)
+- 869 pass events → 790 completed (79 failed excluded) → 240 aggregated edges across both teams
+- Completed passes by length: 140 short (<10 m), 449 medium (10–25 m), 201 long (≥25 m) — medium/short dominate possession phases, long balls appear in transitions
 
 ---
 

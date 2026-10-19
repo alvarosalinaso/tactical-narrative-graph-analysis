@@ -19,7 +19,7 @@ Análisis de redes de pases (StatsBomb Open Data). Grafo dirigido de pases entre
   - `analyze_and_visualize()`: centrality + pyvis → HTML interactivo (betweenness sin peso; PageRank/degree con peso de frecuencia)
 - `graph_analysis.py`:
   - `build_graph_from_csv()`: CSV (source, target, weight) → nx.DiGraph
-  - `run_graph_analysis()`: density, centrality (betweenness sin peso; PageRank/degree con peso), comunidades (greedy_modularity), exporta JSON + CSV
+  - `run_graph_analysis()`: density, centrality (betweenness sin peso; PageRank/degree con peso), comunidades (louvain_communities con semilla fija COMMUNITY_SEED=42), exporta JSON + CSV
 - `statistical_tests.py` — run_statistical_tests
 - `generate_tables.py` — generate
 - `export_visualizations.py` — export_visualizations
