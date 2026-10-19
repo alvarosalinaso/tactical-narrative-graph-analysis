@@ -30,12 +30,29 @@ def build_graph_from_csv(csv_path: Path) -> "nx.DiGraph":
     return G
 
 
+def betweenness_weighted(G: "nx.DiGraph") -> dict:
+    """Betweenness ponderado con distancia = 1/weight (frecuencia de pases).
+
+    NetworkX interpreta ``weight`` como distancia, así que la frecuencia se
+    invierte: cuanto más pases entre dos jugadores, más corta la arista y más
+    preferido es ese carril por los caminos más cortos.
+    """
+    H = nx.DiGraph()
+    H.add_nodes_from(G.nodes())
+    H.add_edges_from(
+        (u, v, {"distance": 1.0 / d["weight"]})
+        for u, v, d in G.edges(data=True)
+        if d.get("weight")
+    )
+    return nx.betweenness_centrality(H, weight="distance")
+
+
 def compute_metrics(G: "nx.DiGraph") -> dict:
     """Calcula métricas completas de una red de pases (un solo equipo).
 
-    Betweenness y degree se calculan sin pesos de frecuencia; PageRank usa
-    el peso de frecuencia de pases. Las comunidades se detectan sobre la
-    versión no dirigida del grafo.
+    Betweenness se calcula en dos versiones (sin pesos y con distancia
+    1/weight); degree sin pesos y PageRank con el peso de frecuencia de
+    pases. Las comunidades se detectan sobre la versión no dirigida.
     """
     betweenness = nx.betweenness_centrality(G)
     pagerank = nx.pagerank(G, weight="weight")
@@ -56,6 +73,7 @@ def compute_metrics(G: "nx.DiGraph") -> dict:
         "density": nx.density(G),
         "is_connected": nx.is_weakly_connected(G),
         "betweenness": betweenness,
+        "betweenness_weighted": betweenness_weighted(G),
         "pagerank": pagerank,
         "degree_centrality": degree_cent,
         "in_degree": dict(G.in_degree(weight="weight")),
@@ -78,6 +96,7 @@ def summarize_metrics(metrics: dict, top_n: int = 5) -> dict:
         "density": metrics["density"],
         "is_connected": metrics["is_connected"],
         "top_betweenness": top_n_list(metrics["betweenness"]),
+        "top_betweenness_weighted": top_n_list(metrics["betweenness_weighted"]),
         "top_pagerank": top_n_list(metrics["pagerank"]),
         "top_degree": top_n_list(metrics["degree_centrality"]),
         "num_communities": len(communities),

@@ -48,7 +48,13 @@ ES: Análisis de grafos de red sobre datos reales de pases de fútbol para revel
 | **PageRank** | Who is most connected in the passing network |
 | **In/Out Degree** | Ball reception vs distribution volume |
 
-**Centrality variants:** betweenness is computed **unweighted** everywhere (NetworkX treats `weight` as distance, so pass frequency would invert shortest paths); PageRank and degree use pass frequency as weight. If `statsbomb_passes.csv` is missing, the `passing.csv` fallback builds **synthetic positional edges** — centrality from that fallback is illustrative only and not comparable to event-level results.
+**Centrality variants — which is which:**
+
+- **Betweenness unweighted** (`top_betweenness`): every pass hop counts as 1. Answers "who sits on the most minimum-hop paths" — this is the one used for node size in the interactive graph and for the headline rankings.
+- **Betweenness weighted** (`top_betweenness_weighted`, distance = 1/weight): frequent pass lanes become *short* edges, so shortest paths prefer high-frequency connections. Answers "who bridges the frequent-pass cores". NetworkX treats `weight` as distance, hence the inversion.
+- **PageRank / degree**: use pass frequency as weight (frequency = importance).
+
+If `statsbomb_passes.csv` is missing, the `passing.csv` fallback builds **synthetic positional edges** — centrality from that fallback is illustrative only and not comparable to event-level results.
 
 ### 3. Interactive visualization
 

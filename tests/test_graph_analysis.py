@@ -6,6 +6,7 @@ import json
 import pandas as pd
 
 from src.graph_analysis import (
+    betweenness_weighted,
     build_graph_from_csv,
     compute_metrics,
     run_graph_analysis,
@@ -42,6 +43,33 @@ def test_summarize_metrics_is_serializable():
     assert summary["top_betweenness"][0]["player"] == "B"
     assert "num_communities" in summary
     json.dumps(summary)
+
+
+def test_betweenness_weighted_prefers_frequent_lane():
+    """With distance = 1/weight, high-frequency paths become 'shorter'.
+
+    Unweighted: A->C is a direct hop so B has betweenness 0.
+    Weighted (dist = 1/pases): the frequent A->B->C lane (0.1+0.1) beats the
+    rare direct pass A->C (1.0), so B gains betweenness.
+    """
+    import networkx as nx
+
+    G = nx.DiGraph()
+    G.add_edge("A", "B", weight=10)
+    G.add_edge("B", "C", weight=10)
+    G.add_edge("A", "C", weight=1)
+
+    unweighted = nx.betweenness_centrality(G)
+    weighted = betweenness_weighted(G)
+
+    assert unweighted["B"] == 0.0
+    assert weighted["B"] > 0.0
+    assert set(weighted) == set(unweighted)
+
+
+def test_summarize_metrics_includes_weighted_betweenness():
+    summary = summarize_metrics(compute_metrics(_tiny_graph()))
+    assert summary["top_betweenness_weighted"][0]["player"] == "B"
 
 
 def test_build_graph_from_csv(tmp_path):

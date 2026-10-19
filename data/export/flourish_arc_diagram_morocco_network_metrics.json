@@ -25,6 +25,28 @@
       "score": 0.0476
     }
   ],
+  "top_betweenness_weighted": [
+    {
+      "player": "Sofyan Amrabat",
+      "score": 0.3325
+    },
+    {
+      "player": "Achraf Hakimi Mouh",
+      "score": 0.2286
+    },
+    {
+      "player": "Nayef Aguerd",
+      "score": 0.1286
+    },
+    {
+      "player": "Romain Saïss",
+      "score": 0.119
+    },
+    {
+      "player": "Abdelhamid Sabiri",
+      "score": 0.0667
+    }
+  ],
   "top_pagerank": [
     {
       "player": "Achraf Hakimi Mouh",

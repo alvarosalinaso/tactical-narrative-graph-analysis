@@ -255,9 +255,11 @@ def analyze_and_visualize(
     Node size = betweenness centrality (higher = more important connector)
     Edge thickness = pass frequency (more passes = thicker line)
 
-    Betweenness is unweighted: NetworkX treats ``weight`` as distance, so a
-    pass-frequency weight would invert meaning (frequent passes = long paths).
-    PageRank and degree stay weighted (frequency = importance there).
+    Betweenness is reported in two flavors: unweighted (node size; each pass
+    hop counts 1) and weighted with distance = 1/weight (frequent pass lanes
+    become "short"). NetworkX treats ``weight`` as distance, so raw pass
+    frequency would invert meaning; PageRank and degree stay weighted with
+    frequency (frequency = importance there).
     """
     if len(G.nodes) == 0:
         print("[ERROR] Empty graph, nothing to visualize")
@@ -265,6 +267,7 @@ def analyze_and_visualize(
 
     metrics = compute_metrics(G)
     centrality = metrics["betweenness"]
+    centrality_weighted = metrics["betweenness_weighted"]
     pagerank = metrics["pagerank"]
     in_degree = metrics["in_degree"]
     out_degree = metrics["out_degree"]
@@ -281,11 +284,13 @@ def analyze_and_visualize(
 
     for node in G.nodes():
         bc = centrality.get(node, 0.01)
+        bc_w = centrality_weighted.get(node, 0.0)
         pr = pagerank.get(node, 0.01)
         size = bc * 200 + 10
         title = (
             f"<b>{node}</b><br>"
-            f"Betweenness: {bc:.3f}<br>"
+            f"Betweenness (sin pesos): {bc:.3f}<br>"
+            f"Betweenness (dist=1/pases): {bc_w:.3f}<br>"
             f"PageRank: {pr:.3f}<br>"
             f"In: {in_degree.get(node, 0)} passes<br>"
             f"Out: {out_degree.get(node, 0)} passes"

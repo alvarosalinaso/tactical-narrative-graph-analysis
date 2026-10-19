@@ -25,6 +25,28 @@
       "score": 0.0404
     }
   ],
+  "top_betweenness_weighted": [
+    {
+      "player": "Kamal Miller",
+      "score": 0.4333
+    },
+    {
+      "player": "Steven de Sousa Vitoria",
+      "score": 0.2508
+    },
+    {
+      "player": "Alistair Johnston",
+      "score": 0.2206
+    },
+    {
+      "player": "Tajon Buchanan",
+      "score": 0.1333
+    },
+    {
+      "player": "Mark Anthony Kaye",
+      "score": 0.1
+    }
+  ],
   "top_pagerank": [
     {
       "player": "Kamal Miller",
