@@ -12,12 +12,15 @@ ES: Análisis de grafos de red sobre datos reales de pases de fútbol para revel
 
 ---
 
-## Data Source
+## Data Source & Attribution
 
-**StatsBomb Open Data** — Free, event-level football data:
+**StatsBomb Open Data** (mandatory attribution) — Free, event-level football data.
+The data is made available by StatsBomb under the [StatsBomb Open Data License](https://github.com/statsbomb/open-data/blob/master/LICENSE.md),
+which requires that any published analysis or derivative work credits StatsBomb as the data source. Please cite StatsBomb when reusing or referencing this dataset.
+
 - Real pass events with player names, locations, and outcomes
-- World Cup 2022 matches (Morocco vs Canada as demo)
-- 869 total passes → 252 unique passing edges
+- World Cup 2022 match: Canada vs Morocco (match_id 3857276, 2022-12-01)
+- **Only completed passes are kept as edges** (failed passes are excluded), one directed graph per team
 
 ---
 

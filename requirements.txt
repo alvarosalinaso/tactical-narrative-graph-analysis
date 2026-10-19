@@ -3,3 +3,4 @@ pyvis>=0.3.2
 pandas>=2.0
 scipy>=1.11.0
 great_tables>=0.10.0
+statsbombpy>=1.0
