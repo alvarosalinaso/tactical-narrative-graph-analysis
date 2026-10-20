@@ -4,7 +4,7 @@
 
 ![Interactive tactical passing graph (Morocco)](assets/grafo_tactico_morocco.png)
 
-> Screenshot of the interactive per-team graph (Morocco). The live version is published on GitHub Pages from `output/grafo_tactico.html`.
+> Screenshot of the interactive per-team graph (Morocco). The interactive graph (`output/grafo_tactico.html`) is deployable via GitHub Pages.
 
 ---
 
