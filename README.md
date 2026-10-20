@@ -87,6 +87,20 @@ Each figure below is recomputed from the regenerated per-team outputs (sources i
 
 ---
 
+## Qué mide y qué no
+
+**Mide (un partido: Canada vs Morocco, StatsBomb 3857276):**
+- Estructura de la red de pases por equipo: nodos = jugadores, aristas = pases completados agregados, peso = frecuencia acumulada (790 completados → 240 aristas).
+- Centralidad de betweenness (sin peso y con distancia 1/peso), PageRank y grado: quién es puente indispensable y quién monopoliza la distribución.
+- Comunidades de jugadores detectadas por Louvain (3 por equipo).
+
+**No mide:**
+- No estima efectos tácticos causales: es la descripción de la red de **un solo partido** (n=1 por equipo; sin comparación entre partidos ni controles).
+- No incluye xG/xT, pases esperados ni eventos que no sean pases: solo eventos de pase de StatsBomb Open Data.
+- No predice resultados ni proyecta rendimiento futuro: las centralidades son descriptivas de ese partido.
+
+---
+
 ## How to run
 
 ```bash
