@@ -115,7 +115,7 @@ statsbombpy>=1.0
 
 ## Related projects
 
-- [Manchester United Analysis](https://github.com/alvarosalinaso/manchester-united-analisis) — Causal analysis of managerial changes
+- [Manchester United Analysis](https://github.com/alvarosalinaso/manchester-united-analisis) — Descriptive before/after analysis of managerial changes
 - [Chilean Video Games](https://github.com/alvarosalinaso/chilean-videogames-analysis) — Market analysis with scraping
 - [World Cup 2026](https://github.com/alvarosalinaso/worldcup-2026) — Interactive dashboard
 
