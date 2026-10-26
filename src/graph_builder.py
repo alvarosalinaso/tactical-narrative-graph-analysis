@@ -260,7 +260,7 @@ def _write_landing_page(
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <title>Grafo táctico de pases — por equipo</title>
+  <title>Grafo táctico de pases, por equipo</title>
 </head>
 <body style="background:#1a1a2e;color:#eee;margin:0;padding:16px;">
   <h1 style="font-family:sans-serif;color:#fff;">Grafo táctico de pases (por equipo)</h1>
@@ -314,7 +314,7 @@ def analyze_teams(
             with open(match_info_json, encoding="utf-8") as f:
                 info = json.load(f)
             match_label = (
-                f"{info.get('home_team', '?')} vs {info.get('away_team', '?')} — "
+                f"{info.get('home_team', '?')} vs {info.get('away_team', '?')}, "
                 f"{info.get('competition', '?')} ({info.get('match_date', '?')})"
             )
         except (json.JSONDecodeError, OSError, KeyError):

@@ -1,4 +1,4 @@
-# Arquitectura — tactical-narrative-graph-analysis
+# Arquitectura, tactical-narrative-graph-analysis
 
 ## Visión general
 Análisis de redes de pases (StatsBomb Open Data). Grafo dirigido de pases entre jugadores, métricas de centralidad (betweenness, PageRank), detección de comunidades, visualización interactiva (pyvis).
@@ -6,11 +6,11 @@ Análisis de redes de pases (StatsBomb Open Data). Grafo dirigido de pases entre
 ## Componentes principales
 
 ### Datos
-- `data/raw/statsbomb_passes.csv` — Event-level passes (passer, receiver, pass_length, pass_outcome, minute, team, opponent)
-- `data/raw/match_info.json` — Metadatos del partido
-- `data/export/*_network_metrics.json` — Métricas por red
-- `data/export/*_pagerank.csv` — PageRank por jugador
-- `output/grafo_tactico.html` — Visualización pyvis
+- `data/raw/statsbomb_passes.csv`, Event-level passes (passer, receiver, pass_length, pass_outcome, minute, team, opponent)
+- `data/raw/match_info.json`, Metadatos del partido
+- `data/export/*_network_metrics.json`, Métricas por red
+- `data/export/*_pagerank.csv`, PageRank por jugador
+- `output/grafo_tactico.html`, Visualización pyvis
 
 ### Procesamiento (src/)
 - `graph_builder.py`:
@@ -20,10 +20,10 @@ Análisis de redes de pases (StatsBomb Open Data). Grafo dirigido de pases entre
 - `graph_analysis.py`:
   - `build_graph_from_csv()`: CSV (source, target, weight) → nx.DiGraph
   - `run_graph_analysis()`: density, centrality (betweenness sin peso; PageRank/degree con peso), comunidades (louvain_communities con semilla fija COMMUNITY_SEED=42), exporta JSON + CSV
-- `statistical_tests.py` — run_statistical_tests
-- `generate_tables.py` — generate
-- `export_visualizations.py` — export_visualizations
-- `analyze_all.py` — Orquestador
+- `statistical_tests.py`, run_statistical_tests
+- `generate_tables.py`, generate
+- `export_visualizations.py`, export_visualizations
+- `analyze_all.py`, Orquestador
 
 ## Flujo de datos
 ```
@@ -38,9 +38,9 @@ CSV exports → run_graph_analysis → *_network_metrics.json + *_pagerank.csv
 - Outputs: HTML estático + JSON/CSV
 
 ## Tests
-- `tests/test_analysis.py` — Smoke tests + load_passing_data, build_graph, graph_analysis, statistical_tests
-- `tests/test_graph_builder.py` — build_graph, load_passing_data (con mocks)
-- `tests/test_graph_analysis.py` — build_graph_from_csv, run_graph_analysis (con mocks)
+- `tests/test_analysis.py`, Smoke tests + load_passing_data, build_graph, graph_analysis, statistical_tests
+- `tests/test_graph_builder.py`, build_graph, load_passing_data (con mocks)
+- `tests/test_graph_analysis.py`, build_graph_from_csv, run_graph_analysis (con mocks)
 - CI: pytest + coverage + ruff (Python 3.10, 3.11, 3.12)
 
 ## Dependencias clave

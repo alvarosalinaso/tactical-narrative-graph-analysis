@@ -10,7 +10,7 @@ def generate():
     metrics_file = Path("data/export/passing_graph_network_metrics.json")
     if not metrics_file.exists():
         print(
-            "[TABLE] network_metrics.json no encontrado — ejecutar graph_analysis.py primero"
+            "[TABLE] network_metrics.json no encontrado, ejecutar graph_analysis.py primero"
         )
         return
 
@@ -43,7 +43,7 @@ def generate():
 
         tbl = (
             GT(df)
-            .tab_header(title="Métricas de Red — Grafo de Pases Tácticos")
+            .tab_header(title="Métricas de Red, Grafo de Pases Tácticos")
             .tab_source_note("Fuente: NetworkX | Análisis: Álvaro Salinas")
         )
         Path("assets").mkdir(exist_ok=True)
@@ -52,7 +52,7 @@ def generate():
     except ImportError:
         # Fallback: pandas styling
         styled = (
-            df.style.set_caption("Métricas de Red — Grafo de Pases Tácticos")
+            df.style.set_caption("Métricas de Red, Grafo de Pases Tácticos")
             .set_table_styles(
                 [
                     {

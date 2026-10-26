@@ -18,7 +18,7 @@ ES: Análisis de grafos de red sobre datos reales de pases de fútbol para revel
 
 ## Data Source & Attribution
 
-**StatsBomb Open Data** (mandatory attribution) — Free, event-level football data.
+**StatsBomb Open Data** (mandatory attribution), Free, event-level football data.
 The data is made available by StatsBomb under the [StatsBomb Open Data License](https://github.com/statsbomb/open-data/blob/master/LICENSE.md),
 which requires that any published analysis or derivative work credits StatsBomb as the data source. Please cite StatsBomb when reusing or referencing this dataset.
 
@@ -55,9 +55,9 @@ which requires that any published analysis or derivative work credits StatsBomb 
 | **PageRank** | Who is most connected in the passing network |
 | **In/Out Degree** | Ball reception vs distribution volume |
 
-**Centrality variants — which is which:**
+**Centrality variants, which is which:**
 
-- **Betweenness unweighted** (`top_betweenness`): every pass hop counts as 1. Answers "who sits on the most minimum-hop paths" — this is the one used for node size in the interactive graph and for the headline rankings.
+- **Betweenness unweighted** (`top_betweenness`): every pass hop counts as 1. Answers "who sits on the most minimum-hop paths", this is the one used for node size in the interactive graph and for the headline rankings.
 - **Betweenness weighted** (`top_betweenness_weighted`, distance = 1/weight): frequent pass lanes become *short* edges, so shortest paths prefer high-frequency connections. Answers "who bridges the frequent-pass cores". NetworkX treats `weight` as distance, hence the inversion.
 - **PageRank / degree**: use pass frequency as weight (frequency = importance).
 
@@ -69,13 +69,13 @@ PyVis renders the graph as an interactive HTML file (`output/grafo_tactico.html`
 
 ---
 
-## Key findings (per team — Canada vs Morocco, match 3857276)
+## Key findings (per team, Canada vs Morocco, match 3857276)
 
 Each figure below is recomputed from the regenerated per-team outputs (sources in parentheses).
 
 **Morocco** (`flourish_arc_diagram_morocco_network_metrics.json`, `flourish_arc_diagram_morocco.csv`)
 - 16 players, 100 aggregated passing edges from 310 completed passes, 3 communities
-- Sofyan Amrabat has the highest betweenness (0.1100, unweighted) — key connector; Achraf Hakimi Mouh leads PageRank (0.1244)
+- Sofyan Amrabat has the highest betweenness (0.1100, unweighted), key connector; Achraf Hakimi Mouh leads PageRank (0.1244)
 
 **Canada** (`flourish_arc_diagram_canada_network_metrics.json`, `flourish_arc_diagram_canada.csv`)
 - 16 players, 140 aggregated passing edges from 480 completed passes, 3 communities
@@ -83,7 +83,7 @@ Each figure below is recomputed from the regenerated per-team outputs (sources i
 
 **Match totals** (`data/raw/statsbomb_passes.csv`)
 - 869 pass events → 790 completed (79 failed excluded) → 240 aggregated edges across both teams
-- Completed passes by length: 140 short (<10 m), 449 medium (10–25 m), 201 long (≥25 m) — medium/short dominate possession phases, long balls appear in transitions
+- Completed passes by length: 140 short (<10 m), 449 medium (10–25 m), 201 long (≥25 m), medium/short dominate possession phases, long balls appear in transitions
 
 ---
 
@@ -129,9 +129,9 @@ statsbombpy>=1.0
 
 ## Related projects
 
-- [Manchester United Analysis](https://github.com/alvarosalinaso/manchester-united-analisis) — Descriptive before/after analysis of managerial changes
-- [Chilean Video Games](https://github.com/alvarosalinaso/chilean-videogames-analysis) — Market analysis with scraping
-- [World Cup 2026](https://github.com/alvarosalinaso/worldcup-2026) — Interactive dashboard
+- [Manchester United Analysis](https://github.com/alvarosalinaso/manchester-united-analisis), Descriptive before/after analysis of managerial changes
+- [Chilean Video Games](https://github.com/alvarosalinaso/chilean-videogames-analysis), Market analysis with scraping
+- [World Cup 2026](https://github.com/alvarosalinaso/worldcup-2026), Interactive dashboard
 
 ---
 

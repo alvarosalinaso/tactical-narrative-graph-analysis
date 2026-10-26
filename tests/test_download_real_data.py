@@ -14,6 +14,6 @@ def test_compute_opponent_away_team():
 
 
 def test_compute_opponent_not_hardcoded():
-    """Logic must be generic — no hardcoded club name."""
+    """Logic must be generic, no hardcoded club name."""
     assert compute_opponent("Wolves", "Liverpool", "Wolves") == "Liverpool"
     assert compute_opponent("Liverpool", "Liverpool", "Wolves") == "Wolves"
